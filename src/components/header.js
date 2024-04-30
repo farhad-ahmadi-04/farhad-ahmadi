@@ -1,4 +1,5 @@
 import domGenerator from "../../node_modules/dom-generator/dist/domGenerator.js";
+import nav from "./nav.js";
 
 // create header by dom-generator
 const header = domGenerator({
@@ -22,7 +23,7 @@ const header = domGenerator({
             }
         ]
     }, {
-        tag: "nav",
+        tag: nav,
         attributes: { class: "menu--item menu-nav" },
     }, {
         tag: "div",

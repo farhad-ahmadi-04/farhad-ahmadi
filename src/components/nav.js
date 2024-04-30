@@ -1,0 +1,52 @@
+import domGenerator from "../../node_modules/dom-generator/dist/domGenerator.js";
+
+const nav = domGenerator({
+    tag: 'nav',
+    children: [{
+        tag: 'ul',
+        attributes: { class: 'list-items' },
+        children: [{
+            tag: 'li',
+            attributes: { class: 'list--item' },
+            children: [{
+                tag: 'a',
+                properties: { href: '#', textContent: 'Home' },
+                attributes: { class: 'active' }
+            }]
+        }, {
+            tag: 'li',
+            attributes: { class: 'list--item' },
+            children: [{
+                tag: 'a',
+                properties: { href: '#', textContent: 'Services' },
+                // attributes: { class: 'active' }
+            }]
+        }, {
+            tag: 'li',
+            attributes: { class: 'list--item' },
+            children: [{
+                tag: 'a',
+                properties: { href: '#', textContent: 'About me' },
+                // attributes: { class: 'active' }
+            }]
+        }, {
+            tag: 'li',
+            attributes: { class: 'list--item' },
+            children: [{
+                tag: 'a',
+                properties: { href: '#', textContent: 'Projects' },
+                // attributes: { class: 'active' }
+            }]
+        }, {
+            tag: 'li',
+            attributes: { class: 'list--item' },
+            children: [{
+                tag: 'a',
+                properties: { href: '#', textContent: 'Contact me' },
+                // attributes: { class: 'active' }
+            }]
+        }]
+    }]
+})
+
+export default nav
