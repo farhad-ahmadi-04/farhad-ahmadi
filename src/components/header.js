@@ -3,18 +3,35 @@ import domGenerator from "../../node_modules/dom-generator/dist/domGenerator.js"
 // create header by dom-generator
 const header = domGenerator({
     tag: "header",
-    children: [
-        {
-            tag: "div",
-            attributes: { class: "left-item" },
-            properties: { textContent: "left-item--test..." },
-        },
-        {
-            tag: "div",
-            attributes: { class: "right-item" },
-            properties: { textContent: "right-item--test..." },
-        }
-    ],
+    children: [{
+        tag: "div",
+        attributes: { class: "menu--item menu-logo" },
+        children: [
+            {
+                tag: "h1",
+                properties: { textContent: "Logo" },
+            }, {
+                tag: "span",
+                attributes: { class: "menu--icon" }
+            }, {
+                tag: "span",
+                attributes: { class: "menu--icon" }
+            }, {
+                tag: "span",
+                attributes: { class: "menu--icon" }
+            }
+        ]
+    }, {
+        tag: "nav",
+        attributes: { class: "menu--item menu-nav" },
+    }, {
+        tag: "div",
+        attributes: { class: "menu--item menu-btn" },
+        children: [{
+            tag: "button",
+            properties: { textContent: "Hire me" }
+        }]
+    }]
 });
 
 export default header
