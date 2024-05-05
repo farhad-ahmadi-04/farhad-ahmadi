@@ -1,5 +1,6 @@
 import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
 import nav from "./nav.js";
+import textBtn from "./textBtn.js";
 
 // create header by dom-generator
 const header = domGenerator({
@@ -29,9 +30,7 @@ const header = domGenerator({
         tag: "div",
         attributes: { class: "menu--item menu-btn" },
         children: [{
-            tag: "button",
-            attributes: { class: "primary--text-btn" },
-            properties: { textContent: "Hire me" }
+            tag: textBtn("Hire me", "#")
         }]
     }]
 });

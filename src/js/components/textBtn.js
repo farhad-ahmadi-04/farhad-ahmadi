@@ -8,12 +8,13 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
  */
 const textBtn = (text, url) => {
     return domGenerator({
-        tag: "button",
+        tag: "a",
         attributes: { class: "text-btn" },
+        properties: { href: url },
         children: [{
-            tag: 'a',
+            tag: 'button',
             attributes: { class: "primary--text-btn" },
-            properties: { textContent: text, href: url }
+            properties: { textContent: text }
         }]
     })
 }
