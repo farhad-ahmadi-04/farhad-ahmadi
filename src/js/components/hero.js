@@ -1,5 +1,6 @@
 import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
 import iconBtn from "./iconbtn.js";
+import textBtn from "./textBtn.js";
 
 
 const heroSection = () => {
@@ -39,7 +40,59 @@ const heroSection = () => {
                     }, {
                         tag: textBtn("Download CV", "#")
                     }],
+                }, {
+                    tag: "div",
+                    attributes: { class: "hero-experience" },
+                    children: [{
+                        tag: 'div',
+                        attributes: { class: "Experiences" },
+                        children: [{
+                            tag: "p",
+                            attributes: { class: "Experiences-num" },
+                            properties: { textContent: "2+" }
+                        }, {
+                            tag: "p",
+                            attributes: { class: "Experiences-text" },
+                            properties: { textContent: "Experiences" }
+                        }]
+                    }, {
+                        tag: 'div',
+                        attributes: { class: "Experiences" },
+                        children: [{
+                            tag: "p",
+                            attributes: { class: "Experiences-num" },
+                            properties: { textContent: "10+" }
+                        }, {
+                            tag: "p",
+                            attributes: { class: "Experiences-text" },
+                            properties: { textContent: "Project done" }
+                        }]
+                    }, {
+                        tag: 'div',
+                        attributes: { class: "Experiences" },
+                        children: [{
+                            tag: "p",
+                            attributes: { class: "Experiences-num" },
+                            properties: { textContent: "10+" }
+                        }, {
+                            tag: "p",
+                            attributes: { class: "Experiences-text" },
+                            properties: { textContent: "Happy Clients" }
+                        }]
+                    }]
                 }],
+        }, {
+            tag: "div",
+            attributes: { class: "hero-item" },
+            children: [{
+                tag: "div",
+                attributes: { class: "cercle-bg" },
+            }, {
+                tag: "img",
+                attributes: { class: "hero-img" },
+                properties: { src: "", alt: "" }
+            }]
         }]
     })
 };
+export default heroSection
