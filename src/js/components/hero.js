@@ -13,6 +13,7 @@ const heroSection = () => {
             children: [
                 {
                     tag: "p",
+                    attributes: { class: "primary--text" },
                     properties: { textContent: "Hi I am" }
                 }, {
                     tag: "h3",

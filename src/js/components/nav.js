@@ -19,7 +19,7 @@ const nav = domGenerator({
             children: [{
                 tag: 'a',
                 properties: { href: '#', textContent: 'Services' },
-                // attributes: { class: 'active' }
+                attributes: { class: 'primary--text' }
             }]
         }, {
             tag: 'li',
@@ -27,7 +27,7 @@ const nav = domGenerator({
             children: [{
                 tag: 'a',
                 properties: { href: '#', textContent: 'About me' },
-                // attributes: { class: 'active' }
+                attributes: { class: 'primary--text' }
             }]
         }, {
             tag: 'li',
@@ -35,7 +35,7 @@ const nav = domGenerator({
             children: [{
                 tag: 'a',
                 properties: { href: '#', textContent: 'Projects' },
-                // attributes: { class: 'active' }
+                attributes: { class: 'primary--text' }
             }]
         }, {
             tag: 'li',
@@ -43,7 +43,7 @@ const nav = domGenerator({
             children: [{
                 tag: 'a',
                 properties: { href: '#', textContent: 'Contact me' },
-                // attributes: { class: 'active' }
+                attributes: { class: 'primary--text' }
             }]
         }]
     }]

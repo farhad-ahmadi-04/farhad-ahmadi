@@ -1,3 +1,9 @@
 main {
     padding: 30px;
+    .hero-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(229, 235, 239);
+    }
 }
