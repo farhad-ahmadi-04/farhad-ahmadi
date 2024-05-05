@@ -7,32 +7,43 @@ const heroSection = () => {
     return domGenerator({
         tag: "section",
         attributes: { class: "hero-section" },
-        children: [{
-            tag: "div",
-            attributes: { class: "hero-item" },
-            children: [
-                {
-                    tag: "p",
-                    attributes: { class: "primary--text" },
-                    properties: { textContent: "Hi I am" }
-                }, {
-                    tag: "h3",
-                    attributes: { class: "hero-name" },
-                    properties: { textContent: "Farhad Ahmadi" },
-                }, {
-                    tag: "h1",
-                    attributes: { class: "hero-skill" },
-                    properties: { textContent: "Front-end dev" },
-                }, {
+        children: [
+            {
+                tag: "div",
+                attributes: { class: "hero-item" },
+                children: [{
                     tag: "div",
-                    attributes: { class: "hero-media" },
+                    attributes: { class: "interview" },
                     children: [{
-                        tag: iconBtn("instagram"),
+                        tag: "div",
+                        attributes: { class: "hero-interview" },
+                        children: [
+                            {
+                                tag: "p",
+                                attributes: { class: "primary--text" },
+                                properties: { textContent: "Hi I am" }
+                            }, {
+                                tag: "h3",
+                                attributes: { class: "hero-name" },
+                                properties: { textContent: "Farhad Ahmadi" },
+                            }
+                        ],
                     }, {
-                        tag: iconBtn("github"),
+                        tag: "h1",
+                        attributes: { class: "hero-skill" },
+                        properties: { textContent: "Front-end dev" },
                     }, {
-                        tag: iconBtn("lonkdin"),
-                    }],
+                        tag: "div",
+                        attributes: { class: "hero-media" },
+                        children: [{
+                            tag: iconBtn("instagram"),
+                        }, {
+                            tag: iconBtn("github"),
+                        }, {
+                            tag: iconBtn("lonkdin"),
+                        }]
+                    },
+                    ]
                 }, {
                     tag: "div",
                     attributes: { class: "hero-action" },
@@ -82,18 +93,18 @@ const heroSection = () => {
                         }]
                     }]
                 }],
-        }, {
-            tag: "div",
-            attributes: { class: "hero-item" },
-            children: [{
-                tag: "div",
-                attributes: { class: "cercle-bg" },
             }, {
-                tag: "img",
-                attributes: { class: "hero-img" },
-                properties: { src: "", alt: "" }
+                tag: "div",
+                attributes: { class: "hero-item" },
+                children: [{
+                    tag: "div",
+                    attributes: { class: "cercle-bg" },
+                }, {
+                    tag: "img",
+                    attributes: { class: "hero-img" },
+                    properties: { src: "", alt: "" }
+                }]
             }]
-        }]
     })
-};
+}
 export default heroSection
