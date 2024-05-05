@@ -36,9 +36,9 @@ const heroSection = () => {
                     tag: "div",
                     attributes: { class: "hero-action" },
                     children: [{
-                        tag: textBtn("Hire me", "#")
+                        tag: textBtn("Hire me", "#"),
                     }, {
-                        tag: textBtn("Download CV", "#")
+                        tag: textBtn("Download CV", "#"),
                     }],
                 }, {
                     tag: "div",

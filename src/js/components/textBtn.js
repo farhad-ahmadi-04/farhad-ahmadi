@@ -9,11 +9,11 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
 const textBtn = (text, url) => {
     return domGenerator({
         tag: "button",
-        attrebute: { class: "text-btn" },
+        attributes: { class: "text-btn" },
         children: [{
             tag: 'a',
-            attrebute: { href: url },
-            prperties: { textContent: text }
+            attributes: { class: "primary--text-btn" },
+            properties: { textContent: text, href: url }
         }]
     })
 }
