@@ -1,4 +1,6 @@
 import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
+import iconBtn from "./iconbtn.js";
+
 
 const heroSection = () => {
     return domGenerator({
@@ -28,6 +30,14 @@ const heroSection = () => {
                         tag: iconBtn("github"),
                     }, {
                         tag: iconBtn("lonkdin"),
+                    }],
+                }, {
+                    tag: "div",
+                    attributes: { class: "hero-action" },
+                    children: [{
+                        tag: textBtn("Hire me", "#")
+                    }, {
+                        tag: textBtn("Download CV", "#")
                     }],
                 }],
         }]
