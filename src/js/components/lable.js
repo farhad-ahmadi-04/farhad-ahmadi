@@ -1,16 +1,18 @@
 import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
 
-const lableSection = (lable, text) => {
+const labelSection = (label, text) => {
     return domGenerator({
         tag: 'div',
         attributes: { class: 'lable-item' },
         children: [{
             tag: 'h1',
-            attributes: { class: 'head-lable' }
+            attributes: { class: 'head-lable' },
+            properties: { textContent: label }
         }, {
             tag: 'p',
-            attributes: { class: 'body-lable' }
+            attributes: { class: 'body-lable' },
+            properties: { textContent: text }
         }]
     })
 }
-export default lableSection
+export default labelSection
