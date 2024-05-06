@@ -99,10 +99,11 @@ const heroSection = () => {
                 children: [{
                     tag: "div",
                     attributes: { class: "cercle-bg" },
-                }, {
-                    tag: "img",
-                    attributes: { class: "hero-img" },
-                    properties: { src: "public/hero--image.png", alt: "Farhad Ahmadi" }
+                    children: [{
+                        tag: "img",
+                        attributes: { class: "hero-img" },
+                        properties: { src: "public/hero--image.png", alt: "Farhad Ahmadi" }
+                    }],
                 }]
             }]
     })
