@@ -12,11 +12,11 @@ const label = (label, text) => {
         attributes: { class: 'lable-item' },
         children: [{
             tag: 'h1',
-            attributes: { class: 'head-lable' },
+            attributes: { class: 'head-lable title--text' },
             properties: { textContent: label }
         }, {
             tag: 'p',
-            attributes: { class: 'body-lable' },
+            attributes: { class: 'primary--text' },
             properties: { textContent: text }
         }]
     })
