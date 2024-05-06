@@ -95,14 +95,14 @@ const heroSection = () => {
                 }],
             }, {
                 tag: "div",
-                attributes: { class: "hero-item" },
+                attributes: { class: "hero-item hero-right-item" },
                 children: [{
                     tag: "div",
                     attributes: { class: "cercle-bg" },
                 }, {
                     tag: "img",
                     attributes: { class: "hero-img" },
-                    properties: { src: "", alt: "" }
+                    properties: { src: "public/hero--image.png", alt: "Farhad Ahmadi" }
                 }]
             }]
     })

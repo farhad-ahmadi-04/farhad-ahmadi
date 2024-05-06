@@ -2,14 +2,20 @@
 
 main {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .hero-section {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
+        width: 100%;
         .hero-item {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 50px;
             .interview {
                 display: flex;
                 flex-direction: column;
@@ -18,12 +24,12 @@ main {
                 gap: 16px;
                 .hero-interview {
                     .hero-name {
-                        font-size: 1.5rem;
+                        font-size: 2rem;
                         color: $white--dark--hover;
                     }
                 }
                 .hero-skill {
-                    font-size: 2.67rem;
+                    font-size: 4.67rem;
                     background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
@@ -39,6 +45,7 @@ main {
                 display: flex;
                 align-items: center;
                 gap: 16px;
+                margin-bottom: 20px;
             }
             .hero-experience {
                 display: flex;
@@ -64,6 +71,27 @@ main {
                         color: $white--normal--hover;
                     }
                 }
+            }
+        }
+        // right item of hero:
+        .hero-right-item {
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            .hero-img {
+                height: 700px;
+                width: 550px;
+                z-index: 2;
+            }
+            .cercle-bg {
+                width: 500px;
+                height: 500px;
+                background-color: $bg--opacity;
+                position: absolute;
+                z-index: 1;
+                bottom: -30px;
+                border-radius: 100%;
             }
         }
     }
