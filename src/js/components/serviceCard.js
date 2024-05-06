@@ -11,25 +11,25 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
 const serviceCard = (img, alt, title, text) => {
     return domGenerator({
         tag: 'div',
-        attrbuites: { class: 'service-card' },
+        attributes: { class: 'service-card' },
         children: [{
             tag: 'div',
-            attrbuites: { class: 'service-head' },
+            attributes: { class: 'service-head' },
             children: [{
                 tag: 'img',
-                attrbuites: { class: 'head-img' },
+                attributes: { class: 'head-img' },
                 properties: { src: img, alt: alt }
             }, {
                 tag: "h5",
-                attrbuites: { class: 'head-title' },
+                attributes: { class: 'head-title' },
                 properties: { textContent: title }
             }]
         }, {
             tag: "div",
-            attrbuites: { class: 'service-body' },
+            attributes: { class: 'service-body' },
             children: [{
                 tag: "p",
-                attrbuites: { class: 'body-text' },
+                attributes: { class: 'body-text primary--text' },
                 properties: { textContent: text }
             }]
         }]

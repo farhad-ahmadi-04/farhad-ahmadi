@@ -1,5 +1,6 @@
 import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
 import label from "./lable.js";
+import serviceCard from "./serviceCard.js";
 
 
 const servicesSection = domGenerator({
@@ -10,6 +11,9 @@ const servicesSection = domGenerator({
     }, {
         tag: 'div',
         attributes: { class: 'service-items' },
+        children: [{
+            tag: serviceCard("public/developer-64.png", "developer icon", "web developer", "test.....")
+        }]
     }]
 })
 export default servicesSection
