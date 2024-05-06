@@ -1,5 +1,6 @@
 @import "./variables.scss";
 
+// btn style:-----------------------
 .primary--text-btn {
     border: none;
     color: $white--light;
@@ -19,19 +20,6 @@
     gap: 10px;
     padding: 12px 20px;
 }
-
-.primary--text {
-    color: $white--dark--hover;
-    font-size: 0.93rem;
-}
-
-.title--text {
-    font-size: 2.4rem;
-    color: $white--light;
-    font-weight: bold;
-    margin: 10px;
-}
-
 .icon-btn {
     border: 1px solid $white--darker;
     border-radius: 50px;
@@ -56,3 +44,18 @@
         }
     }
 }
+// -------------------btn style.
+
+// texts style:---------------------------------
+.primary--text {
+    color: $white--dark--hover;
+    font-size: 0.93rem;
+}
+
+.title--text {
+    font-size: 2.4rem;
+    color: $white--light;
+    font-weight: bold;
+    margin: 10px;
+}
+// --------------texts style.
