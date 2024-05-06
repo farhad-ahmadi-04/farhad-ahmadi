@@ -9,14 +9,13 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
  */
 const iconBtn = (image, alt, url) => {
     return domGenerator({
-        tag: "button",
-        attrbute: { class: "icon-btn" },
+        tag: "a",
+        attributes: { class: "icon-btn", href: url },
         children: [{
-            tag: 'a',
-            attrbute: { href: url },
+            tag: 'button',
             children: [{
                 tag: "img",
-                attrbute: { class: "icon-btn-image" },
+                attributes: { class: "icon-btn-image" },
                 properties: { src: image, alt: alt }
             }]
         }]

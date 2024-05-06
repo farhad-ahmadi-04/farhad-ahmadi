@@ -24,3 +24,28 @@
     color: $white--dark--hover;
     font-size: 0.93rem;
 }
+
+.icon-btn {
+    border: 1px solid $white--darker;
+    border-radius: 50px;
+    background-color: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 8px;
+    button {
+        height: fit-content;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon-btn-image {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

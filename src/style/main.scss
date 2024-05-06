@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 main {
     padding: 30px;
     .hero-section {
@@ -25,6 +27,12 @@ main {
                     background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
+                }
+                .hero-media {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
                 }
             }
             .hero-action {

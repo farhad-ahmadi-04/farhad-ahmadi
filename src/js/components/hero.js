@@ -36,11 +36,11 @@ const heroSection = () => {
                         tag: "div",
                         attributes: { class: "hero-media" },
                         children: [{
-                            tag: iconBtn("instagram"),
+                            tag: iconBtn('public/instagram.svg', "instagram image", "instagram"),
                         }, {
-                            tag: iconBtn("github"),
+                            tag: iconBtn('public/github.svg', 'githum logo', "github"),
                         }, {
-                            tag: iconBtn("lonkdin"),
+                            tag: iconBtn('public/linkdin.svg', 'linkIn image', "LinkdIn"),
                         }]
                     },
                     ]
