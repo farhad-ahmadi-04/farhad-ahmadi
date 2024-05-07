@@ -1,1 +1,58 @@
-{}
+{
+  "own": "farhad ahmadi",
+  "skill": "front end developer",
+  "social media": [
+    {
+      "platform": "instagram",
+      "address": "https://www.instagram.com/farhad_ahmadi_04",
+      "icon": "public/instagram.svg",
+      "alt": "instagram icon farhad"
+    },
+    {
+      "platform": "github",
+      "address": "https://github.com/farhad-ahmadi-04",
+      "icon": "public/github.svg",
+      "alt": "github icon farhad"
+    },
+    {
+      "platform": "LinkedIn",
+      "address": "https://www.linkedin.com/in/farhad-ahmadi-217a26288/",
+      "icon": "public/linkdin.svg",
+      "alt": "linkedin icon farhad"
+    }
+  ],
+  "work history": [
+    {
+      "text": "Experiences",
+      "number": "2"
+    },
+    {
+      "text": "Project done",
+      "number": "10"
+    },
+    {
+      "text": "Happy Clients",
+      "number": "5"
+    }
+  ],
+  "service card": [
+    {
+      "src": "public/developer-64.png",
+      "alt": "developer icon farhad",
+      "title": "front-end",
+      "description": "A front-end developer is responsible for designing and creating the visual and interactive parts of a website, including web pages and user interfaces."
+    },
+    {
+      "src": "public/ui-designer.png",
+      "alt": "ui designer icon farhad",
+      "title": "UI designer",
+      "description": "A UI designer is an artist who crafts the visual and aesthetic details of websites and applications to make them beautiful and functional."
+    },
+    {
+      "src": "public/ui-designer.png",
+      "alt": "ux designer icon farhad",
+      "title": "Ux designer",
+      "description": "A UX designer is a strategist who designs the overall experience of a product or website to ensure it is intuitive, seamless, and enjoyable for the user."
+    }
+  ]
+}
