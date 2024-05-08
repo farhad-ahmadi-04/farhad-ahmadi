@@ -4,7 +4,7 @@
     "skill": "front end developer",
     "about me": "Hello! I'm an experienced front-end developer with significant experience in web programming, striving for professional growth and development in this field. My work experience in programming extends to designing and developing websites and web applications, and I'm proficient in technologies such as HTML, CSS, JavaScript, and the React framework. Moreover, I have some experience in the field of user interface and user experience (UI/UX) design and I'm eager to expand these skills. With a responsible personality, I consider my colleagues as effective and credible team members. I'm always enthusiastic, organized, and committed to team and company goals, and I enjoy collaborating and communicating effectively with my colleagues."
   },
-  "social media": [
+  "socialMedia": [
     {
       "platform": "instagram",
       "address": "https://www.instagram.com/farhad_ahmadi_04",
@@ -24,7 +24,7 @@
       "alt": "linkedin icon farhad"
     }
   ],
-  "work history": [
+  "workHistory": [
     {
       "text": "Experiences",
       "number": "2"
@@ -38,7 +38,7 @@
       "number": "5"
     }
   ],
-  "service card": [
+  "serviceCard": [
     {
       "src": "public/developer-64.png",
       "alt": "developer icon farhad",

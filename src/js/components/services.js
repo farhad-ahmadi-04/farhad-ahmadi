@@ -10,10 +10,7 @@ const servicesSection = domGenerator({
         tag: label('Services', 'Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam')
     }, {
         tag: 'div',
-        attributes: { class: 'service-items' },
-        children: [{
-            tag: serviceCard("public/developer-64.png", "developer icon", "web developer", "test.....")
-        }]
+        attributes: { class: 'service-items' }
     }]
 })
 export default servicesSection
