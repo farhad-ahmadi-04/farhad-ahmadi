@@ -57,5 +57,39 @@
       "title": "Ux designer",
       "description": "A UX designer is a strategist who designs the overall experience of a product or website to ensure it is intuitive, seamless, and enjoyable for the user."
     }
+  ],
+  "skill": [
+    {
+      "tool": "figma",
+      "avrage": 70
+    },
+    {
+      "tool": "Html",
+      "avrage": 95
+    },
+    {
+      "tool": "css",
+      "avrage": 95
+    },
+    {
+      "tool": "javascript",
+      "avrage": 80
+    },
+    {
+      "tool": "react",
+      "avrage": 20
+    },
+    {
+      "tool": "sass",
+      "avrage": 80
+    },
+    {
+      "tool": "git",
+      "avrage": 80
+    },
+    {
+      "tool": "bootstrap",
+      "avrage": 95
+    }
   ]
 }
