@@ -1,6 +1,6 @@
-import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
-import iconBtn from "./iconbtn.js";
-import textBtn from "./textBtn.js";
+import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
+import iconBtn from "../iconbtn.js";
+import textBtn from "../textBtn.js";
 
 
 const heroSection = () => {

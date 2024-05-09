@@ -1,8 +1,8 @@
-import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
-import fetchData from "../Assets/fetchData.js";
-import render from "../Assets/render.js";
+import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
+import fetchData from "../../Assets/fetchData.js";
+import render from "../../Assets/render.js";
 import heroSection from "./hero.js";
-import serviceCard from "./serviceCard.js";
+import serviceCard from "../serviceCard.js";
 import servicesSection from "./services.js";
 // varients
 const app = document.querySelector('.app')

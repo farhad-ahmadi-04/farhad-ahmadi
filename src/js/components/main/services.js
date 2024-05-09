@@ -1,6 +1,6 @@
-import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
-import label from "./lable.js";
-import serviceCard from "./serviceCard.js";
+import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
+import label from "../lable.js";
+import serviceCard from "../serviceCard.js";
 
 
 const servicesSection = domGenerator({

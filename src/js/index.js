@@ -1,7 +1,7 @@
 // main js file
-import header from "./components/header.js";
+import header from "./components/header/header.js";
 import render from "./Assets/render.js";
-import main from "./components/main.js";
+import main from "./components/main/main.js";
 
 const app = document.querySelector('.app')
 
