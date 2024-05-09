@@ -1,5 +1,6 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import label from "../lable.js";
+import aboutMePart from "./aboutMePart.js";
 
 const aboutMESection = () => {
     return domGenerator({
@@ -9,6 +10,10 @@ const aboutMESection = () => {
         }, {
             tag: "div",
             attributes: { class: "div-item" },
+            children: [{
+                tag: aboutMePart("public/hero--image.png", "Farhad Ahmadi")
+            }]
         }]
     })
 }
+export default aboutMESection

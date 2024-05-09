@@ -4,6 +4,7 @@ import render from "../../Assets/render.js";
 import heroSection from "./hero.js";
 import serviceCard from "../serviceCard.js";
 import servicesSection from "./services.js";
+import aboutMESection from "./aboutMe.js";
 // varients
 const app = document.querySelector('.app')
 
@@ -18,6 +19,7 @@ const main = domGenerator({
 window.addEventListener('DOMContentLoaded', () => {
     render(main, heroSection())
     render(main, servicesSection)
+    render(main, aboutMESection())
     render(app, main)
 })
 
