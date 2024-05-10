@@ -1,6 +1,6 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import label from "../lable.js";
-import mainImage from "./mainImg.js";
+import mainImage from "../mainImg.js";
 
 const aboutMESection = () => {
     return domGenerator({

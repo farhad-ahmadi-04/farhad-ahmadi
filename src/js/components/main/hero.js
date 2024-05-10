@@ -1,6 +1,7 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import iconBtn from "../iconbtn.js";
 import textBtn from "../textBtn.js";
+import mainImage from "../mainImg.js";
 
 
 const heroSection = () => {
@@ -94,17 +95,7 @@ const heroSection = () => {
                     }]
                 }],
             }, {
-                tag: "div",
-                attributes: { class: "hero-item hero-right-item" },
-                children: [{
-                    tag: "div",
-                    attributes: { class: "cercle-bg" },
-                    children: [{
-                        tag: "img",
-                        attributes: { class: "hero-img" },
-                        properties: { src: "public/hero--image.png", alt: "Farhad Ahmadi" }
-                    }],
-                }]
+                tag: mainImage("public/hero--image.png", "Farhad Ahmadi", "bg")
             }]
     })
 }
