@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // get renderf of hero section
     render(main, heroSection)
     render(main, servicesSection)
-    render(main, aboutMESection())
+    render(main, aboutMESection)
     render(app, main)
 })
 
@@ -35,6 +35,7 @@ obj.then(data => {
     const objPosition = {
         heroSection: document.querySelector('.hero-section'),
         serviceItems: document.querySelector('.service-items'),
+        aboutMeSecItem: document.querySelector('.about-me-sec-item'),
     }
 
     // call function for push data
@@ -47,26 +48,33 @@ obj.then(data => {
 
 
 /**
- * for send card to service section: send data and position to this function and then it will get render by helping from render modules
- * @param {object} data - data of card
+ * set component of sections => set data to component and then send it to sections.
+ * @param {object} data - data fron json server
  * @param {object} position - object of html element 
 */
 const sectionData = async (data, position) => {
     try {
 
-        // hero:
+        // hero: get render hero item---
         render(position.heroSection, heroItem(data));
-        // select positoin
+        // ---select positoin
         const heroMedia = document.querySelector('.hero-media')
+        // ---set icon btn in hero item
         await data.socialMedia.forEach(async item => {
             await render(heroMedia, iconBtn(item.icon, item.alt, item.address));
         })
-
+        // ---get render from main image in hero section.
         render(position.heroSection, mainImage(data.about, "max"));
 
+        // service section:
+        // ---getting render from card in service section.
         await data.serviceCard.forEach(async item => {
             await render(position.serviceItems, serviceCard(item.src, item.alt, item.title, item.description))
         });
+
+        // about me:
+        // ---getting render from main image
+        render(position.aboutMeSecItem, mainImage(data.about, "min"));
     } catch (error) {
         console.error(error);
     }
