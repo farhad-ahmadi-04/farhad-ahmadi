@@ -1,7 +1,6 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import fetchData from "../../Assets/fetchData.js";
 import render from "../../Assets/render.js";
-import heroSection from "./hero.js";
 import serviceCard from "../serviceCard.js";
 import servicesSection from "./services.js";
 import aboutMESection from "./aboutMe.js";
@@ -22,9 +21,6 @@ const main = domGenerator({
  * get render from section when page loaded
 */
 window.addEventListener('DOMContentLoaded', () => {
-
-    // tag: "section",
-    // attributes: { class: "landin-section hero-section" },
     // get renderf of hero section
     render(main, generateElement('section', 'landin-section, hero-section'))
     render(main, servicesSection)
