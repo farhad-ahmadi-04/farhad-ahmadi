@@ -7,7 +7,7 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
  * @param {String} imgBg - imgBg is key world for set style
  * @returns html element
  */
-const mainImage = (image, alt, imgBg) => {
+const mainImage = (data, imgBg) => {
     return domGenerator({
         tag: "div",
         attributes: { class: "main-image" },
@@ -17,7 +17,7 @@ const mainImage = (image, alt, imgBg) => {
             children: [{
                 tag: "img",
                 attributes: { class: "hero-img" },
-                properties: { src: image, alt: alt }
+                properties: { src: data.img, alt: data.alt }
             }],
         }]
     })
