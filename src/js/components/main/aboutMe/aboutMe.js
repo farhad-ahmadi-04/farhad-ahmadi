@@ -17,5 +17,9 @@ const aboutMe = (data) => {
     // ---getting render from main image
     render(aboutMeSecItem, mainImage(data.about, "min"));
     render(aboutMeSecItem, MyIntroduction(data.about.aboutMe));
+
+    render(aboutMeSecItem, generateElement("div", "introduction-item"))
+
+
 }
 export default aboutMe

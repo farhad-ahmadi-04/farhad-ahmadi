@@ -55,7 +55,7 @@ const sectionData = async (data, position) => {
         // service components:
         services(data)
 
-        // about me:
+        // about components:
         aboutMe(data)
     } catch (error) {
         console.error(error);
