@@ -4,7 +4,7 @@ import render from "../../Assets/render.js";
 import serviceCard from "../serviceCard.js";
 import servicesSection from "./services.js";
 import aboutMESection from "./aboutMe.js";
-import heroItem from "./heroItem.js";
+import heroItem from "./hero/heroItem.js";
 import mainImage from "../mainImg.js";
 import iconBtn from "../iconbtn.js";
 import MyIntroduction from "./MyIntroduction.js";
