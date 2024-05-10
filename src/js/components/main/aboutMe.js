@@ -5,6 +5,7 @@ import mainImage from "../mainImg.js";
 const aboutMESection = () => {
     return domGenerator({
         tag: 'section',
+        attributes: { class: 'landin-section' },
         children: [{
             tag: label("About me", "front end developer and also UI/UX designer")
         }, {

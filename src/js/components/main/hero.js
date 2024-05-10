@@ -7,7 +7,7 @@ import mainImage from "../mainImg.js";
 const heroSection = () => {
     return domGenerator({
         tag: "section",
-        attributes: { class: "hero-section" },
+        attributes: { class: "landin-section hero-section" },
         children: [
             {
                 tag: "div",

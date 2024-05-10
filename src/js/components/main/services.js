@@ -5,7 +5,7 @@ import serviceCard from "../serviceCard.js";
 
 const servicesSection = domGenerator({
     tag: "section",
-    attributes: { class: "service--section" },
+    attributes: { class: "landin-section service--section" },
     children: [{
         tag: label('Services', 'Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam')
     }, {
