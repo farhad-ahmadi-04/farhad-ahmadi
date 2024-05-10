@@ -9,6 +9,7 @@ import heroItem from "./heroItem.js";
 import mainImage from "../mainImg.js";
 import iconBtn from "../iconbtn.js";
 import MyIntroduction from "./MyIntroduction.js";
+import generateElement from "../../Assets/generateEle.js";
 // varients
 const app = document.querySelector('.app')
 
@@ -21,8 +22,11 @@ const main = domGenerator({
  * get render from section when page loaded
 */
 window.addEventListener('DOMContentLoaded', () => {
+
+    // tag: "section",
+    // attributes: { class: "landin-section hero-section" },
     // get renderf of hero section
-    render(main, heroSection)
+    render(main, generateElement('section', 'landin-section, hero-section'))
     render(main, servicesSection)
     render(main, aboutMESection)
     render(app, main)
