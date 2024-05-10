@@ -3,7 +3,8 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
 /**
  * create my image componenet
  * @param {string} image - src of image
- * @param {*} alt - alt of image
+ * @param {String} alt - alt of image
+ * @param {String} imgBg - imgBg is key world for set style
  * @returns html element
  */
 const mainImage = (image, alt, imgBg) => {
@@ -12,7 +13,7 @@ const mainImage = (image, alt, imgBg) => {
         attributes: { class: "hero-item hero-right-item" },
         children: [{
             tag: "div",
-            attributes: { class: `cercle-${imgBg}` },
+            attributes: { class: `${imgBg}-cercle-bg` },
             children: [{
                 tag: "img",
                 attributes: { class: "hero-img" },

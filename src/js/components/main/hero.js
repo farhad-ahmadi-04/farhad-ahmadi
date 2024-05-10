@@ -95,7 +95,7 @@ const heroSection = () => {
                     }]
                 }],
             }, {
-                tag: mainImage("public/hero--image.png", "Farhad Ahmadi", "bg")
+                tag: mainImage("public/hero--image.png", "Farhad Ahmadi", "max")
             }]
     })
 }

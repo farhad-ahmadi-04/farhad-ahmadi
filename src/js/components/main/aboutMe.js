@@ -11,7 +11,7 @@ const aboutMESection = () => {
             tag: "div",
             attributes: { class: "div-item" },
             children: [{
-                tag: mainImage("public/hero--image.png", "Farhad Ahmadi", "bg")
+                tag: mainImage("public/hero--image.png", "Farhad Ahmadi", "min")
             }]
         }]
     })
