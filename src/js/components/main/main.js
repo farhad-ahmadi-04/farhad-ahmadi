@@ -1,13 +1,10 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import fetchData from "../../Assets/fetchData.js";
 import render from "../../Assets/render.js";
-import serviceCard from "../serviceCard.js";
 import services from "./serviceSec/services.js";
-import aboutMESection from "./aboutMe.js";
-import mainImage from "../mainImg.js";
-import MyIntroduction from "./MyIntroduction.js";
 import generateElement from "../../Assets/generateEle.js";
 import hero from "./hero/hero.js";
+import aboutMe from "./aboutMe/aboutMe.js";
 // varients
 const app = document.querySelector('.app')
 
@@ -23,8 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     // get renderf of hero section
     render(main, generateElement('section', 'landin-section, hero-section'))
     render(main, generateElement('section', 'landin-section, service--section'))
-    // tag: 'section',
-    // attributes: { class: 'landin-section about-me-sec' },
     render(main, generateElement('section', 'landin-section, about-me-sec'))
     render(app, main)
 })
@@ -36,7 +31,6 @@ obj.then(data => {
     // find positions for push 
     const objPosition = {
         heroSection: document.querySelector('.hero-section'),
-        aboutMeSecItem: document.querySelector('.about-me-sec-item'),
     }
 
     // call function for push data
@@ -62,9 +56,7 @@ const sectionData = async (data, position) => {
         services(data)
 
         // about me:
-        // ---getting render from main image
-        render(position.aboutMeSecItem, mainImage(data.about, "min"));
-        render(position.aboutMeSecItem, MyIntroduction(data.about.aboutMe));
+        aboutMe(data)
     } catch (error) {
         console.error(error);
     }
