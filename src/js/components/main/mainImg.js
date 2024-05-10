@@ -1,4 +1,4 @@
-import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
+import domGenerator from "dom-generator/dist/domGenerator.js";
 
 /**
  * create my image componenet
@@ -6,13 +6,13 @@ import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerat
  * @param {*} alt - alt of image
  * @returns html element
  */
-const aboutMePart = (image, alt) => {
+const mainImage = (image, alt, imgBg) => {
     return domGenerator({
         tag: "div",
         attributes: { class: "hero-item hero-right-item" },
         children: [{
             tag: "div",
-            attributes: { class: "cercle-bg" },
+            attributes: { class: `cercle-${imgBg}` },
             children: [{
                 tag: "img",
                 attributes: { class: "hero-img" },
@@ -21,4 +21,4 @@ const aboutMePart = (image, alt) => {
         }]
     })
 }
-export default aboutMePart
+export default mainImage
