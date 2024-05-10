@@ -22,7 +22,9 @@ const main = domGenerator({
 window.addEventListener('DOMContentLoaded', () => {
     // get renderf of hero section
     render(main, generateElement('section', 'landin-section, hero-section'))
-    render(main, servicesSection)
+    // tag: "section",
+    // attributes: { class: "landin-section service--section" },
+    render(main, generateElement('section', 'landin-section, service--section'))
     render(main, aboutMESection)
     render(app, main)
 })
