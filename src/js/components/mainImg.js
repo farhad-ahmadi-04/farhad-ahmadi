@@ -10,7 +10,7 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
 const mainImage = (image, alt, imgBg) => {
     return domGenerator({
         tag: "div",
-        attributes: { class: "hero-item hero-right-item" },
+        attributes: { class: "main-image" },
         children: [{
             tag: "div",
             attributes: { class: `${imgBg}-cercle-bg` },
