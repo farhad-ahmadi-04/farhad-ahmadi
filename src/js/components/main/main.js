@@ -8,6 +8,7 @@ import aboutMESection from "./aboutMe.js";
 import heroItem from "./heroItem.js";
 import mainImage from "../mainImg.js";
 import iconBtn from "../iconbtn.js";
+import MyIntroduction from "./MyIntroduction.js";
 // varients
 const app = document.querySelector('.app')
 
@@ -74,6 +75,7 @@ const sectionData = async (data, position) => {
         // about me:
         // ---getting render from main image
         render(position.aboutMeSecItem, mainImage(data.about, "min"));
+        render(position.aboutMeSecItem, MyIntroduction(data.about.aboutMe));
     } catch (error) {
         console.error(error);
     }
