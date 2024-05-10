@@ -4,7 +4,7 @@ import label from "../lable.js";
 /**
  * create about me section
  */
-const aboutMESection = domGenerator({
+const aboutMe = domGenerator({
     tag: 'section',
     attributes: { class: 'landin-section about-me-sec' },
     children: [{
@@ -14,4 +14,4 @@ const aboutMESection = domGenerator({
         attributes: { class: "about-me-sec-item" },
     }]
 });
-export default aboutMESection
+export default aboutMe

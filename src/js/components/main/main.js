@@ -2,7 +2,7 @@ import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerat
 import fetchData from "../../Assets/fetchData.js";
 import render from "../../Assets/render.js";
 import serviceCard from "../serviceCard.js";
-import servicesSection from "./services.js";
+import services from "./serviceSec/services.js";
 import aboutMESection from "./aboutMe.js";
 import mainImage from "../mainImg.js";
 import MyIntroduction from "./MyIntroduction.js";
@@ -22,8 +22,6 @@ const main = domGenerator({
 window.addEventListener('DOMContentLoaded', () => {
     // get renderf of hero section
     render(main, generateElement('section', 'landin-section, hero-section'))
-    // tag: "section",
-    // attributes: { class: "landin-section service--section" },
     render(main, generateElement('section', 'landin-section, service--section'))
     render(main, aboutMESection)
     render(app, main)
@@ -36,7 +34,6 @@ obj.then(data => {
     // find positions for push 
     const objPosition = {
         heroSection: document.querySelector('.hero-section'),
-        serviceItems: document.querySelector('.service-items'),
         aboutMeSecItem: document.querySelector('.about-me-sec-item'),
     }
 
@@ -56,14 +53,11 @@ obj.then(data => {
 */
 const sectionData = async (data, position) => {
     try {
-
+        // hero components
         hero(data, position);
 
-        // service section:
-        // ---getting render from card in service section.
-        await data.serviceCard.forEach(async item => {
-            await render(position.serviceItems, serviceCard(item.src, item.alt, item.title, item.description))
-        });
+        // service components:
+        services(data)
 
         // about me:
         // ---getting render from main image
