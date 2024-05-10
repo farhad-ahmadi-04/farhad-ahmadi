@@ -57,9 +57,8 @@ const sectionData = async (data, position) => {
 
         // hero: get render hero item---
         render(position.heroSection, heroItem(data));
-        // ---select positoin
-        const heroMedia = document.querySelector('.hero-media')
         // ---set icon btn in hero item
+        const heroMedia = document.querySelector('.hero-media')
         await data.socialMedia.forEach(async item => {
             await render(heroMedia, iconBtn(item.icon, item.alt, item.address));
         })
