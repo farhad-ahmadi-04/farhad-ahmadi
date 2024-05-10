@@ -4,11 +4,10 @@ import render from "../../Assets/render.js";
 import serviceCard from "../serviceCard.js";
 import servicesSection from "./services.js";
 import aboutMESection from "./aboutMe.js";
-import heroItem from "./hero/heroItem.js";
 import mainImage from "../mainImg.js";
-import iconBtn from "../iconbtn.js";
 import MyIntroduction from "./MyIntroduction.js";
 import generateElement from "../../Assets/generateEle.js";
+import hero from "./hero/hero.js";
 // varients
 const app = document.querySelector('.app')
 
@@ -56,15 +55,7 @@ obj.then(data => {
 const sectionData = async (data, position) => {
     try {
 
-        // hero: get render hero item---
-        render(position.heroSection, heroItem(data));
-        // ---set icon btn in hero item
-        const heroMedia = document.querySelector('.hero-media')
-        await data.socialMedia.forEach(async item => {
-            await render(heroMedia, iconBtn(item.icon, item.alt, item.address));
-        })
-        // ---get render from main image in hero section.
-        render(position.heroSection, mainImage(data.about, "max"));
+        hero(data, position);
 
         // service section:
         // ---getting render from card in service section.
