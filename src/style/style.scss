@@ -96,3 +96,18 @@
     }
 }
 // ---------------------main image component style:
+
+// container style:-----------------
+.row-primary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.col-primary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

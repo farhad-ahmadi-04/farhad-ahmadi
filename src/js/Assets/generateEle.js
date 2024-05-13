@@ -7,11 +7,10 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
  * @returns html element
  */
 const generateElement = (ele, cla) => {
-    const className = cla.split(",").join(' ');
 
     return domGenerator({
         tag: ele,
-        attributes: { class: className }
+        attributes: { class: cla }
     })
 }
 export default generateElement

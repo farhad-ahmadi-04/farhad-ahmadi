@@ -13,14 +13,14 @@ const aboutMe = (data) => {
     render(aboutMeSec, label("About me", "front end developer and also UI/UX designer"))
 
     // create div for item (image & paragraph + btn)
-    render(aboutMeSec, generateElement("div", "about-me-sec-item"))
+    render(aboutMeSec, generateElement("div", "about-me-sec-item row-primary-container"))
 
     // ---selectr item & getting render from main image
     const aboutMeSecItem = document.querySelector('.about-me-sec-item')
     render(aboutMeSecItem, mainImage(data.about, "min"));
 
     // create div for paragraph & btn + selectr div + set text data to div
-    render(aboutMeSecItem, generateElement("div", "introduction-item"))
+    render(aboutMeSecItem, generateElement("div", "introduction-item col-primary-container "))
     const introductionItem = document.querySelector('.introduction-item')
     render(introductionItem, MyIntroduction(data.about.aboutMe));
 }

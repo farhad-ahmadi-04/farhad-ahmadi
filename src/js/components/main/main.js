@@ -18,9 +18,9 @@ const main = domGenerator({
 */
 window.addEventListener('DOMContentLoaded', () => {
     // get renderf of hero section
-    render(main, generateElement('section', 'landin-section, hero-section'))
-    render(main, generateElement('section', 'landin-section, service--section'))
-    render(main, generateElement('section', 'landin-section, about-me-sec'))
+    render(main, generateElement('section', 'landin-section hero-section row-primary-container'))
+    render(main, generateElement('section', 'landin-section service--section col-primary-container'))
+    render(main, generateElement('section', 'landin-section about-me-sec col-primary-container'))
     render(app, main)
 })
 

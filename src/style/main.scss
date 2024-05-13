@@ -7,85 +7,72 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .hero-section {
+
+    .hero-item {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
-        .hero-item {
+        flex-direction: column;
+        gap: 50px;
+        .interview {
             display: flex;
             flex-direction: column;
-            gap: 50px;
-            .interview {
+            justify-content: center;
+            gap: 16px;
+            .hero-interview {
+                .hero-name {
+                    font-size: 2rem;
+                    color: $white--dark--hover;
+                }
+            }
+            .hero-skill {
+                font-size: 4.67rem;
+                background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+            .hero-media {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+        .hero-action {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .hero-experience {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            gap: 16px;
+            padding: 8px 16px;
+            background-color: rgba(255, 255, 255, 0.04);
+            .Experiences {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: flex-start;
-                gap: 16px;
-                .hero-interview {
-                    .hero-name {
-                        font-size: 2rem;
-                        color: $white--dark--hover;
-                    }
-                }
-                .hero-skill {
-                    font-size: 4.67rem;
-                    background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
-                    -webkit-text-fill-color: transparent;
-                    -webkit-background-clip: text;
-                }
-                .hero-media {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                }
-            }
-            .hero-action {
-                display: flex;
                 align-items: center;
-                gap: 16px;
-                margin-bottom: 20px;
-            }
-            .hero-experience {
-                display: flex;
-                align-items: center;
-                width: max-content;
-                gap: 16px;
-                padding: 8px 16px;
-                background-color: rgba(255, 255, 255, 0.04);
-                .Experiences {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 4px;
-                    padding: 5px 10px;
-                    &:not(:last-child) {
-                        border-right: 1px solid $white--dark--hover;
-                    }
-                    .Experiences-num {
-                        color: $orange--normal;
-                    }
-                    .Experiences-text {
-                        color: $white--normal--hover;
-                    }
+                gap: 4px;
+                padding: 5px 10px;
+                &:not(:last-child) {
+                    border-right: 1px solid $white--dark--hover;
+                }
+                .Experiences-num {
+                    color: $orange--normal;
+                }
+                .Experiences-text {
+                    color: $white--normal--hover;
                 }
             }
         }
     }
-    .service--section {
+
+    .service-items {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        width: 100%;
-        .service-items {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
+        align-items: center;
+        gap: 20px;
     }
 }
