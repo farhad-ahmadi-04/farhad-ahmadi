@@ -3,6 +3,7 @@ import render from "../../../Assets/render.js";
 import label from "../../lable.js";
 import mainImage from "../../mainImg.js";
 import MyIntroduction from "../MyIntroduction.js";
+import textIconBtn from "../../textIconBtn.js";
 
 /**
  * create about me section
@@ -23,6 +24,7 @@ const aboutMe = (data) => {
     render(aboutMeSecItem, generateElement("div", "introduction-item col-primary-container "))
     const introductionItem = document.querySelector('.introduction-item')
     render(introductionItem, MyIntroduction(data.about.aboutMe));
+    render(introductionItem, textIconBtn("#", data.icon.textIcon, "download icon", "Download CV"));
 
 
 }

@@ -93,5 +93,8 @@
       "tool": "bootstrap",
       "avrage": 95
     }
-  ]
+  ],
+  "icon": {
+    "textIcon": "public/Download.svg"
+  }
 }
