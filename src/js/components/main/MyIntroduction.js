@@ -5,9 +5,6 @@ const MyIntroduction = (text) => {
         tag: "p",
         properties: { textContent: text },
         attributes: { class: "primary--text" }
-    }, {
-        tag: "div",
-        attributes: { class: "introduction-btn" },
     })
 };
 export default MyIntroduction
