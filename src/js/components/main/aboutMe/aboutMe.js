@@ -19,9 +19,11 @@ const aboutMe = (data) => {
     const aboutMeSecItem = document.querySelector('.about-me-sec-item')
     render(aboutMeSecItem, mainImage(data.about, "min"));
 
-    // create div for paragraph & btn + selectr div + set text data to div
+    // create div for paragraph & btn + selectr div + set text data to div 
     render(aboutMeSecItem, generateElement("div", "introduction-item col-primary-container "))
     const introductionItem = document.querySelector('.introduction-item')
     render(introductionItem, MyIntroduction(data.about.aboutMe));
+
+
 }
 export default aboutMe
