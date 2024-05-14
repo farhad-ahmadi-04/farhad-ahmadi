@@ -8,7 +8,7 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
  * @param {string} text - text of btn
  * @returns bottun element (text icon btn)
  */
-const textIconBtn = (url, image, alt, text) => {
+const textIconBtn = (url = "#", image, alt, text) => {
     return domGenerator({
         tag: "a",
         attributes: { class: "text-icon-btn", href: url },

@@ -24,7 +24,7 @@ const aboutMe = (data) => {
     render(aboutMeSecItem, generateElement("div", "introduction-item col-primary-container "))
     const introductionItem = document.querySelector('.introduction-item')
     render(introductionItem, MyIntroduction(data.about.aboutMe));
-    render(introductionItem, textIconBtn("#", data.icon.textIcon, "download icon", "Download CV"));
+    render(introductionItem, textIconBtn(undefined, data.icon.textIcon, "download icon", "Download CV"));
 
 
 }

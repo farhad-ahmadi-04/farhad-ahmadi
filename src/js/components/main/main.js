@@ -47,7 +47,7 @@ obj.then(data => {
  * @param {object} data - data fron json server
  * @param {object} position - object of html element 
 */
-const sectionData = async (data, position) => {
+const sectionData = (data, position) => {
     try {
         // hero components
         hero(data, position);
