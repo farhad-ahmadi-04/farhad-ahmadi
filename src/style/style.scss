@@ -99,10 +99,11 @@
     }
     .hero-img {
         height: 700px;
-        width: 550px;
+        width: 610px;
         position: absolute;
         bottom: 0;
         border-radius: 48%;
+        filter: grayscale(0.5);
     }
 }
 // ---------------------main image component style:
