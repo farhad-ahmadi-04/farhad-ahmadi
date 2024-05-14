@@ -57,6 +57,9 @@
 .primary--text {
     color: $white--dark--hover;
     font-size: 0.93rem;
+    letter-spacing: 0.1rem;
+    line-break: loose;
+    line-height: 1.5rem;
 }
 
 .title--text {
