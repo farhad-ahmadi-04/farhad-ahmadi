@@ -13,8 +13,12 @@ const aboutMe = (data) => {
     const aboutMeSec = document.querySelector('.about-me-sec')
     render(aboutMeSec, label("About me", "front end developer and also UI/UX designer"))
 
+    // craete div for push (image + paragraph) & skills item
+    render(aboutMeSec, generateElement("div", "about-me-item col-primary-container"))
+    const aboutMeItem = document.querySelector('.about-me-item')
+
     // create div for item (image & paragraph + btn)
-    render(aboutMeSec, generateElement("div", "about-me-sec-item row-primary-container"))
+    render(aboutMeItem, generateElement("div", "about-me-sec-item row-primary-container"))
 
     // ---selectr item & getting render from main image
     const aboutMeSecItem = document.querySelector('.about-me-sec-item')
@@ -26,6 +30,7 @@ const aboutMe = (data) => {
     render(introductionItem, MyIntroduction(data.about.aboutMe));
     render(introductionItem, textIconBtn(undefined, data.icon.textIcon, "download icon", "Download CV"));
 
-
+    // create div of skills
+    render(aboutMeItem, generateElement("div", "skills row-primary-container"))
 }
 export default aboutMe

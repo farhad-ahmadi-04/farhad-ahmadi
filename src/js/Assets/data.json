@@ -63,35 +63,51 @@
   "skill": [
     {
       "tool": "figma",
-      "avrage": 70
+      "avrage": 70,
+      "img": "public/Figma.svg",
+      "alt": "figma icon"
     },
     {
       "tool": "Html",
-      "avrage": 95
+      "avrage": 95,
+      "img": "public/Html.svg",
+      "alt": "html icon"
     },
     {
       "tool": "css",
-      "avrage": 95
+      "avrage": 95,
+      "img": "public/Css.svg",
+      "alt": "css icon"
     },
     {
-      "tool": "javascript",
-      "avrage": 80
+      "tool": "java script",
+      "avrage": 80,
+      "img": "public/js.svg",
+      "alt": "javaScript icon"
     },
     {
       "tool": "react",
-      "avrage": 20
+      "avrage": 20,
+      "img": "public/react.svg",
+      "alt": "react icon"
     },
     {
       "tool": "sass",
-      "avrage": 80
+      "avrage": 80,
+      "img": "public/Sass.svg",
+      "alt": "scss icon"
     },
     {
       "tool": "git",
-      "avrage": 80
+      "avrage": 80,
+      "img": "public/Git.svg",
+      "alt": "git icon"
     },
     {
       "tool": "bootstrap",
-      "avrage": 95
+      "avrage": 95,
+      "img": "public/Bootstrap.svg",
+      "alt": "Bootstrap icon"
     }
   ],
   "icon": {
