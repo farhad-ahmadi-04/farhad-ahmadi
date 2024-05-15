@@ -1,9 +1,11 @@
-import domGenerator from "../../../../../node_modules/dom-generator/dist/domGenerator.js";
+import generateElement from "../../../Assets/generateEle.js";
 import render from "../../../Assets/render.js";
-import label from "../../lable.js";
+import portfolioLabel from "./portfolioLabel.js";
+// import textBtn from "../../textBtn.js";
 
 const portfolio = (data) => {
     const portfolioSec = document.querySelector(".portfolio-sec")
-    render(portfolioSec, label("portfolio", "...this is test text..."))
+    render(portfolioSec, portfolioLabel("Portfolio"))
+
 }
 export default portfolio
