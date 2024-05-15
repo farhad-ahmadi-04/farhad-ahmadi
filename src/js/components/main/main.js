@@ -5,6 +5,9 @@ import services from "./serviceSec/services.js";
 import generateElement from "../../Assets/generateEle.js";
 import hero from "./hero/hero.js";
 import aboutMe from "./aboutMe/aboutMe.js";
+import portfolio from "./portfolio/portfolio.js";
+
+
 // varients
 const app = document.querySelector('.app')
 
@@ -21,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     render(main, generateElement('section', 'landin-section hero-section row-primary-container'))
     render(main, generateElement('section', 'landin-section service--section col-primary-container'))
     render(main, generateElement('section', 'landin-section about-me-sec col-primary-container'))
+    render(main, generateElement('section', 'landin-section portfolio-sec col-primary-container'))
     render(app, main)
 })
 
@@ -57,6 +61,9 @@ const sectionData = (data, position) => {
 
         // about components:
         aboutMe(data)
+
+        // portfolio components:
+        portfolio(data)
     } catch (error) {
         console.error(error);
     }
