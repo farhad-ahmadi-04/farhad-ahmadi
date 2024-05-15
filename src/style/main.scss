@@ -69,27 +69,18 @@ main {
         }
     }
 
-    // .service-items {
-    //     display: grid;
-    //     grid-template-columns: repeat(3, 1fr);
-    //     grid-column-gap: 24px;
-    //     grid-row-gap: 24px;
-    //     justify-items: center;
-
-    //     // display: flex;
-    //     // flex-wrap: wrap;
-    //     // justify-content: center;
-    //     // align-items: center;
-    //     // gap: 24px;
-    // }
-
     .service-items {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
     }
-    .introduction-item {
-        gap: 30px;
+    .about-me-sec {
+        .introduction-item {
+            gap: 30px;
+        }
+        .skills {
+            overflow-x: hidden;
+        }
     }
 }

@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    .progress {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: conic-gradient($orange--normal 60%, $orange--normal--hover 100%);
+        border-radius: 100%;
+        .progress-bar {
+            width: 93%;
+            height: 93%;
+            background-color: #121212;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .skill-icon {
+                width: 60px;
+            }
+        }
+    }
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .progress-range {
+            font-size: calc(0.75lvw + 10px);
+            font-weight: bold;
+            background: $gradient;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+}

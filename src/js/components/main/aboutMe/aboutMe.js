@@ -4,6 +4,7 @@ import label from "../../lable.js";
 import mainImage from "../../mainImg.js";
 import MyIntroduction from "../MyIntroduction.js";
 import textIconBtn from "../../textIconBtn.js";
+import skillCard from "../../skillCard.js";
 
 /**
  * create about me section
@@ -32,5 +33,9 @@ const aboutMe = (data) => {
 
     // create div of skills
     render(aboutMeItem, generateElement("div", "skills row-primary-container"))
+    const skills = document.querySelector('.skills')
+    // create card by map method:
+    const skillCards = data.skill.map(item => render(skills, skillCard(item)))
+
 }
 export default aboutMe

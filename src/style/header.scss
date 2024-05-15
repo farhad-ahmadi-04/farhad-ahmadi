@@ -11,7 +11,7 @@ header {
         flex-direction: column;
         gap: 5px;
         h1 {
-            background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
+            background: $gradient;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             font-weight: bold;

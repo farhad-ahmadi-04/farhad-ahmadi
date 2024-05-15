@@ -16,7 +16,7 @@ const skillCard = (data) => {
                 tag: "div",
                 attributes: { class: "progress-bar" },
                 children: [{
-                    tag: "image",
+                    tag: "img",
                     attributes: { class: "skill-icon" },
                     properties: { src: data.img, alt: data.alt },
                 }]
@@ -30,7 +30,7 @@ const skillCard = (data) => {
                 properties: { textContent: `${data.avrage}%` }
             }, {
                 tag: "span",
-                attributes: { class: "skill-item" },
+                attributes: { class: "skill-item primary--text" },
                 properties: { textContent: data.tool }
             }]
         }]
