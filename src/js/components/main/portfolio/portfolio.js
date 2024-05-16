@@ -13,12 +13,13 @@ const portfolio = (data) => {
     // find categoies
     const uniqueCategory = [...new Set(data.portfolio.map(item => item.category))];
     // set same category to same array
-    const groupedPeople = uniqueCategory.map(category => {
+    uniqueCategory.map(category => {
         return data.portfolio.filter(project => project.category === category);
     });
-
     // get render fron categories
+    render(category, textBtn("All", "primary--text-btn"))
     uniqueCategory.map(item => render(category, textBtn(item, "secondary--text-btn")))
+
 
 
 
