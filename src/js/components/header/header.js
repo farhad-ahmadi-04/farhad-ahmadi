@@ -30,7 +30,7 @@ const header = domGenerator({
         tag: "div",
         attributes: { class: "menu--item menu-btn" },
         children: [{
-            tag: textBtn("Hire me", "#")
+            tag: textBtn("Hire me", "primary--text-btn")
         }]
     }]
 });

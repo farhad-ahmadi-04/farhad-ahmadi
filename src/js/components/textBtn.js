@@ -3,19 +3,14 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
 /**
  * create text button component to use everywhere
  * @param {string} text - value of textBtn
- * @param {string} url - url of link
+ * @param {string} claBtn - style of btn
  * @returns - html element (button)
  */
-const textBtn = (text, url) => {
+const textBtn = (text, claBtn) => {
     return domGenerator({
-        tag: "a",
-        attributes: { class: "text-btn" },
-        properties: { href: url },
-        children: [{
-            tag: 'button',
-            attributes: { class: "primary--text-btn" },
-            properties: { textContent: text }
-        }]
+        tag: 'button',
+        attributes: { class: claBtn },
+        properties: { textContent: text }
     })
 }
 export default textBtn

@@ -6,23 +6,20 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
  * @param {string} image - image of btn that get from json server
  * @param {string} alt - alt of image
  * @param {string} text - text of btn
+ * @param {string} cla - style of btn
  * @returns bottun element (text icon btn)
  */
-const textIconBtn = (url = "#", image, alt, text) => {
+const textIconBtn = (image, alt, text, cla) => {
     return domGenerator({
-        tag: "a",
-        attributes: { class: "text-icon-btn", href: url },
+        tag: 'button',
+        attributes: { class: cla },
         children: [{
-            tag: 'button',
-            attributes: { class: "primary--textIcon-btn" },
-            children: [{
-                tag: "img",
-                attributes: { class: "icon-btn-image" },
-                properties: { src: image, alt: alt }
-            }, {
-                tag: "span",
-                properties: { textContent: text }
-            }]
+            tag: "img",
+            attributes: { class: "icon-btn-image" },
+            properties: { src: image, alt: alt }
+        }, {
+            tag: "span",
+            properties: { textContent: text }
         }]
     })
 }

@@ -17,7 +17,7 @@ const hero = (data, position) => {
     // ---set icon btn in hero item
     const heroMedia = document.querySelector('.hero-media')
     data.socialMedia.forEach(async item => {
-        await render(heroMedia, iconBtn(item.icon, item.alt, item.address));
+        await render(heroMedia, iconBtn(item.icon, item.alt, item.address, "icon-btn"));
     })
     // ---get render from main image in hero section.
     render(position.heroSection, mainImage(data.about, "max"));

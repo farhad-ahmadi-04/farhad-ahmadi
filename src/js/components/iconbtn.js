@@ -3,14 +3,15 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
 /**
  * create component of icon btn to use everywhere we want
  * @param {string} image - icon of btn
- * @param {*} alt - alt value for image
- * @param {*} url - url of social media
+ * @param {string} alt - alt value for image
+ * @param {string} url - url of social media
+ * @param {string} url - style of btn
  * @returns html element
  */
-const iconBtn = (image, alt, url) => {
+const iconBtn = (image, alt, url, cla) => {
     return domGenerator({
         tag: "a",
-        attributes: { class: "icon-btn", href: url },
+        attributes: { class: cla, href: url },
         children: [{
             tag: 'button',
             children: [{

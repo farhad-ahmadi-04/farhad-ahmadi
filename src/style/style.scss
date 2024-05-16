@@ -8,7 +8,28 @@
     font-size: 16px;
     font-weight: bold;
     background: linear-gradient(to bottom right, $orange--normal 0, $orange--normal--hover 100%);
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+.secondary--text-btn {
     border: none;
+    color: $white--normal--active;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background: $bg--opacity;
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+.outline-primary--text-btn {
+    border: 1px solid $white--dark--hover;
+    color: $white--dark--hover;
+    background: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
     padding: 12px 40px;
     cursor: pointer;
 }
@@ -26,6 +47,7 @@
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
+    width: fit-content;
 }
 .icon-btn {
     border: 1px solid $white--darker;
@@ -45,6 +67,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         .icon-btn-image {
             width: 16px;
             height: 16px;

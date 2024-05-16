@@ -18,7 +18,7 @@ const portfolio = (data) => {
     });
 
     // get render fron categories
-    uniqueCategory.map(item => render(category, textBtn(item, "#")))
+    uniqueCategory.map(item => render(category, textBtn(item, "secondary--text-btn")))
 
 
 
