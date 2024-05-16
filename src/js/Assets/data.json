@@ -119,27 +119,37 @@
       {
         "name": "car insurance",
         "repository": "https://farhad-ahmadi-04.github.io/Car-insurance/",
-        "sourceCode": "https://github.com/farhad-ahmadi-04/Car-insurance"
+        "sourceCode": "https://github.com/farhad-ahmadi-04/Car-insurance",
+        "img": "public/car-insurance-image.png",
+        "aly": "car insurance project"
       },
       {
         "name": "Speech app",
         "repository": "https://farhad-ahmadi-04.github.io/Speech-App/",
-        "sourceCode": "https://github.com/farhad-ahmadi-04/Speech-App"
+        "sourceCode": "https://github.com/farhad-ahmadi-04/Speech-App",
+        "img": "public/Speech-app-image.png",
+        "alt": "Speech App project"
       },
       {
         "name": "Validation project",
         "repository": "https://farhad-ahmadi-04.github.io/validation-project/",
-        "sourceCode": "https://github.com/farhad-ahmadi-04/validation-project"
+        "sourceCode": "https://github.com/farhad-ahmadi-04/validation-project",
+        "img": "public/Validation-image.png",
+        "alt": "Validation project"
       },
       {
         "name": "Calculator",
         "repository": "https://mehrdadj2005.github.io/calculator/",
-        "sourceCode": "https://github.com/mehrdadj2005/calculator"
+        "sourceCode": "https://github.com/mehrdadj2005/calculator",
+        "img": "public/calculator-image.png",
+        "alt": "calculator project"
       },
       {
         "name": "Game-of-human-007-",
         "repository": "https://farhad-ahmadi-04.github.io/Game-of-human-007-/",
-        "sourceCode": "https://github.com/farhad-ahmadi-04/Game-of-human-007-"
+        "sourceCode": "https://github.com/farhad-ahmadi-04/Game-of-human-007-",
+        "img": "public/game-of-human-image.png",
+        "alt": "Game-of-human-007 project"
       }
     ],
     "ui": [
