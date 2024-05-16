@@ -113,26 +113,30 @@
   "icon": {
     "textIcon": "public/Download.svg"
   },
-  "portfolio": [
-    {
-      "category": "js",
-      "name": "car insurance",
-      "source": "#"
-    },
-    {
-      "category": "ui",
-      "name": "car insurance",
-      "source": "#"
-    },
-    {
-      "category": "js",
-      "name": "car insurance",
-      "source": "#"
-    },
-    {
-      "category": "ui",
-      "name": "car insurance",
-      "source": "#"
-    }
-  ]
+  "portfolio": {
+    "js": [
+      {
+        "category": "js",
+        "name": "car insurance",
+        "source": "#"
+      },
+      {
+        "category": "js",
+        "name": "car insurance",
+        "source": "#"
+      }
+    ],
+    "ui": [
+      {
+        "category": "ui",
+        "name": "car insurance",
+        "source": "#"
+      },
+      {
+        "category": "ui",
+        "name": "car insurance",
+        "source": "#"
+      }
+    ]
+  }
 }
