@@ -111,7 +111,8 @@
     }
   ],
   "icon": {
-    "textIcon": "public/Download.svg"
+    "textIcon": "public/Download.svg",
+    "arrowRight": "public/Arrow-Right.svg"
   },
   "portfolio": {
     "js": [
