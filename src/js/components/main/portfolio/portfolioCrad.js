@@ -15,7 +15,7 @@ const portfolioCard = (category, data, icon) => {
             attributes: { class: "portfolio-head" },
             children: [{
                 tag: 'img',
-                properties: { src: "#", alt: "farhad" }
+                properties: { src: data.img, alt: data.alt }
             }]
         }, {
             tag: 'div',
@@ -25,22 +25,22 @@ const portfolioCard = (category, data, icon) => {
                 attributes: { class: "portfolio-body-label" },
                 children: [{
                     tag: 'a',
-                    attributes: { class: "portfolio-name" },
+                    attributes: { class: "portfolio-name primary--text" },
                     properties: { textContent: data.name, href: data.repository },
                 }, {
                     tag: 'span',
-                    attributes: { class: "portfolio-category" },
+                    attributes: { class: "portfolio-category primary--text" },
                     properties: { textContent: category },
                 }]
             }, {
                 tag: 'p',
-                attributes: { class: "portfolio-body-description" },
+                attributes: { class: "portfolio-body-description primary--text" },
                 properties: { textContent: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups." },
             }, {
                 tag: 'a',
                 properties: { href: data.sourceCode },
                 children: [{
-                    tag: textIconBtn(icon.arrowRight, "Arrow-Right", "source code", "primary--textIcon-btn")
+                    tag: textIconBtn(icon.arrowRight, "Arrow-Right", "source code", "secondary--textIcon-btn")
                 }]
             }]
         }]
