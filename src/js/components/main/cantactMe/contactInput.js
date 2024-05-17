@@ -8,9 +8,9 @@ import domGenerator from "../../../../../node_modules/dom-generator/dist/domGene
  * @param {string} cla - className of input
  * @returns html element
  */
-const inputCom = (type, nameInput, placeholder, cla) => {
+const inputCom = (ele, type, nameInput, placeholder, cla) => {
     return domGenerator({
-        tag: "input",
+        tag: ele,
         attributes: { class: cla },
         properties: { type: type, name: nameInput, placeholder: placeholder }
     })
