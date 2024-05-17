@@ -121,7 +121,7 @@
         "repository": "https://farhad-ahmadi-04.github.io/Car-insurance/",
         "sourceCode": "https://github.com/farhad-ahmadi-04/Car-insurance",
         "img": "public/car-insurance-image.png",
-        "aly": "car insurance project"
+        "alt": "car insurance project"
       },
       {
         "name": "Speech app",
@@ -156,7 +156,8 @@
       {
         "name": "assasin creed",
         "repository": "#",
-        "sourceCode": "#"
+        "sourceCode": "#",
+        "img": "#"
       }
     ]
   }

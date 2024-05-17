@@ -11,12 +11,9 @@ const portfolioCard = (category, data, icon) => {
         tag: 'div',
         attributes: { class: "portfolio-Card" },
         children: [{
-            tag: 'div',
-            attributes: { class: "portfolio-head" },
-            children: [{
-                tag: 'img',
-                properties: { src: data.img, alt: data.alt }
-            }]
+            tag: 'img',
+            attributes: { class: "portfolio-Card-image" },
+            properties: { src: data.img, alt: data.alt },
         }, {
             tag: 'div',
             attributes: { class: "portfolio-body" },
