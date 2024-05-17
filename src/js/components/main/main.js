@@ -6,6 +6,7 @@ import generateElement from "../../Assets/generateEle.js";
 import hero from "./hero/hero.js";
 import aboutMe from "./aboutMe/aboutMe.js";
 import portfolio from "./portfolio/portfolio.js";
+import cantactMe from "./cantactMe/cantactMe.js";
 
 
 // varients
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     render(main, generateElement('section', 'landin-section service--section col-primary-container'))
     render(main, generateElement('section', 'landin-section about-me-sec col-primary-container'))
     render(main, generateElement('section', 'landin-section portfolio-sec col-primary-container'))
+    render(main, generateElement('section', 'landin-section cantact-me-sec col-primary-container'))
     render(app, main)
 })
 
@@ -64,6 +66,9 @@ const sectionData = (data, position) => {
 
         // portfolio components:
         portfolio(data)
+
+        // contact me components:
+        cantactMe()
     } catch (error) {
         console.error(error);
     }

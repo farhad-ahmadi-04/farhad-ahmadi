@@ -6,7 +6,7 @@ import portfolioLabel from "./portfolioLabel.js";
 // import textBtn from "../../textBtn.js";
 
 let showCardsStep = 0
-let showCards = 2
+let showCards = 3
 
 /**
  * create portfoliosection and add component to the section:
