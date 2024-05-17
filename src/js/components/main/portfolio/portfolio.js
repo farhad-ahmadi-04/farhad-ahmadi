@@ -65,7 +65,7 @@ const portfolio = (data) => {
     const moreDiv = document.querySelector('.more-div')
 
     // 12th step:
-    render(moreDiv, textBtn("More", "more-card primary--text-btn"))
+    render(moreDiv, textBtn("More", "more-card outline-primary--text-btn"))
     const more = document.querySelector('.more-card')
 
     // 13th step:
