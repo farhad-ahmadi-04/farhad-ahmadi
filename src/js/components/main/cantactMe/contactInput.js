@@ -8,11 +8,25 @@ import domGenerator from "../../../../../node_modules/dom-generator/dist/domGene
  * @param {string} cla - className of input
  * @returns html element
  */
-const inputCom = (ele, type, nameInput, placeholder, cla) => {
+export const inputCom = (ele, type, nameInput, placeholder, cla) => {
     return domGenerator({
         tag: ele,
         attributes: { class: cla },
         properties: { type: type, name: nameInput, placeholder: placeholder }
     })
 }
-export default inputCom
+
+/**
+ * function is for create texterea but not just it we can use it for another things too.
+ * @param {string} ele - target element to create
+ * @param {string} placeholder - placeholder of input
+ * @param {string} cla - className 
+ * @returns html element
+ */
+export const textereaCom = (ele, placeholder, cla) => {
+    return domGenerator({
+        tag: ele,
+        attributes: { class: cla },
+        properties: { placeholder: placeholder }
+    })
+}
