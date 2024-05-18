@@ -17,13 +17,13 @@ export const inputCom = (ele, type, nameInput, placeholder, cla) => {
 }
 
 /**
- * function is for create texterea but not just it we can use it for another things too.
+ * function is for create textarea but not just it we can use it for another things too.
  * @param {string} ele - target element to create
  * @param {string} placeholder - placeholder of input
  * @param {string} cla - className 
  * @returns html element
  */
-export const textereaCom = (ele, placeholder, cla) => {
+export const textareaCom = (ele, placeholder, cla) => {
     return domGenerator({
         tag: ele,
         attributes: { class: cla },

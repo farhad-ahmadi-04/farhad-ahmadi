@@ -1,7 +1,7 @@
 import render from "../../../Assets/render.js";
 import label from "../../lable.js";
 import contactForm from "./contactForm.js";
-import inputCom from "./contactInput.js";
+import { inputCom, textareaCom } from "./contactInput.js";
 
 /**
  * create contact me section with all nessesaries components:
@@ -21,6 +21,7 @@ const cantactMe = () => {
     render(inputForm, inputCom("input", "text", "user-name", "Name", undefined))
     render(inputForm, inputCom("input", "email", "user-email", "Email", undefined))
     render(inputForm, inputCom("input", "text", "user-email", "Email", undefined))
+    render(inputForm, textareaCom("textarea", "Message", undefined))
 
 }
 export default cantactMe
