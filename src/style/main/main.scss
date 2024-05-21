@@ -2,6 +2,7 @@
 @import "./hero/hero.scss";
 @import "./serviceSec/serviceSec.scss";
 @import "./aboutMeSec/aboutMeSec.scss";
+@import "./portfolioSec/portfolioSec.scss";
 
 main {
     padding: 30px;
@@ -10,98 +11,4 @@ main {
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-
-    .portfolio-sec {
-        .portfolio-label {
-            .category {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-            }
-        }
-        .prtfolio-card-sec {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            .portfolio-Card {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-end;
-                padding: 0.5em;
-                width: 100%;
-                height: 330px;
-                gap: 24px;
-                padding: 0;
-                border-radius: 28px 28px 16px 16px;
-                overflow: hidden;
-                position: relative;
-                transition: all 0.5s;
-                @media screen and (min-width: 600px) {
-                    width: 50%;
-                    height: 350px;
-                }
-                @media screen and (min-width: 800px) {
-                    width: 30.33%;
-                    height: 370px;
-                }
-                .portfolio-Card-image {
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                }
-                .portfolio-body {
-                    background-color: $gray--normal;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: 16px;
-                    width: -webkit-fill-available;
-                    padding: 16px;
-                    z-index: 1;
-                    transform: translateY(75%);
-                    transition: all 0.3s;
-                    .portfolio-body-label {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        .portfolio-name:hover {
-                            transition: all 0.2s;
-                            color: $white--dark;
-                            text-decoration: none;
-                        }
-                        .portfolio-category {
-                            color: $white--dark--active;
-                        }
-                    }
-                    .portfolio-body-description,
-                    a:not(.portfolio-body-label > a) {
-                        visibility: hidden;
-                        opacity: 0;
-                    }
-                }
-                &:hover {
-                    .portfolio-body-description,
-                    a:not(.portfolio-body-label > a) {
-                        visibility: visible;
-                        opacity: 1;
-                        transition: all 0.3s;
-                    }
-                    .portfolio-body {
-                        transform: translateY(0);
-                    }
-                    .portfolio-name {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-        .more-div {
-            margin: 3.3vw 0 3.3vw 0;
-            text-align: center;
-        }
-    }
 }

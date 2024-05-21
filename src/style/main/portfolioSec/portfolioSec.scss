@@ -1,0 +1,23 @@
+@import "./portfolioCard.scss";
+
+.portfolio-sec {
+    .portfolio-label {
+        .category {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    .prtfolio-card-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .more-div {
+        margin: 3.3vw 0 3.3vw 0;
+        text-align: center;
+    }
+}
