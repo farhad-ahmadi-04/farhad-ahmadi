@@ -1,7 +1,7 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import nav from "../nav.js";
 
-const footerGenerate = (logo) => {
+const footerGen = (logo) => {
     return domGenerator({
         tag: "footer",
         children: [{
@@ -24,4 +24,4 @@ const footerGenerate = (logo) => {
 
     })
 }
-export default footerGenerate
+export default footerGen

@@ -9,9 +9,6 @@ import portfolio from "./portfolio/portfolio.js";
 import cantactMe from "./cantactMe/cantactMe.js";
 
 
-// varients
-const app = document.querySelector('.app')
-
 // create element
 const main = domGenerator({
     tag: 'main',
@@ -27,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     render(main, generateElement('section', 'landin-section about-me-sec col-primary-container'))
     render(main, generateElement('section', 'landin-section portfolio-sec col-primary-container'))
     render(main, generateElement('section', 'landin-section cantact-me-sec col-primary-container'))
-    render(app, main)
 })
 
 //featch data

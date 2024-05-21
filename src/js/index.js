@@ -2,7 +2,7 @@
 import header from "./components/header/header.js";
 import render from "./Assets/render.js";
 import main from "./components/main/main.js";
-import footerGenerate from "./components/footer/footerGenerate.js";
+import footer from "./components/footer/footer.js";
 
 const app = document.querySelector('.app')
 
@@ -10,5 +10,5 @@ const app = document.querySelector('.app')
 window.addEventListener('DOMContentLoaded', () => {
     render(app, header)
     render(app, main)
-    render(app, footerGenerate("feri"))
+    render(app, footer)
 })
