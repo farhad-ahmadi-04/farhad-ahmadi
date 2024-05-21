@@ -1,6 +1,7 @@
 @import "../variables.scss";
 @import "../componentStyle/serviceCard.scss";
 @import "./hero/hero.scss";
+@import "./serviceSec/serviceSec.scss";
 
 main {
     padding: 30px;
@@ -10,12 +11,6 @@ main {
     justify-content: center;
     overflow-x: hidden;
 
-    .service-items {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-    }
     .about-me-sec {
         .introduction-item {
             gap: 30px;
