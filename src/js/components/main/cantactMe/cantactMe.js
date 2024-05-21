@@ -20,10 +20,10 @@ const cantactMe = () => {
     const Form = document.querySelector("#contact-form")
     const inputForm = document.querySelector(".inputs")
     // 3th step:
-    render(inputForm, inputCom("input", "text", "user-name", "Name", undefined))
-    render(inputForm, inputCom("input", "email", "user-email", "Email", undefined))
-    render(inputForm, inputCom("input", "text", "user-email", "Email", undefined))
-    render(inputForm, textareaCom("textarea", "Message", undefined))
+    render(inputForm, inputCom("input", "text", "user-name", "Name", "input-item"))
+    render(inputForm, inputCom("input", "email", "user-email", "Email", "input-item"))
+    render(inputForm, inputCom("input", "number", "user-phone", "Phone number", "input-item"))
+    render(inputForm, textareaCom("textarea", "Message", "input-item"))
     // 4th step:
     const submitFormBtn = document.querySelector(".submit-div")
     render(submitFormBtn, textBtn("Send", "outline-primary--text-btn"))
