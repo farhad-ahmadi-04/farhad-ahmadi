@@ -1,6 +1,11 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import nav from "../nav.js";
 
+/**
+ * create footer stracture
+ * @param {string} logo - logo of site(It's text) 
+ * @returns html elemnt
+ */
 const footerGen = (logo) => {
     return domGenerator({
         tag: "footer",

@@ -10,5 +10,5 @@ const app = document.querySelector('.app')
 window.addEventListener('DOMContentLoaded', () => {
     render(app, header)
     render(app, main)
-    render(app, footer)
+    render(app, footer(app))
 })
