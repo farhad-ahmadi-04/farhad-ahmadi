@@ -1,5 +1,5 @@
 import render from "../../../Assets/render.js";
-import iconBtn from "../../iconbtn.js";
+import iconBtn from "../../buttons/iconbtn.js";
 import mainImage from "../../mainImg.js";
 import heroItem from "./heroItem.js";
 

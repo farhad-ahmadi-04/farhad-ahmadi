@@ -1,6 +1,6 @@
 import generateElement from "../../../Assets/generateEle.js";
 import render from "../../../Assets/render.js";
-import textBtn from "../../textBtn.js";
+import textBtn from "../../buttons/textBtn.js";
 import portfolioCard from "./portfolioCrad.js";
 import portfolioLabel from "./portfolioLabel.js";
 // import textBtn from "../../textBtn.js";

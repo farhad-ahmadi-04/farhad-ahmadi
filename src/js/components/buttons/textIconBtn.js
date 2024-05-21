@@ -1,4 +1,4 @@
-import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
+import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 
 /**
  * create textIcon btn by dom generator and set value dynamically

@@ -1,5 +1,5 @@
 import domGenerator from "../../../../../node_modules/dom-generator/dist/domGenerator.js";
-import textIconBtn from "../../textIconBtn.js";
+import textIconBtn from "../../buttons/textIconBtn.js";
 
 /**
  * create card component with dom generator

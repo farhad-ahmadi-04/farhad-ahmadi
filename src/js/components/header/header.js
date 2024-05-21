@@ -1,6 +1,6 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 import nav from "../nav.js";
-import textBtn from "../textBtn.js";
+import textBtn from "../buttons/textBtn.js";
 
 // create header by dom-generator
 const header = domGenerator({

@@ -2,8 +2,8 @@ import generateElement from "../../../Assets/generateEle.js";
 import render from "../../../Assets/render.js";
 import label from "../../lable.js";
 import mainImage from "../../mainImg.js";
-import MyIntroduction from "../MyIntroduction.js";
-import textIconBtn from "../../textIconBtn.js";
+import MyIntroduction from "./MyIntroduction.js";
+import textIconBtn from "../../buttons/textIconBtn.js";
 import skillCard from "../../skillCard.js";
 
 /**
