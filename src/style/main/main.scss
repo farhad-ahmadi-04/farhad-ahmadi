@@ -1,6 +1,7 @@
 @import "../variables.scss";
 @import "./hero/hero.scss";
 @import "./serviceSec/serviceSec.scss";
+@import "./aboutMeSec/aboutMeSec.scss";
 
 main {
     padding: 30px;
@@ -9,15 +10,6 @@ main {
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-
-    .about-me-sec {
-        .introduction-item {
-            gap: 30px;
-        }
-        .skills {
-            overflow-x: hidden;
-        }
-    }
 
     .portfolio-sec {
         .portfolio-label {
