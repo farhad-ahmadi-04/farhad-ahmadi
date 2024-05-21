@@ -1,10 +1,10 @@
-@import "./style.scss";
-@import "./label.scss";
-@import "./skillCard.scss";
+@import "./componentStyle/style.scss";
+@import "./componentStyle/label.scss";
+@import "./componentStyle/skillCard.scss";
 
 .app {
     background-color: #121212;
     font-family: "lato";
-    @import "./header.scss";
-    @import "./main.scss";
+    @import "./header/header.scss";
+    @import "./main/main.scss";
 }
