@@ -25,13 +25,16 @@ const footer = (app) => {
     const navigation = document.querySelector(".nav-footer")
     render(navigation, nav())
 
-    // 3nd step:
+    // 3nd & 4th :step:
     const mediaFooter = document.querySelector(".media-footer")
-    obj.then(data => media(data.socialMedia, mediaFooter)).
+    const contactFooter = document.querySelector('.contact-footer')
+    obj.then(data => {
+        // 3:
+        media(data.socialMedia, mediaFooter);
+        // 4:
+        contactFooter(data.about, data.icon, contactFooter)
+    }).
         catch(err => console.error(err))
-
-    // 4th step:
-
 }
 
 /**
@@ -41,5 +44,14 @@ const footer = (app) => {
  */
 function media(media, pos) {
     media.map(item => render(pos, iconBtn(item.icon, item.alt, item.address, "icon-btn")))
+}
+
+/**
+ * function for get render from contact footer component
+ * @param {object} about - about object that I want just email & phone number
+ * @param {object} icon - icons of project 
+ * @param {Element} pos - element for get render
+ */
+function contactFooter(about, icon, pos) {
 }
 export default footer

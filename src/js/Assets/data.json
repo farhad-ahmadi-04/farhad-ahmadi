@@ -114,7 +114,9 @@
   ],
   "icon": {
     "textIcon": "public/Download.svg",
-    "arrowRight": "public/Arrow-Right.svg"
+    "arrowRight": "public/Arrow-Right.svg",
+    "email": "public/email.svg",
+    "phone": "public/phone.svg"
   },
   "portfolio": {
     "js": [
