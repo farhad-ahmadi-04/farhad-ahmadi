@@ -72,7 +72,27 @@
         gap: calc(10px + 5px);
     }
 }
+.secondary-simple--textIcon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    color: $white--dark--hover;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    transition: all 0.2s;
 
+    &:hover {
+        border-bottom: 1px solid $white--dark;
+        color: $white--dark;
+        gap: calc(10px + 5px);
+    }
+}
 .icon-btn {
     border: 1px solid $white--darker;
     border-radius: 50px;

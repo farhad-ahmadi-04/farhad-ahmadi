@@ -32,7 +32,7 @@ const footer = (app) => {
         // 3:
         media(data.socialMedia, mediaFooter);
         // 4:
-        contactFooter(data.about, data.icon, contactFooter)
+        contactFooterCom(data.about, data.icon, contactFooter)
     }).
         catch(err => console.error(err))
 }
@@ -47,11 +47,22 @@ function media(media, pos) {
 }
 
 /**
+ * create component of contact:
+ * 1st step: destruction data.
+ * 2nd step: get render from textIcon btn by datas
  * function for get render from contact footer component
  * @param {object} about - about object that I want just email & phone number
  * @param {object} icon - icons of project 
  * @param {Element} pos - element for get render
  */
-function contactFooter(about, icon, pos) {
+function contactFooterCom(about, icon, pos) {
+    // 1st:
+    const { email, phone } = about;
+    const { email: emailIcon, phone: phoneIcon } = icon;
+
+    // 2nd:
+    render(pos, textIconBtn(emailIcon, "email address", email, "secondary-simple--textIcon-btn"))
+    render(pos, textIconBtn(phoneIcon, "phone number", phone, "secondary-simple--textIcon-btn"))
+
 }
 export default footer
