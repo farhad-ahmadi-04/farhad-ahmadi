@@ -9,7 +9,10 @@ const obj = fetchData("src/js/Assets/data.json")
 
 
 /**
- * send components to footer
+ * send components to footer:
+ * 1st: generate assets stracture of footer
+ * 2nd: select nav div & getrender from navi in footer
+ * 3rd: select media div & get data from json and loop on that then pass it to media function.
  * @param {HTMLElement} app - html element to get render 
  */
 const footer = (app) => {
@@ -20,7 +23,7 @@ const footer = (app) => {
     const navigation = document.querySelector(".nav-footer")
     render(navigation, nav())
 
-    // 2nd step:
+    // 3nd step:
     const mediaFooter = document.querySelector(".media-footer")
     obj.then(data => media(data.socialMedia, mediaFooter)).
         catch(err => console.error(err))
