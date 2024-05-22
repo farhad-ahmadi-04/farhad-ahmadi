@@ -10,8 +10,9 @@ const header = domGenerator({
         attributes: { class: "menu--item menu-logo" },
         children: [
             {
-                tag: "h1",
-                properties: { textContent: "Logo" },
+                tag: "span",
+                attributes: { class: "logo" },
+                properties: { textContent: "feri" },
             }, {
                 tag: "span",
                 attributes: { class: "menu--icon" }

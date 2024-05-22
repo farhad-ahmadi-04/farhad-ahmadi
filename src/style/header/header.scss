@@ -10,12 +10,6 @@ header {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        h1 {
-            background: $gradient;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            font-weight: bold;
-        }
         .menu--icon {
             width: 25px;
             height: 1px;

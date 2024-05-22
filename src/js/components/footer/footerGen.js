@@ -11,7 +11,7 @@ const footerGen = (logo) => {
         tag: "footer",
         children: [{
             tag: "div",
-            attributes: { class: 'footer-item logo-footer' },
+            attributes: { class: 'footer-item logo-footer logo' },
             properties: { textContent: logo }
         }, {
             tag: "div",
