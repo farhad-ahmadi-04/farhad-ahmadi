@@ -6,4 +6,16 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1.5rem;
+    background-color: $bg--opacity;
+    .footer-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .contact-footer {
+        gap: 40px;
+    }
 }
