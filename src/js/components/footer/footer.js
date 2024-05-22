@@ -1,6 +1,6 @@
 import fetchData from "../../Assets/fetchData.js"
 import render from "../../Assets/render.js"
-import iconBtn from "../buttons/iconbtn.js"
+import mediaFooter from "./mediaFooter.js"
 import textIconBtn from "../buttons/textIconBtn.js"
 import nav from "../nav.js"
 import footerGen from "./footerGen.js"
@@ -26,25 +26,18 @@ const footer = (app) => {
     render(navigation, nav())
 
     // 3nd & 4th :step:
-    const mediaFooter = document.querySelector(".media-footer")
-    const contactFooter = document.querySelector('.contact-footer')
+    const mediaFooterDiv = document.querySelector(".media-footer")
+    const contactFooterDiv = document.querySelector('.contact-footer')
     obj.then(data => {
         // 3:
-        media(data.socialMedia, mediaFooter);
+        mediaFooter(data.socialMedia, mediaFooterDiv);
         // 4:
-        contactFooterCom(data.about, data.icon, contactFooter)
+        contactFooterCom(data.about, data.icon, contactFooterDiv)
     }).
         catch(err => console.error(err))
 }
 
-/**
- * loop on array from json file to get render from each item
- * @param {Array} media - all social media
- * @param {*} pos - html element
- */
-function media(media, pos) {
-    media.map(item => render(pos, iconBtn(item.icon, item.alt, item.address, "icon-btn")))
-}
+
 
 /**
  * create component of contact:
