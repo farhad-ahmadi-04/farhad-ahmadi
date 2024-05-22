@@ -16,9 +16,6 @@ const footerGen = (logo) => {
         }, {
             tag: "div",
             attributes: { class: "footer-item nav-footer" },
-            children: [{
-                tag: nav
-            }]
         }, {
             tag: "div",
             attributes: { class: "footer-item media-footer" }

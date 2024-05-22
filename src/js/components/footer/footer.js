@@ -1,6 +1,7 @@
 import fetchData from "../../Assets/fetchData.js"
 import render from "../../Assets/render.js"
 import iconBtn from "../buttons/iconbtn.js"
+import nav from "../nav.js"
 import footerGen from "./footerGen.js"
 
 // get data from json file
@@ -16,6 +17,10 @@ const footer = (app) => {
     render(app, footerGen("feri"))
 
     // 2nd step:
+    const navigation = document.querySelector(".nav-footer")
+    render(navigation, nav())
+
+    // 2nd step:
     const mediaFooter = document.querySelector(".media-footer")
     obj.then(data => media(data.socialMedia, mediaFooter)).
         catch(err => console.error(err))
@@ -29,5 +34,7 @@ const footer = (app) => {
  */
 function media(media, pos) {
     media.map(item => render(pos, iconBtn(item.icon, item.alt, item.address, "icon-btn")))
+
+
 }
 export default footer

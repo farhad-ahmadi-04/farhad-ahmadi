@@ -24,8 +24,8 @@ const header = domGenerator({
             }
         ]
     }, {
-        tag: nav,
-        attributes: { class: "menu--item menu-nav" },
+        tag: nav(),
+        // attributes: { class: "menu--item menu-nav" },
     }, {
         tag: "div",
         attributes: { class: "menu--item menu-btn" },
