@@ -8,7 +8,7 @@ const app = document.querySelector('.app')
 
 // get render from header
 window.addEventListener('DOMContentLoaded', () => {
-    render(app, header)
+    render(app, header())
     render(app, main)
     render(app, footer(app))
 })

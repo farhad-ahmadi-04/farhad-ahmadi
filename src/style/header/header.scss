@@ -18,19 +18,4 @@ header {
             visibility: hidden;
         }
     }
-    nav {
-        .list-items {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-            .list--item {
-                text-decoration: none;
-            }
-            .active {
-                color: $orange--normal;
-            }
-        }
-    }
 }
