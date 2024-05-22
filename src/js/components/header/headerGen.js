@@ -1,9 +1,7 @@
-import domGenerator from "dom-generator/dist/domGenerator.js";
-import nav from "../nav.js";
-import textBtn from "../buttons/textBtn.js";
+import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 
 // create header by dom-generator
-const header = () => {
+const headerGen = () => {
     return domGenerator({
         tag: "header",
         children: [{
@@ -26,7 +24,8 @@ const header = () => {
                 }
             ]
         }, {
-            tag: "nav"
+            tag: "nav",
+            attributes: { class: "menu--item menu-nav" },
         }, {
             tag: "div",
             attributes: { class: "menu--item menu-btn" },
@@ -34,4 +33,4 @@ const header = () => {
     })
 };
 
-export default header
+export default headerGen

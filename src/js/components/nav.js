@@ -15,7 +15,7 @@ const nav = (obj, cla) => {
         attributes: { class: cla },
     })
     // 2nd:
-    obj.map(items => render(ulList, liItem(items.item, items.link, items.clas)));
+    obj.map(items => render(ulList, liItem(items.item, items.link, items.class)));
     // 3rd:
     return ulList
 }

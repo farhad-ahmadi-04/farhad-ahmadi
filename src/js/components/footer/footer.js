@@ -23,7 +23,7 @@ const footer = (app) => {
 
     // 2nd step:
     const navigation = document.querySelector(".nav-footer")
-    render(navigation, nav())
+    // render(navigation, nav())
 
     // 3nd & 4th :step:
     const mediaFooterDiv = document.querySelector(".media-footer")
