@@ -1,4 +1,4 @@
-const liList = [
+export const liList = [
     {
         item: "home",
         link: "#",
@@ -20,4 +20,5 @@ const liList = [
         link: "#",
         class: "primary--text"
     }
-]
+];
+
