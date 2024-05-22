@@ -1,5 +1,4 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
-import nav from "../nav.js";
 
 /**
  * create footer stracture
@@ -14,7 +13,7 @@ const footerGen = (logo) => {
             attributes: { class: 'footer-item logo-footer logo' },
             properties: { textContent: logo }
         }, {
-            tag: "div",
+            tag: "nav",
             attributes: { class: "footer-item nav-footer" },
         }, {
             tag: "div",

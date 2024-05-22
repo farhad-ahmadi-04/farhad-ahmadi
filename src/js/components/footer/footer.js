@@ -4,6 +4,7 @@ import mediaFooter from "./mediaFooter.js"
 import contactFooterCom from "./contactFooter.js"
 import nav from "../nav.js"
 import footerGen from "./footerGen.js"
+import { liList } from "../list.js"
 
 // get data from json file
 const obj = fetchData("src/js/Assets/data.json")
@@ -23,7 +24,7 @@ const footer = (app) => {
 
     // 2nd step:
     const navigation = document.querySelector(".nav-footer")
-    // render(navigation, nav())
+    render(navigation, nav(liList, "list-items"))
 
     // 3nd & 4th :step:
     const mediaFooterDiv = document.querySelector(".media-footer")
