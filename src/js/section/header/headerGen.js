@@ -14,7 +14,7 @@ const headerGen = () => {
                     properties: { textContent: "feri" },
                 }, {
                     tag: "button",
-                    attributes: { class: 'humberger-menu' },
+                    attributes: { class: 'hamberger-menu' },
                     children: [{
                         tag: "span",
                         attributes: { class: "menu--icon top-icon" }
