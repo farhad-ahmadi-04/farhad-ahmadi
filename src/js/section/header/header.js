@@ -1,7 +1,7 @@
 import render from "../../Assets/render.js";
 import { liList } from "../../components/list.js";
 import headerGen from "./headerGen.js";
-import nav from "../../components/nav/desktopNav.js";
+import nav from "../../components/nav/uiList.js";
 import textBtn from "../../components/buttons/textBtn.js";
 
 /**
