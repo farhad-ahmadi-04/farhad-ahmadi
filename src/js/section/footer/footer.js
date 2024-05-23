@@ -2,7 +2,7 @@ import fetchData from "../../Assets/fetchData.js"
 import render from "../../Assets/render.js"
 import mediaFooter from "./mediaFooter.js"
 import contactFooterCom from "./contactFooter.js"
-import nav from "../../components/nav.js"
+import nav from "../../components/nav/desktopNav.js"
 import footerGen from "./footerGen.js"
 import { footerLiList } from "../../components/list.js"
 
