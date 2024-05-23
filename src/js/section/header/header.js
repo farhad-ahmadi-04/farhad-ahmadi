@@ -1,7 +1,7 @@
 import render from "../../Assets/render.js";
 import { liList } from "../../components/list.js";
 import headerGen from "./headerGen.js";
-import nav from "../../components/nav/uiList.js";
+import ul from "../../components/nav/ulList.js";
 import textBtn from "../../components/buttons/textBtn.js";
 
 /**
@@ -17,7 +17,7 @@ const header = (pos) => {
 
     // 2nd:
     const navDiv = document.querySelector(".menu-nav");
-    render(navDiv, nav(liList, "list-items"))
+    render(navDiv, ul(liList, "list-items"))
 
     // 3rd:
     const menuBtnDiv = document.querySelector(".menu-btn");

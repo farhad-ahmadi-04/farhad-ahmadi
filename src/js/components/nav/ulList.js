@@ -8,7 +8,7 @@ import render from "../../Assets/render.js";
  * @param {obj} obj  objects that has data of ul li elements
  * @returns ul element
  */
-const nav = (obj, cla) => {
+const ul = (obj, cla) => {
     // 1st:
     const ulList = domGenerator({
         tag: 'ul',
@@ -40,4 +40,4 @@ const liItem = (item, link, cla) => {
     })
 }
 
-export default nav
+export default ul

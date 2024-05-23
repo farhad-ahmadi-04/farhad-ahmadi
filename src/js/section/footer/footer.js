@@ -2,7 +2,7 @@ import fetchData from "../../Assets/fetchData.js"
 import render from "../../Assets/render.js"
 import mediaFooter from "./mediaFooter.js"
 import contactFooterCom from "./contactFooter.js"
-import nav from "../../components/nav/uiList.js"
+import ul from "../../components/nav/ulList.js"
 import footerGen from "./footerGen.js"
 import { footerLiList } from "../../components/list.js"
 
@@ -24,7 +24,7 @@ const footer = (app) => {
 
     // 2nd step:
     const navigation = document.querySelector(".nav-footer")
-    render(navigation, nav(footerLiList, "list-items"))
+    render(navigation, ul(footerLiList, "list-items"))
 
     // 3nd & 4th :step:
     const mediaFooterDiv = document.querySelector(".media-footer")
