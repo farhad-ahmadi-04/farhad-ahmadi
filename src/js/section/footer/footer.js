@@ -2,9 +2,9 @@ import fetchData from "../../Assets/fetchData.js"
 import render from "../../Assets/render.js"
 import mediaFooter from "./mediaFooter.js"
 import contactFooterCom from "./contactFooter.js"
-import nav from "../nav.js"
+import nav from "../../components/nav.js"
 import footerGen from "./footerGen.js"
-import { footerLiList } from "../list.js"
+import { footerLiList } from "../../components/list.js"
 
 // get data from json file
 const obj = fetchData("src/js/Assets/data.json")

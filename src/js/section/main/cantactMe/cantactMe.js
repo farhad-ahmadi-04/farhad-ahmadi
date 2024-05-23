@@ -1,7 +1,7 @@
 import render from "../../../Assets/render.js";
-import label from "../../lable.js";
+import label from "../../../components/lable.js";
 import contactForm from "./contactForm.js";
-import textBtn from "../../buttons/textBtn.js";
+import textBtn from "../../../components/buttons/textBtn.js";
 import { inputCom, textareaCom } from "./contactInput.js";
 
 /**

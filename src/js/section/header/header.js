@@ -1,8 +1,8 @@
 import render from "../../Assets/render.js";
-import { liList } from "../list.js";
+import { liList } from "../../components/list.js";
 import headerGen from "./headerGen.js";
-import nav from "../nav.js";
-import textBtn from "../buttons/textBtn.js";
+import nav from "../../components/nav.js";
+import textBtn from "../../components/buttons/textBtn.js";
 
 /**
  * create header by using component

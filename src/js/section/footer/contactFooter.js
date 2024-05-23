@@ -1,5 +1,5 @@
 import render from "../../Assets/render.js";
-import textIconBtn from "../buttons/textIconBtn.js";
+import textIconBtn from "../../components/buttons/textIconBtn.js";
 
 /**
  * create component of contact:

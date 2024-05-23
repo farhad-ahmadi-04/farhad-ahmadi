@@ -1,8 +1,8 @@
 // main js file
-import header from "./components/header/header.js";
+import header from "./section/header/header.js";
 import render from "./Assets/render.js";
-import main from "./components/main/main.js";
-import footer from "./components/footer/footer.js";
+import main from "./section/main/main.js";
+import footer from "./section/footer/footer.js";
 
 const app = document.querySelector('.app')
 
@@ -10,5 +10,5 @@ const app = document.querySelector('.app')
 window.addEventListener('DOMContentLoaded', () => {
     header(app)
     render(app, main)
-    render(app, footer(app))
+    footer(app)
 })
