@@ -13,14 +13,18 @@ const headerGen = () => {
                     attributes: { class: "logo" },
                     properties: { textContent: "feri" },
                 }, {
-                    tag: "span",
-                    attributes: { class: "menu--icon" }
-                }, {
-                    tag: "span",
-                    attributes: { class: "menu--icon" }
-                }, {
-                    tag: "span",
-                    attributes: { class: "menu--icon" }
+                    tag: "button",
+                    attributes: { class: 'humberger-menu' },
+                    children: [{
+                        tag: "span",
+                        attributes: { class: "menu--icon top-icon" }
+                    }, {
+                        tag: "span",
+                        attributes: { class: "menu--icon middle-icon" }
+                    }, {
+                        tag: "span",
+                        attributes: { class: "menu--icon bttom-icon" }
+                    }]
                 }
             ]
         }, {
