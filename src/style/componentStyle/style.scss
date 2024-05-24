@@ -162,14 +162,14 @@
 // texts style:---------------------------------
 .primary--text {
     color: $white--dark--hover;
-    font-size: 0.93rem;
+    font-size: calc(0.6vw + 10px);
     letter-spacing: 0.1rem;
     line-break: loose;
     line-height: 1.5rem;
 }
 
 .title--text {
-    font-size: 2.4rem;
+    font-size: calc(1vw + 28px);
     color: $white--light;
     font-weight: bold;
     margin: 10px;
