@@ -275,6 +275,8 @@ nav {
         }
         .active {
             color: $orange--normal;
+            font-size: calc(0.6vw + 10px);
+            letter-spacing: 0.1rem;
         }
     }
 }
