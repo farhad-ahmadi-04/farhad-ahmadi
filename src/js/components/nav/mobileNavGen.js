@@ -1,7 +1,7 @@
-import domGenerator from "dom-generator/dist/domGenerator.js";
+import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 
 const mobileNav = (logo) => {
-    domGenerator({
+    return domGenerator({
         tag: 'div',
         attributes: { class: 'mobile-nav' },
         children: [{

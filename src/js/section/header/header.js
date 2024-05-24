@@ -3,12 +3,15 @@ import { liList } from "../../components/list.js";
 import headerGen from "./headerGen.js";
 import ul from "../../components/nav/ulList.js";
 import textBtn from "../../components/buttons/textBtn.js";
+import mobileNav from "../../components/nav/mobileNavGen.js";
 
 /**
  * create header by using component
  * 1st step: get render from headerGen (stractur of header).
- * 2nd step:select menu nav div & get render from nav.
- * 3rd step:select menu btn div & get render from text btn
+ * 2nd step:condition for media screen.
+ * 3nd step:select menu nav div & get render from nav.
+ * 4th step:get render from mobile navbar.
+ * 5th step:select menu btn div & get render from text btn
  * @param {Element} pos position for append to
  */
 const header = (pos) => {
@@ -16,10 +19,18 @@ const header = (pos) => {
     render(pos, headerGen("feri"))
 
     // 2nd:
-    const navDiv = document.querySelector(".menu-nav");
-    render(navDiv, ul(liList, "list-items"))
+    const mediaQueryCondition = window.matchMedia('( min-width: 700px )')
+    if (mediaQueryCondition.matches) {
+        // 3rd:
+        const navDiv = document.querySelector(".menu-nav");
+        render(navDiv, ul(liList, "list-items"))
+    } else {
+        // 4th:
+        render(pos, mobileNav('feri'))
+    }
 
-    // 3rd:
+
+    // 5th:
     const menuBtnDiv = document.querySelector(".menu-btn");
     render(menuBtnDiv, textBtn("Hite me", "primary--text-btn"))
 }
