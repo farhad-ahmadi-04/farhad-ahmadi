@@ -1,60 +1,83 @@
 @import "../../variables.scss";
 
-.hero-item {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    .interview {
+.hero-section {
+    @media only screen and (max-width: 700px) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero-item {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 16px;
-        .hero-interview {
-            .hero-name {
-                font-size: 2rem;
-                color: $white--dark--hover;
-            }
-        }
-        .hero-skill {
-            font-size: 4.67rem;
-            background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-        }
-        .hero-media {
-            width: 100%;
-            display: flex;
+        gap: 50px;
+        @media only screen and (max-width: 700px) {
+            justify-content: center;
             align-items: center;
-            gap: 8px;
+            gap: 30px;
         }
-    }
-    .hero-action {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 20px;
-    }
-    .hero-experience {
-        display: flex;
-        align-items: center;
-        width: max-content;
-        gap: 16px;
-        padding: 8px 16px;
-        background-color: rgba(255, 255, 255, 0.04);
-        .Experiences {
+        .interview {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 4px;
-            padding: 5px 10px;
-            &:not(:last-child) {
-                border-right: 1px solid $white--dark--hover;
+            gap: 16px;
+            @media only screen and (max-width: 700px) {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
             }
-            .Experiences-num {
-                color: $orange--normal;
+            .hero-interview {
+                .hero-name {
+                    font-size: 2rem;
+                    color: $white--dark--hover;
+                }
             }
-            .Experiences-text {
-                color: $white--normal--hover;
+            .hero-skill {
+                font-size: 4.67rem;
+                font-size: calc(2vw + 40px);
+                background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                @media only screen and (max-width: 700px) {
+                    text-align: center;
+                }
+            }
+            .hero-media {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                @media only screen and (max-width: 700px) {
+                    justify-content: center;
+                }
+            }
+        }
+        .hero-action {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .hero-experience {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            gap: 16px;
+            padding: 8px 16px;
+            background-color: rgba(255, 255, 255, 0.04);
+            .Experiences {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 4px;
+                padding: 5px 10px;
+                &:not(:last-child) {
+                    border-right: 1px solid $white--dark--hover;
+                }
+                .Experiences-num {
+                    color: $orange--normal;
+                }
+                .Experiences-text {
+                    color: $white--normal--hover;
+                }
             }
         }
     }
