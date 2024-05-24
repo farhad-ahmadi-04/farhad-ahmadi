@@ -66,6 +66,12 @@
         font-size: 12px;
         padding: 10px 16px;
     }
+    img {
+        width: 24px;
+        @media only screen and (max-width: 700px) {
+            width: 16px;
+        }
+    }
 }
 .secondary--textIcon-btn {
     display: flex;
@@ -77,7 +83,6 @@
     background: none;
     cursor: pointer;
     border: none;
-
     width: fit-content;
     border-bottom: 1px solid $white--dark--hover;
     transition: all 0.2s;
@@ -91,8 +96,11 @@
         font-size: 16px;
         font-weight: bold;
         @media only screen and (max-width: 700px) {
-            font-size: 12px;
+            font-size: 14px;
         }
+    }
+    img {
+        width: 16px;
     }
 }
 .secondary-simple--textIcon-btn {
@@ -114,6 +122,14 @@
         border-bottom: 1px solid $white--dark;
         color: $white--dark;
         gap: calc(10px + 5px);
+    }
+    img {
+        @media only screen and (max-width: 700px) {
+            width: 16px;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        font-size: 14px;
     }
 }
 .icon-btn {
