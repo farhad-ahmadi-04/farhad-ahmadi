@@ -10,6 +10,10 @@
     background: linear-gradient(to bottom right, $orange--normal 0, $orange--normal--hover 100%);
     padding: 12px 40px;
     cursor: pointer;
+    @media only screen and (max-width: 700px) {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
 }
 
 .secondary--text-btn {
@@ -21,6 +25,10 @@
     background: $bg--opacity;
     padding: 12px 40px;
     cursor: pointer;
+    @media only screen and (max-width: 700px) {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
 }
 
 .outline-primary--text-btn {
@@ -32,6 +40,10 @@
     font-weight: bold;
     padding: 12px 40px;
     cursor: pointer;
+    @media only screen and (max-width: 700px) {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
 }
 
 .primary--textIcon-btn {
