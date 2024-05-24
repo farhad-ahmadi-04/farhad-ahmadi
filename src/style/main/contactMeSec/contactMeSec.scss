@@ -34,7 +34,7 @@
         input::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 800px) {
             grid-template-columns: 1fr 1fr;
         }
     }
