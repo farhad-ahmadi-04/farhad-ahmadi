@@ -17,7 +17,7 @@ const mobileNavbar = (pos) => {
 
     // 2nd:
     const mobileNav = document.querySelector('.mobile-nav')
-    render(mobileNav, ul(liList, 'mobile-nav-ul'))
+    render(mobileNav, ul(liList, 'mobile-list-items'))
 
     // 3rd:
     const hireMeBtn = document.querySelector('.hire-me')
