@@ -35,28 +35,3 @@ header {
         }
     }
 }
-// when user click on hamberger-menu
-.menu-active {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: fit-content;
-    border: none;
-    padding: 0;
-    background: none;
-    .menu--icon {
-        width: 33px;
-        height: 2.5px;
-        background-color: $black--light;
-        transition: all 0.2s ease;
-    }
-    .top-icon {
-        transform: rotate(-30deg) translateY(12.3px);
-    }
-    .middle-icon {
-        display: none;
-    }
-    .bttom-icon {
-        transform: rotate(30deg) translateY(-12.3px);
-    }
-}
