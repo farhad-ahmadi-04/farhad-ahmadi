@@ -3,7 +3,7 @@ import { liList } from "../../components/list.js";
 import headerGen from "./headerGen.js";
 import ul from "../../components/nav/ulList.js";
 import textBtn from "../../components/buttons/textBtn.js";
-import mobileNav from "../../components/nav/mobileNavGen.js";
+import mobileNavbar from "./mobileNavbar.js";
 
 /**
  * create header by using component
@@ -26,7 +26,7 @@ const header = (pos) => {
         render(navDiv, ul(liList, "list-items"))
     } else {
         // 4th:
-        render(pos, mobileNav('feri'))
+        mobileNavbar(pos)
     }
 
 

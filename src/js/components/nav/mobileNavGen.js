@@ -1,6 +1,6 @@
 import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 
-const mobileNav = (logo) => {
+const mobileNavGen = (logo) => {
     return domGenerator({
         tag: 'div',
         attributes: { class: 'mobile-nav' },
@@ -31,4 +31,4 @@ const mobileNav = (logo) => {
         }]
     })
 }
-export default mobileNav
+export default mobileNavGen
