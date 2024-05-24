@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .hero-section {
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 1012px) {
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 1012px) {
             justify-content: center;
             align-items: center;
             gap: 30px;
@@ -19,7 +19,7 @@
             flex-direction: column;
             justify-content: center;
             gap: 16px;
-            @media only screen and (max-width: 700px) {
+            @media only screen and (max-width: 1012px) {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
@@ -36,7 +36,7 @@
                 background: linear-gradient(to right, $orange--normal 0, $orange--normal--hover 100%);
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
-                @media only screen and (max-width: 700px) {
+                @media only screen and (max-width: 1012px) {
                     text-align: center;
                 }
             }
@@ -45,7 +45,7 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                @media only screen and (max-width: 700px) {
+                @media only screen and (max-width: 1012px) {
                     justify-content: center;
                 }
             }
@@ -59,24 +59,41 @@
         .hero-experience {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             width: max-content;
             gap: 16px;
             padding: 8px 16px;
             background-color: rgba(255, 255, 255, 0.04);
+            @media only screen and (max-width: 460px) {
+                flex-direction: column;
+            }
             .Experiences {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 gap: 4px;
-                padding: 5px 10px;
+                padding: 10px;
                 &:not(:last-child) {
                     border-right: 1px solid $white--dark--hover;
+                    @media only screen and (max-width: 460px) {
+                        border: none;
+                        border-bottom: 1px solid $white--dark--hover;
+                        padding: 10px 5px;
+                    }
                 }
                 .Experiences-num {
                     color: $orange--normal;
+                    font-size: calc(1vw + 10px);
+                    @media only screen and (max-width: 460px) {
+                        text-align: center;
+                    }
                 }
                 .Experiences-text {
                     color: $white--normal--hover;
+                    font-size: calc(0.8vw + 10px);
+                    @media only screen and (max-width: 460px) {
+                        text-align: center;
+                    }
                 }
             }
         }
