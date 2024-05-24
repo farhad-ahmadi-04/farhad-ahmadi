@@ -3,7 +3,7 @@ import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerat
 const mobileNavGen = (logo) => {
     return domGenerator({
         tag: 'div',
-        attributes: { class: 'mobile-navbar-hidden' },
+        attributes: { class: 'mobile-navbar' },
         children: [{
             tag: 'div',
             attributes: { class: 'mobile-nav-head' },

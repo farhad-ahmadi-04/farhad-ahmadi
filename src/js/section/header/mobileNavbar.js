@@ -9,6 +9,9 @@ import ul from "../../components/nav/ulList.js";
  * 1st: get render for stracture
  * 2nd: select nav & get render from ul list
  * 3nd: select hire me div & get render from text btn
+ * 4th step: slect navbar + btn for show vav & btn for close nav
+ * 5th step: condition for show navbar
+ * 6th step: condition for hide navbar
  * @param {Element} pos - element for appending to
  */
 const mobileNavbar = (pos) => {
@@ -23,40 +26,23 @@ const mobileNavbar = (pos) => {
     const hireMeBtn = document.querySelector('.hire-me')
     render(hireMeBtn, textBtn('Hire me', 'primary--text-btn'))
 
-    const hambergerMenu = document.querySelector('.hamberger-menu')
-    const closeMobileNav = document.querySelector('.close-mobile-nav')
-    hambergerMenu.addEventListener('click', showNavbar)
-    closeMobileNav.addEventListener('click', hideNavbar)
-}
+    // 4th:
+    const navMenu = document.querySelector('.mobile-navbar'),
+        navToggle = document.querySelector('.hamberger-menu'),
+        navClose = document.querySelector('.close-mobile-nav')
 
-/*
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
-
-// -------Menu show 
-if (navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
-    })
-}
-
-// ----Menu hidden 
-if (navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
-}
-*/
-
-
-const showNavbar = () => {
-    const mobileNavbarHidden = document.querySelector('.mobile-navbar-hidden')
-    mobileNavbarHidden.className = 'mobile-navbar'
-}
-const hideNavbar = () => {
-    const mobileNavbarHidden = document.querySelector('.mobile-navbar')
-    mobileNavbarHidden.className = 'mobile-navbar-hidden'
+    // 5th:
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('navbar-show')
+        })
+    }
+    // 6th:
+    if (navClose) {
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('navbar-show')
+        })
+    }
 }
 
 export default mobileNavbar
