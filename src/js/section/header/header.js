@@ -8,8 +8,8 @@ import mobileNavbar from "./mobileNavbar.js";
 /**
  * create header by using component
  * 1st step: get render from headerGen (stractur of header).
- * 2nd step:condition for media screen.
- * 3nd step:select menu nav div & get render from nav.
+ * 2nd step:select menu nav div & get render from nav.
+ * 3nd step:condition for media screen.
  * 4th step:get render from mobile navbar.
  * 5th step:select menu btn div & get render from text btn
  * @param {Element} pos position for append to
@@ -18,16 +18,16 @@ const header = (pos) => {
     // 1st:
     render(pos, headerGen("feri"))
 
-    // 2nd:
-    const mediaQueryCondition = window.matchMedia('( min-width: 700px )')
+    // 2rd:
+    const navDiv = document.querySelector(".menu-nav");
+    render(navDiv, ul(liList, "list-items"))
+    // 3nd:
+    const mediaQueryCondition = window.matchMedia('( max-width: 700px )')
     if (mediaQueryCondition.matches) {
-        // 3rd:
-        const navDiv = document.querySelector(".menu-nav");
-        render(navDiv, ul(liList, "list-items"))
-    } else {
         // 4th:
         mobileNavbar(pos)
     }
+
 
 
     // 5th:
