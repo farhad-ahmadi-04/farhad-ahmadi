@@ -30,6 +30,6 @@ const header = (pos) => {
 
     // 5th:
     const menuBtnDiv = document.querySelector(".menu-btn");
-    render(menuBtnDiv, textBtn("Hite me", "primary--text-btn"))
+    render(menuBtnDiv, textBtn("Hite me", "primary--text-btn hireMe--btn"))
 }
 export default header

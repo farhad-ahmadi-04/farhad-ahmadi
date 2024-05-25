@@ -3,6 +3,8 @@ import iconBtn from "../../../components/buttons/iconbtn.js";
 import mainImage from "../../../components/mainImg.js";
 import heroItem from "./heroItem.js";
 
+
+
 /**
  * getting render of hero section components:
  * 1= get render hero item.
@@ -13,13 +15,16 @@ import heroItem from "./heroItem.js";
  */
 const hero = (data, position) => {
     // hero: get render hero item---
-    render(position.heroSection, heroItem(data));
+    render(position, heroItem(data));
     // ---set icon btn in hero item
     const heroMedia = document.querySelector('.hero-media')
-    data.socialMedia.forEach(async item => {
-        await render(heroMedia, iconBtn(item.icon, item.alt, item.address, "icon-btn"));
+    data.socialMedia.forEach(item => {
+        render(heroMedia, iconBtn(item.icon, item.alt, item.address, "icon-btn"));
     })
     // ---get render from main image in hero section.
-    render(position.heroSection, mainImage(data.about, "max"));
+    render(position, mainImage(data.about, "max"));
 }
+
+
+
 export default hero;

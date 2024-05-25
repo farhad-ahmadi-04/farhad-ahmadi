@@ -1,14 +1,17 @@
 // main js file
 import header from "./section/header/header.js";
-import render from "./Assets/render.js";
-import main from "./section/main/main.js";
+import { loadMain } from "./section/main/main.js";
 import footer from "./section/footer/footer.js";
 
 const app = document.querySelector('.app')
 
-// get render from header
-window.addEventListener('DOMContentLoaded', () => {
+// get render from sectins & effects
+const initialize = async () => {
     header(app)
-    render(app, main)
+    await loadMain(app)
     footer(app)
-})
+    const scrollModuls = await import("./effects/scrollEffects.js")
+
+    scrollModuls.handelScroll()
+}
+initialize()

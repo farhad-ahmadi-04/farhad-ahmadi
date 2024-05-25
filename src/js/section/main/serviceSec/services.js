@@ -17,8 +17,8 @@ const services = (data) => {
     render(serviceSection, generateElement('div', 'service-items'))
     const serviceItems = document.querySelector('.service-items');
 
-    data.serviceCard.forEach(async item => {
-        await render(serviceItems, serviceCard(item.src, item.alt, item.title, item.description))
+    data.serviceCard.forEach(item => {
+        render(serviceItems, serviceCard(item.src, item.alt, item.title, item.description))
     });
 
 }

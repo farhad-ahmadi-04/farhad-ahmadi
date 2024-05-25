@@ -9,37 +9,48 @@ import portfolio from "./portfolio/portfolio.js";
 import cantactMe from "./cantactMe/cantactMe.js";
 
 
-// create element
-const main = domGenerator({
-    tag: 'main',
-})
+/**
+ * 1st step: create main element
+ * 2nd step: get render from sections
+ * 3rd step: fetch data from json file
+ * 4th step: get render form main in direction
+ * @param {Element} app direction for appending to
+ */
+export const loadMain = (app) => {
+    // create element
+    const main = domGenerator({
+        tag: 'main',
+    })
+
+    sectionsRender(main)
+
+    //featch data
+    const obj = fetchData("src/js/Assets/data.json")
+    // if featching is seccess, so call this function
+    obj.then(data => {
+        // find positions for push 
+        const heroSection = document.querySelector('.hero-section');
+        // call function for push data
+        sectionData(data, heroSection)
+    })
+        // if not,so call this
+        .catch(err => { console.log(err) });
+
+    render(app, main)
+}
 
 /**
  * get render from section when page loaded
 */
-window.addEventListener('DOMContentLoaded', () => {
+const sectionsRender = (item) => {
     // get renderf of hero section
-    render(main, generateElement('section', 'landin-section hero-section row-primary-container'))
-    render(main, generateElement('section', 'landin-section service--section col-primary-container'))
-    render(main, generateElement('section', 'landin-section about-me-sec col-primary-container'))
-    render(main, generateElement('section', 'landin-section portfolio-sec col-primary-container'))
-    render(main, generateElement('section', 'landin-section cantact-me-sec col-primary-container'))
-})
+    render(item, generateElement('section', 'landin-section hero-section row-primary-container'))
+    render(item, generateElement('section', 'landin-section service--section col-primary-container'))
+    render(item, generateElement('section', 'landin-section about-me-sec col-primary-container'))
+    render(item, generateElement('section', 'landin-section portfolio-sec col-primary-container'))
+    render(item, generateElement('section', 'landin-section cantact-me-sec col-primary-container'))
+}
 
-//featch data
-const obj = fetchData("src/js/Assets/data.json")
-// if featching is seccess, so call this function
-obj.then(data => {
-    // find positions for push 
-    const objPosition = {
-        heroSection: document.querySelector('.hero-section'),
-    }
-
-    // call function for push data
-    sectionData(data, objPosition)
-})
-    // if not,so call this
-    .catch(err => { console.log(err) });
 
 
 
@@ -50,23 +61,18 @@ obj.then(data => {
  * @param {object} position - object of html element 
 */
 const sectionData = (data, position) => {
-    try {
-        // hero components
-        hero(data, position);
+    // hero components
+    hero(data, position);
 
-        // service components:
-        services(data)
+    // service components:
+    services(data)
 
-        // about components:
-        aboutMe(data)
+    // about components:
+    aboutMe(data)
 
-        // portfolio components:
-        portfolio(data)
+    // portfolio components:
+    portfolio(data)
 
-        // contact me components:
-        cantactMe()
-    } catch (error) {
-        console.error(error);
-    }
+    // contact me components:
+    cantactMe()
 };
-export default main
