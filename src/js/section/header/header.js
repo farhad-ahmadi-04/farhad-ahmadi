@@ -28,8 +28,6 @@ const header = (pos) => {
         mobileNavbar(pos)
     }
 
-
-
     // 5th:
     const menuBtnDiv = document.querySelector(".menu-btn");
     render(menuBtnDiv, textBtn("Hite me", "primary--text-btn"))
