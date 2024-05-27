@@ -9,9 +9,8 @@ import mobileNavbar from "./mobileNavbar.js";
  * create header by using component
  * 1st step: get render from headerGen (stractur of header).
  * 2nd step:select menu nav div & get render from nav.
- * 3nd step:condition for media screen.
- * 4th step:get render from mobile navbar.
- * 5th step:select menu btn div & get render from text btn
+ * 3nd step:get render from mobile navbar.
+ * 4th step:select menu btn div & get render from text btn
  * @param {Element} pos position for append to
  */
 const header = (pos) => {
@@ -21,14 +20,12 @@ const header = (pos) => {
     // 2rd:
     const navDiv = document.querySelector(".menu-nav");
     render(navDiv, ul(liList, "list-items"))
-    // 3nd:
-    const mediaQueryCondition = window.matchMedia('( max-width: 700px )')
-    if (mediaQueryCondition.matches) {
-        // 4th:
-        mobileNavbar(pos)
-    }
 
-    // 5th:
+    // 3nd:
+    mobileNavbar(pos)
+
+
+    // 4th:
     const menuBtnDiv = document.querySelector(".menu-btn");
     render(menuBtnDiv, textBtn("Hite me", "primary--text-btn hireMe--btn"))
 }
