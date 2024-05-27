@@ -11,7 +11,6 @@ const initialize = async () => {
     await loadMain(app)
     footer(app)
     const scrollModuls = await import("./effects/scrollEffects.js")
-
     scrollModuls.handelScroll()
 }
 initialize()
