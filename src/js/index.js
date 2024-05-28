@@ -10,7 +10,7 @@ const initialize = async () => {
     header(app)
     await loadMain(app)
     footer(app)
-    const scrollModuls = await import("./effects/scrollEffects.js")
+    const scrollModuls = await import("./effects/scroll/scrollEffects.js")
     scrollModuls.handelScroll()
 }
 initialize()

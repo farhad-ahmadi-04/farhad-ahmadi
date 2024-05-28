@@ -1,4 +1,4 @@
-import { asyncDelay } from '../Assets/asyncDelay.js'
+import { asyncDelay } from '../../Assets/asyncDelay.js'
 import { scroll } from './scroll.js';
 
 
