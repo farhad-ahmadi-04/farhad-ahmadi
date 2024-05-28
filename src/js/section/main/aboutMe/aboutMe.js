@@ -5,37 +5,42 @@ import mainImage from "../../../components/mainImg.js";
 import MyIntroduction from "./MyIntroduction.js";
 import textIconBtn from "../../../components/buttons/textIconBtn.js";
 import skillCard from "./skillCard.js";
+import { sliderAbout } from "./aboutSlider.js";
 
 /**
- * create about me section
+ * create about me section by get render from components
+ * 1st step: select section + add label.
+ * 2nd step: craete div for push (image + paragraph) & skills item.
+ * 3rd step: create div for item (image & paragraph + btn).
+ * 4th step: select item & getting render from main image.
+ * 5th step: create div for paragraph & btn + selectr div + set text data to div.
+ * 6th step: call sliderAbout component.
+ * @param {object} data - data of json file
  */
 const aboutMe = (data) => {
-    // select section + add label
+    // 1st:
     const aboutMeSec = document.querySelector('.about-me-sec')
     render(aboutMeSec, label("About me", "front end developer and also UI/UX designer"))
 
-    // craete div for push (image + paragraph) & skills item
+    // 2nd:
     render(aboutMeSec, generateElement("div", "about-me-item col-primary-container"))
     const aboutMeItem = document.querySelector('.about-me-item')
 
-    // create div for item (image & paragraph + btn)
+    // 3rd:
     render(aboutMeItem, generateElement("div", "about-me-sec-item row-primary-container"))
 
-    // ---selectr item & getting render from main image
+    // 4th:
     const aboutMeSecItem = document.querySelector('.about-me-sec-item')
     render(aboutMeSecItem, mainImage(data.about, "min"));
 
-    // create div for paragraph & btn + selectr div + set text data to div 
+    // 5th:
     render(aboutMeSecItem, generateElement("div", "introduction-item col-primary-container "))
     const introductionItem = document.querySelector('.introduction-item')
     render(introductionItem, MyIntroduction(data.about.aboutMe));
     render(introductionItem, textIconBtn(data.icon.textIcon, "download icon", "Download CV", "primary--textIcon-btn"));
 
-    // create div of skills
-    render(aboutMeItem, generateElement("div", "skills row-primary-container"))
-    const skills = document.querySelector('.skills')
-    // create card by map method:
-    const skillCards = data.skill.map(item => render(skills, skillCard(item)))
+    // 6th:
+    sliderAbout(aboutMeItem, data)
 
 }
 export default aboutMe

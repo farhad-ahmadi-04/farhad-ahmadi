@@ -18,15 +18,22 @@
                 }
             }
         }
-        .skills {
-            overflow-x: hidden;
-            animation: slide 10s linear infinite;
-            @keyframes slide {
-                0% {
-                    transform: translateX(0);
+        .skills-sliedr {
+            overflow: hidden;
+
+            .skills {
+                gap: 2rem;
+                animation: 10s slide infinite linear;
+                @keyframes slide {
+                    0% {
+                        transform: translateX(3%);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
                 }
-                100% {
-                    transform: translateX(-100%);
+                &:hover {
+                    animation-play-state: paused;
                 }
             }
         }
