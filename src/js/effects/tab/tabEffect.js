@@ -8,8 +8,21 @@ export const tabEffect = (e) => {
     tabs.forEach(tab => tab.classList.remove("primary--text-btn"));
     // 1-4:
     clicked.classList.add("primary--text-btn");
-    console.log(clicked);
 
     // 2nd:
-    // const clicked = e.target.closest(".button-tab")
+    if (clicked.dataset.id === "1") {
+        const allCrads = document.querySelectorAll('.portfolio-Card')
+        allCrads.forEach(tab => tab.classList.remove("portfolio-Card--active"));
+        // 3-2:
+        allCrads.forEach(tab => tab.classList.add("portfolio-Card--active"));
+    } else {
+
+        // 3nd:
+        const cards = document.querySelectorAll(`.portfolio-card-${clicked.dataset.id}`)
+        // 3-1:
+        const allCrads = document.querySelectorAll('.portfolio-Card')
+        allCrads.forEach(tab => tab.classList.remove("portfolio-Card--active"));
+        // 3-2:
+        cards.forEach(tab => tab.classList.add("portfolio-Card--active"));
+    }
 }

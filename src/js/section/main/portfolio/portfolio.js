@@ -35,8 +35,8 @@ const portfolio = (data) => {
     const uniqueCategory = Object.keys(data.portfolio)
 
     // 3rd step:
-    render(category, textBtn("All", "secondary--text-btn primary--text-btn button-tab", 0))
-    uniqueCategory.map((item, index) => render(category, textBtn(item, "secondary--text-btn button-tab", index + 1)))
+    render(category, textBtn("All", "secondary--text-btn primary--text-btn button-tab", 1))
+    uniqueCategory.map((item, index) => render(category, textBtn(item, "secondary--text-btn button-tab", index + 2)))
 
     // 4th step:
     render(portfolioSec, generateElement('div', "prtfolio-card-sec", undefined))
@@ -48,7 +48,7 @@ const portfolio = (data) => {
     const combined = [];
 
     // 7th step:
-    let i = 1
+    let i = 2
     for (const [category, project] of cardData) {
         project.map(item => {
             // 8th step:
