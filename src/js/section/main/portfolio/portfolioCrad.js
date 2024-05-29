@@ -9,7 +9,7 @@ import textIconBtn from "../../../components/buttons/textIconBtn.js";
 const portfolioCard = (category, data, icon) => {
     return domGenerator({
         tag: 'div',
-        attributes: { class: "portfolio-Card" },
+        attributes: { class: `portfolio-Card portfolio-card-${category.id}` },
         children: [{
             tag: 'img',
             attributes: { class: "portfolio-Card-image" },
@@ -27,7 +27,7 @@ const portfolioCard = (category, data, icon) => {
                 }, {
                     tag: 'span',
                     attributes: { class: "portfolio-category primary--text" },
-                    properties: { textContent: category },
+                    properties: { textContent: category.name },
                 }]
             }, {
                 tag: 'p',

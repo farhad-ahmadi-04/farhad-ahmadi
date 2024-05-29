@@ -6,7 +6,7 @@ import portfolioLabel from "./portfolioLabel.js";
 // import textBtn from "../../textBtn.js";
 
 let showCardsStep = 0
-let showCards = 3
+let showCards = 6
 
 /**
  * create portfoliosection and add component to the section:
@@ -35,8 +35,8 @@ const portfolio = (data) => {
     const uniqueCategory = Object.keys(data.portfolio)
 
     // 3rd step:
-    render(category, textBtn("All", "primary--text-btn"))
-    uniqueCategory.map(item => render(category, textBtn(item, "secondary--text-btn")))
+    render(category, textBtn("All", "primary--text-btn", 0))
+    uniqueCategory.map((item, index) => render(category, textBtn(item, "secondary--text-btn", index + 1)))
 
     // 4th step:
     render(portfolioSec, generateElement('div', "prtfolio-card-sec", undefined))
@@ -48,11 +48,18 @@ const portfolio = (data) => {
     const combined = [];
 
     // 7th step:
+    let i = 1
     for (const [category, project] of cardData) {
         project.map(item => {
             // 8th step:
-            combined.push({ category: category, item });
+            combined.push({
+                category: {
+                    name: category,
+                    id: i
+                }, item
+            });
         })
+        i += 1;
     }
     // 9th step:
     const shuffled = combined.sort(() => 0.5 - Math.random());
@@ -70,7 +77,7 @@ const portfolio = (data) => {
 
     // 13th step:
     more.addEventListener('click', () => {
-        cardRender(shuffled, cardDiv, data.icon, showCardsStep += 2, showCards += 2)
+        cardRender(shuffled, cardDiv, data.icon, showCardsStep += 6, showCards += 3)
     })
 }
 
