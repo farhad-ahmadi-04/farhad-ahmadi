@@ -2,13 +2,13 @@
 
 // btn style:-----------------------
 // --------text button--------
-.primary--text-btn {
+.secondary--text-btn {
     border: none;
-    color: $white--light;
+    color: $white--normal--active;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
-    background: linear-gradient(to bottom right, $orange--normal 0, $orange--normal--hover 100%);
+    background: $bg--opacity;
     padding: 12px 40px;
     cursor: pointer;
     @media only screen and (max-width: 700px) {
@@ -17,13 +17,13 @@
     }
 }
 
-.secondary--text-btn {
+.primary--text-btn {
     border: none;
-    color: $white--normal--active;
+    color: $white--light;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
-    background: $bg--opacity;
+    background: linear-gradient(to bottom right, $orange--normal 0, $orange--normal--hover 100%);
     padding: 12px 40px;
     cursor: pointer;
     @media only screen and (max-width: 700px) {

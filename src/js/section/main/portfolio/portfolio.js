@@ -35,8 +35,8 @@ const portfolio = (data) => {
     const uniqueCategory = Object.keys(data.portfolio)
 
     // 3rd step:
-    render(category, textBtn("All", "primary--text-btn", 0))
-    uniqueCategory.map((item, index) => render(category, textBtn(item, "secondary--text-btn", index + 1)))
+    render(category, textBtn("All", "secondary--text-btn primary--text-btn button-tab", 0))
+    uniqueCategory.map((item, index) => render(category, textBtn(item, "secondary--text-btn button-tab", index + 1)))
 
     // 4th step:
     render(portfolioSec, generateElement('div', "prtfolio-card-sec", undefined))
