@@ -1,5 +1,29 @@
 @import "../variables.scss";
 
+// corsor style--------
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: $white--darker;
+}
+.cursor-outlione {
+    width: 30px;
+    height: 30px;
+    border: 2px solid $white--dark;
+}
+.cursor-dot,
+.cursor-outlione {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+// --------------corsor style
+
 // btn style:-----------------------
 // --------text button--------
 .secondary--text-btn {

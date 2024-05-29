@@ -12,7 +12,9 @@ const initialize = async () => {
     footer(app)
     const scrollModuls = await import("./effects/scroll/scrollEffects.js")
     const tabModuls = await import("./effects/tab/tab.js")
+    const cursorModuls = await import("./effects/cursor/cursor.js")
     scrollModuls.handelScroll()
     tabModuls.tab()
+    cursorModuls.cursor(app)
 }
 initialize()
