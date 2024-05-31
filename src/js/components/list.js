@@ -1,46 +1,46 @@
 export const liList = [
     {
         item: "home",
-        link: "#",
+        link: "hero-section",
         class: "active"
     }, {
         item: "Services",
-        link: "#",
+        link: "service-section",
         class: "primary--text"
     }, {
         item: "About me",
-        link: "#",
+        link: "aboutMe-section",
         class: "primary--text"
     }, {
         item: "Portfolio",
-        link: "#",
+        link: "portfolio-section",
         class: "primary--text"
     }, {
         item: "Contact me",
-        link: "#",
+        link: "cantactMe-section",
         class: "primary--text"
     }
 ];
 export const footerLiList = [
     {
         item: "home",
-        link: "#",
+        link: "hero-section",
         class: "primary--text"
     }, {
         item: "Services",
-        link: "#",
+        link: "service-section",
         class: "primary--text"
     }, {
         item: "About me",
-        link: "#",
+        link: "aboutMe-section",
         class: "primary--text"
     }, {
         item: "Portfolio",
-        link: "#",
+        link: "portfolio-section",
         class: "primary--text"
     }, {
         item: "Contact me",
-        link: "#",
+        link: "cantactMe-section",
         class: "primary--text"
     }
 ];
