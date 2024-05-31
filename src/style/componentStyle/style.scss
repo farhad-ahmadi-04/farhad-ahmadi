@@ -1,5 +1,9 @@
 @import "../variables.scss";
 
+a {
+    cursor: none;
+}
+
 // corsor style--------
 .cursor-dot {
     width: 5px;
@@ -172,7 +176,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
+        cursor: none;
         .icon-btn-image {
             width: 16px;
             height: 16px;

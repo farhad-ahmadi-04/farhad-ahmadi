@@ -1,6 +1,7 @@
 import generateElement from "../../Assets/generateEle.js"
 import render from "../../Assets/render.js"
 
+
 export const cursor = (app) => {
     render(app, generateElement("div", "cursor-dot"))
     render(app, generateElement("div", "cursor-outlione"))
