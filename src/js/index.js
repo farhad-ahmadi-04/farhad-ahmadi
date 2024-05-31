@@ -13,8 +13,10 @@ const initialize = async () => {
     const scrollModuls = await import("./effects/scroll/scrollEffects.js")
     const tabModuls = await import("./effects/tab/tab.js")
     const cursorModuls = await import("./effects/cursor/cursor.js")
+    const sendEmail = await import("./effects/sendEmail/sendEmail.js")
     scrollModuls.handelScroll()
     tabModuls.tab()
     cursorModuls.cursor(app)
+    sendEmail.senEmail()
 }
 initialize()

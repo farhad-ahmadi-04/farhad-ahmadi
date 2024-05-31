@@ -23,12 +23,13 @@
             height: fit-content;
             background-color: $bg--opacity;
             color: $white--dark--hover;
+            font-size: calc(0.4vw + 10px);
         }
         textarea.input-item {
             resize: none;
             height: 100px;
             font-family: "lato";
-            font-size: 0.93rem;
+            font-size: calc(0.4vw + 10px);
         }
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
