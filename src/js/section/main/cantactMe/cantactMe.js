@@ -22,7 +22,7 @@ const cantactMe = () => {
     render(inputForm, inputCom("input", "text", "user-name", "Name", "input-item user-name"))
     render(inputForm, inputCom("input", "email", "user-email", "Email", "input-item user-email"))
     render(inputForm, inputCom("input", "number", "user-phone", "Phone number", "input-item user-phone"))
-    render(inputForm, textareaCom("textarea", "Message", "input-item"))
+    render(inputForm, textareaCom("textarea", "Message", "input-item user-message"))
 
 }
 export default cantactMe
