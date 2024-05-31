@@ -9,7 +9,12 @@ const contactForm = () => {
             attributes: { class: "inputs" }
         }, {
             tag: 'div',
-            attributes: { class: "submit-div" }
+            attributes: { class: "submit-div" },
+            children: [{
+                tag: 'input',
+                attributes: { class: "outline-primary--text-btn" },
+                properties: { textContent: "Send", type: "submit" },
+            }]
         }]
     })
 }

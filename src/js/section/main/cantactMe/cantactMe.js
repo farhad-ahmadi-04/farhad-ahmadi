@@ -9,7 +9,6 @@ import { inputCom, textareaCom } from "./contactInput.js";
  * 1st: selct section & get render of label
  * 2nd: get render form form & select it
  * 3rd: get render from inputs
- * 4rd: select div of sub,it button & get render from button
  */
 const cantactMe = () => {
     // 1st step:
@@ -24,9 +23,6 @@ const cantactMe = () => {
     render(inputForm, inputCom("input", "email", "user-email", "Email", "input-item"))
     render(inputForm, inputCom("input", "number", "user-phone", "Phone number", "input-item"))
     render(inputForm, textareaCom("textarea", "Message", "input-item"))
-    // 4th step:
-    const submitFormBtn = document.querySelector(".submit-div")
-    render(submitFormBtn, textBtn("Send", "outline-primary--text-btn"))
 
 }
 export default cantactMe
