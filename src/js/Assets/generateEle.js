@@ -7,11 +7,11 @@ import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.
  * @param {string} text - text for element
  * @returns html element
  */
-const generateElement = (ele, cla, text) => {
+const generateElement = (ele, cla, text, idEle = undefined) => {
 
     return domGenerator({
         tag: ele,
-        attributes: { class: cla },
+        attributes: { class: cla, id: idEle },
         properties: { textContent: text }
     })
 }
