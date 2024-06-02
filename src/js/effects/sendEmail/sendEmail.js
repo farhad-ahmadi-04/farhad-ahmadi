@@ -1,14 +1,34 @@
 import initEmail from "./initEmail.js"
+import { validateForm } from "./validation.js";
 
 /**
  * when user submit for this function call another function to send email
+ * 1st step: select form & inputs.
+ * 2nd step: set event handeler to submit form
+ * 3rd step: prevent from load of page by submitting
+ * 4th step: call validateForm and pass inputs to it.
+ * 5th step: loop on inputs & set condition to send email.
+ * 6th step call functions to send email.
  */
 export const emailHandeler = () => {
+    // 1st:
     const form = document.querySelector('#contact-form')
+    const inputsForm = form.children[0].children
+    // 2nd:
     form.addEventListener('submit', (e) => {
+        // 3rd:
         e.preventDefault();
+        // 4th:
+        validateForm(inputsForm)
+        // 5th:
+        for (const item of inputsForm) {
+            // 5-1:
+            if (item.classList.contains('error')) return
+        }
+        // 6th:
         initEmail()
         sendMail()
+
     })
 }
 
@@ -26,11 +46,11 @@ const sendMail = () => {
         phone_number: document.querySelector('.user-phone').value,
         message: document.querySelector('.user-message').value
     }
-
     // 2nd: 
     const serviceID = 'service_dnejofy';
     const templateID = 'template_go2tfq5';
 
+    // 3rd:
     emailjs.send(serviceID, templateID, formData)
         .then(() => {
             alert('Sent!');
