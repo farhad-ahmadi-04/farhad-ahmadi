@@ -1,15 +1,25 @@
-import emailjs from '../../../../node_modules/@emailjs/browser/dist/emailjs.js';
-export const senEmail = () => {
+import initEmail from "./initEmail.js"
+
+/**
+ * when user submit for this function call another function to send email
+ */
+export const emailHandeler = () => {
     const form = document.querySelector('#contact-form')
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        console.log("kjldc");
+        initEmail()
         sendMail()
     })
 }
 
+/**
+ * send email:
+ * 1st step: create select form value to create form template.
+ * 2nd step: get serviceID & templateID.
+ * 3rd step: send email by data.
+ */
 const sendMail = () => {
-
+    // 1st:
     const formData = {
         full_name: document.querySelector('.user-name').value,
         email_id: document.querySelector('.user-email').value,
@@ -17,14 +27,14 @@ const sendMail = () => {
         message: document.querySelector('.user-message').value
     }
 
+    // 2nd: 
     const serviceID = 'service_dnejofy';
-    const templateID = 'template_vh6s0kk';
+    const templateID = 'template_go2tfq5';
 
-    emailjs.sendForm(serviceID, templateID, formData)
+    emailjs.send(serviceID, templateID, formData)
         .then(() => {
             alert('Sent!');
         }, (err) => {
-            btn.value = 'Send Email';
-            alert(JSON.stringify(err));
+            console.log(err);
         });
 }

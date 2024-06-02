@@ -17,6 +17,6 @@ const initialize = async () => {
     scrollModuls.handelScroll()
     tabModuls.tab()
     cursorModuls.cursor(app)
-    sendEmail.senEmail()
+    sendEmail.emailHandeler()
 }
 initialize()
