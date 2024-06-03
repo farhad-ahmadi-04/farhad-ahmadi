@@ -1,4 +1,5 @@
-import { checkName } from "./vilidateName.js";
+import { checkName } from "./validateInputs/validateName.js";
+import { checkPhoneNumber } from "./validateInputs/validatePhoneNumber.js";
 
 /**
  * loop on inputs and check it by call checkInput function
@@ -28,5 +29,6 @@ const checkInput = (input) => {
     if (input.value == "") input.classList.add("error")
     // 2 - user-name input
     if (input.classList.contains("user-name")) checkName(input)
+    if (input.classList.contains("user-phone")) checkPhoneNumber(input)
 }
 
