@@ -16,24 +16,30 @@
         gap: 10px;
         width: 100%;
         .input-item {
-            outline: none;
-            padding: 0.6rem 0.9rem;
-            border: none;
-            border-radius: 0.2rem;
-            height: fit-content;
-            background-color: $bg--opacity;
-            color: $white--dark--hover;
-            font-size: calc(0.4vw + 10px);
-        }
-        textarea.input-item {
-            resize: none;
-            height: 100px;
-            font-family: "lato";
-            font-size: calc(0.4vw + 10px);
-        }
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .input-tag {
+                outline: none;
+                padding: 0.6rem 0.9rem;
+                border: none;
+                border-radius: 0.2rem;
+                height: fit-content;
+                background-color: $bg--opacity;
+                color: $white--dark--hover;
+                font-size: calc(0.4vw + 10px);
+            }
+            textarea.input-tag {
+                resize: none;
+                width: 100%;
+                height: 100px;
+                font-family: "lato";
+                font-size: calc(0.4vw + 10px);
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
         }
         @media screen and (min-width: 800px) {
             grid-template-columns: 1fr 1fr;

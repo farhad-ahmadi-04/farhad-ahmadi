@@ -10,9 +10,16 @@ import domGenerator from "../../../../../node_modules/dom-generator/dist/domGene
  */
 export const inputCom = (ele, type, nameInput, placeholder, cla) => {
     return domGenerator({
-        tag: ele,
-        attributes: { class: cla },
-        properties: { type: type, name: nameInput, placeholder: placeholder }
+        tag: "div",
+        attributes: { class: "input-item" },
+        children: [{
+            tag: ele,
+            attributes: { class: cla },
+            properties: { type: type, name: nameInput, placeholder: placeholder }
+        }, {
+            tag: "small",
+            attributes: { class: "error-message" }
+        }]
     })
 }
 
@@ -25,8 +32,15 @@ export const inputCom = (ele, type, nameInput, placeholder, cla) => {
  */
 export const textareaCom = (ele, placeholder, cla) => {
     return domGenerator({
-        tag: ele,
-        attributes: { class: cla },
-        properties: { placeholder: placeholder }
+        tag: "div",
+        attributes: { class: "input-item" },
+        children: [{
+            tag: ele,
+            attributes: { class: cla },
+            properties: { placeholder: placeholder }
+        }, {
+            tag: "small",
+            attributes: { class: "error-message" }
+        }]
     })
 }

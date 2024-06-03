@@ -19,10 +19,10 @@ const cantactMe = () => {
     const Form = document.querySelector("#contact-form")
     const inputForm = document.querySelector(".inputs")
     // 3th step:
-    render(inputForm, inputCom("input", "text", "user-name", "Name", "input-item user-name"))
-    render(inputForm, inputCom("input", "email", "user-email", "Email", "input-item user-email"))
-    render(inputForm, inputCom("input", "number", "user-phone", "Phone number", "input-item user-phone"))
-    render(inputForm, textareaCom("textarea", "Message", "input-item user-message"))
+    render(inputForm, inputCom("input", "text", "user-name", "Name", "input-tag user-name"))
+    render(inputForm, inputCom("input", "email", "user-email", "Email", "input-tag user-email"))
+    render(inputForm, inputCom("input", "number", "user-phone", "Phone number", "input-tag user-phone"))
+    render(inputForm, textareaCom("textarea", "Message", "input-tag user-message"))
 
 }
 export default cantactMe
