@@ -20,21 +20,23 @@ export const validateForm = (form) => {
 
 /**
  * set condition to finde empty input:
- * 1 - empty input: set error class 
- * 2 - user-name input: call checkName function to  the input has user-name class
- * @param {Element} input - input element 
+ * 3 - get input: det first child element that is input.
+ * 2 - empty input: set error class 
+ * 3 - user-name input: call checkName function to  the input has user-name class
+ * @param {Element} input - div element 
  */
 const checkInput = (input) => {
     const fild = input.firstChild
 
     console.log(fild);
-    // 1 - empty input
+    // 2 - empty input
     if (fild.value == "") {
         input.classList.add("not-send")
         fild.classList.add("error");
     }
-    // 2 - user-name input
+    // 3 - user-name input
     if (fild.classList.contains("user-name")) checkName(fild)
     if (fild.classList.contains("user-phone")) checkPhoneNumber(fild)
+    if (fild.classList.contains("user-email")) checkMail(fild)
 }
 
