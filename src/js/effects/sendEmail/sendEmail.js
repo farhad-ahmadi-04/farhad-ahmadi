@@ -46,14 +46,16 @@ const sendMail = () => {
         phone_number: document.querySelector('.user-phone').value,
         message: document.querySelector('.user-message').value
     }
+    const submitBtn = document.querySelector(".submit-div").firstChild
     // 2nd: 
     const serviceID = 'service_dnejofy';
     const templateID = 'template_go2tfq5';
+    submitBtn.value = "sending..."
 
     // 3rd:
     emailjs.send(serviceID, templateID, formData)
         .then(() => {
-            alert('Sent!');
+            submitBtn.value = "sent!";
         }, (err) => {
             console.log(err);
         });
