@@ -10,7 +10,6 @@
  * 1-8 => [a-zA-Z]: Matches any character from this set: lowercase letters (a-z) and uppercase letters (A-Z).
  * 1-9 => {2,}: Ensures that at least two or more characters from the preceding set are present.
  * 1-10 => $: Asserts the end of the string.
-
  * @param {Element} input - input element by email type
  */
 export const checkMail = (input) => {
