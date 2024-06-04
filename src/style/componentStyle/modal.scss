@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+/* Custom CSS for dark theme */
+.swal2-popup {
+    background-color: $gray--normal !important;
+    color: $gray--light !important;
+    font-family: "lato";
+}
+.swal2-title {
+    color: $gray--light !important;
+}
+.swal2-html-container {
+    color: $white--normal !important;
+}
+.swal2-actions .swal2-confirm {
+    background-color: $white--dark--active !important;
+    border-color: $white--darker !important;
+}
+.swal2-actions .swal2-cancel {
+    background-color: $white--darker !important;
+    border-color: $white--darker !important;
+}
