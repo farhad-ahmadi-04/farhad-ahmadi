@@ -12,6 +12,8 @@
  * 8= \d{4,9}: Four to nine digits (last part of the phone number).
  * 9= $: End of the string.
  * 3rd step: check value of input by regex
+ * @param {Element} input - input element
+ * @param {string} message - message of error
  */
 export const checkPhoneNumber = (input, message) => {
     // 1st

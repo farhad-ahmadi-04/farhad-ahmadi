@@ -1,6 +1,7 @@
 import { checkName } from "./validateInputs/validateName.js";
 import { checkPhoneNumber } from "./validateInputs/validatePhoneNumber.js";
 import { checkMail } from "./validateInputs/validateMail.js";
+import { checkMessage } from "./validateInputs/validateMessage.js";
 
 /**
  * loop on inputs and check it by call checkInput function
@@ -40,6 +41,7 @@ const checkInput = (input) => {
         if (fild.classList.contains("user-phone")) checkPhoneNumber(fild, `Please enter a valid phone number`)
         if (fild.classList.contains("user-email")) checkMail(fild, `Please enter a valid email address.
     The email must include English letters, numbers, the '@' symbol, and a valid domain such as '.com' or '.org'.`)
+        if (fild.classList.contains("user-message")) checkMessage(fild)
     }
 
 }

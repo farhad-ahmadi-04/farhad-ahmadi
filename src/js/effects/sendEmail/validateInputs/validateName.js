@@ -13,7 +13,8 @@
     - +: Ensures that one or more of the preceding characters are present.
  * 1-2 => $/: Asserts the end of the string.
  * 3rd step: check value of input by regex
- * @param {Element} input input element
+ * @param {Element} input - input element
+ * @param {string} message - message of error
  */
 export const checkName = (input, message) => {
     // 1st
