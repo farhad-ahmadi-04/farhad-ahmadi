@@ -6,9 +6,9 @@
  */
 export const checkName = (input) => {
     // 1st:
-    const regexName = /^[آ-یA-Za-z\u0600-\u06FF\s,.!؟]+$/;
+    const nameRegex = /^[آ-یA-Za-z\u0600-\u06FF\s,.!؟]+$/;
     // 2nd:
-    if (!input.value.match(regexName)) {
+    if (!input.value.match(nameRegex)) {
         input.parentElement.classList.add("not-send")
         input.classList.add("error", "error-name")
     } else {
