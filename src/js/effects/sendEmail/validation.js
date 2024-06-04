@@ -28,16 +28,19 @@ export const validateForm = (form) => {
  */
 const checkInput = (input) => {
     const fild = input.firstChild
-
-    console.log(fild);
+    const small = fild.nextSibling
     // 2 - empty input
     if (fild.value == "") {
         input.classList.add("not-send")
         fild.classList.add("error");
+        small.textContent = "please fill the form"
+    } else {
+        // 3 - user-name input
+        if (fild.classList.contains("user-name")) checkName(fild, `Please enter a valid name`)
+        if (fild.classList.contains("user-phone")) checkPhoneNumber(fild, `Please enter a valid phone number`)
+        if (fild.classList.contains("user-email")) checkMail(fild, `Please enter a valid email address.
+    The email must include English letters, numbers, the '@' symbol, and a valid domain such as '.com' or '.org'.`)
     }
-    // 3 - user-name input
-    if (fild.classList.contains("user-name")) checkName(fild)
-    if (fild.classList.contains("user-phone")) checkPhoneNumber(fild)
-    if (fild.classList.contains("user-email")) checkMail(fild)
+
 }
 

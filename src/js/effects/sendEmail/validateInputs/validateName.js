@@ -1,6 +1,7 @@
 /**
  * check user-name input: user can not type number, just able to type English or Farsi
- * 1st: create regex =>
+ * 1st step: select small tag
+ * 2nd: create regex =>
  * 1-1 => /^: Asserts the start of the string.
     - [آ-یA-Za-z\u0600-\u06FF\s,.!؟]+:
     - [ ]: Defines a character class, matching any one of the enclosed characters.
@@ -11,18 +12,22 @@
     - ,.!؟: Matches any of these specific punctuation characters: comma, period, exclamation mark, and the Persian question mark (؟).
     - +: Ensures that one or more of the preceding characters are present.
  * 1-2 => $/: Asserts the end of the string.
- * 2rd step: check value of input by regex
+ * 3rd step: check value of input by regex
  * @param {Element} input input element
  */
-export const checkName = (input) => {
-    // 1nd:
+export const checkName = (input, message) => {
+    // 1st
+    const small = input.nextElementSibling
+    // 2nd:
     const nameRegex = /^[آ-یA-Za-z\u0600-\u06FF\s,.!؟]+$/;
-    // 2rd:
-    if (!input.value.match(nameRegex)) {
+    // 3rd:
+    if (input.value != "" && !input.value.match(nameRegex)) {
         input.parentElement.classList.add("not-send")
         input.classList.add("error", "error-name")
+        small.textContent = message
     } else {
         input.parentElement.classList.remove("not-send")
         input.classList.remove("error", "error-name")
+        small.textContent = ""
     }
 }
