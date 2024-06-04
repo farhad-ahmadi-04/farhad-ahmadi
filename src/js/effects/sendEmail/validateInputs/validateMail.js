@@ -1,4 +1,5 @@
 /**
+ * create validate for email => 
  * 1st : create regex for email => 
  * 1-1 => ^: Asserts the start of the string.
  * 1-2 => [a-zA-Z0-9._%+-]: Matches any character from this set: lowercase letters (a-z), uppercase letters (A-Z), digits (0-9), period (.), underscore (_), percent sign (%), plus sign (+), and hyphen (-).
@@ -13,5 +14,14 @@
  * @param {Element} input - input element by email type
  */
 export const checkMail = (input) => {
+    // 1st:
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // 2nd:
+    if (!input.value.match(emailRegex)) {
+        input.parentElement.classList.add("not-send")
+        input.classList.add("error", "error-email")
+    } else {
+        input.parentElement.classList.remove("not-send")
+        input.classList.remove("error", "error-email")
+    }
 }

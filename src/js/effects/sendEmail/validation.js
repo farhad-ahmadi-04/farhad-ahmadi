@@ -1,6 +1,6 @@
 import { checkName } from "./validateInputs/validateName.js";
 import { checkPhoneNumber } from "./validateInputs/validatePhoneNumber.js";
-import { checkMail } from "./validateInputs/validateEmail.js";
+import { checkMail } from "./validateInputs/validateMail.js";
 
 /**
  * loop on inputs and check it by call checkInput function

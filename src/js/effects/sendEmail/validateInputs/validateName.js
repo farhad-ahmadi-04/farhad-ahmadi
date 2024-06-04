@@ -11,14 +11,13 @@
     - ,.!؟: Matches any of these specific punctuation characters: comma, period, exclamation mark, and the Persian question mark (؟).
     - +: Ensures that one or more of the preceding characters are present.
  * 1-2 => $/: Asserts the end of the string.
- * 2nd step: create regex for En & Farsi words
  * 2rd step: check value of input by regex
  * @param {Element} input input element
  */
 export const checkName = (input) => {
-    // 2nd:
+    // 1nd:
     const nameRegex = /^[آ-یA-Za-z\u0600-\u06FF\s,.!؟]+$/;
-    // 3rd:
+    // 2rd:
     if (!input.value.match(nameRegex)) {
         input.parentElement.classList.add("not-send")
         input.classList.add("error", "error-name")

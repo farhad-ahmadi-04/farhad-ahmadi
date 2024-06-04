@@ -9,7 +9,6 @@
  * 7= [-. ]*: Zero or more separators like dash, dot, or space.
  * 8= \d{4,9}: Four to nine digits (last part of the phone number).
  * 9= $: End of the string.
- * 
  * 2nd step: check value of input by regex
  */
 export const checkPhoneNumber = (input) => {
