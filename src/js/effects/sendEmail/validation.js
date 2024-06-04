@@ -25,10 +25,16 @@ export const validateForm = (form) => {
  * @param {Element} input - input element 
  */
 const checkInput = (input) => {
+    const fild = input.firstChild
+
+    console.log(fild);
     // 1 - empty input
-    if (input.value == "") input.classList.add("error")
+    if (fild.value == "") {
+        input.classList.add("not-send")
+        fild.classList.add("error");
+    }
     // 2 - user-name input
-    if (input.classList.contains("user-name")) checkName(input)
-    if (input.classList.contains("user-phone")) checkPhoneNumber(input)
+    if (fild.classList.contains("user-name")) checkName(fild)
+    if (fild.classList.contains("user-phone")) checkPhoneNumber(fild)
 }
 

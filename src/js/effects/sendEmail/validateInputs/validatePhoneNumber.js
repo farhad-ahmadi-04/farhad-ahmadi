@@ -17,8 +17,11 @@ export const checkPhoneNumber = (input) => {
     const phoneRegex = /^\+?(\d{1,3})?[-. (]*\d{3}[-. )]*\d{3}[-. ]*\d{4,9}$/;
     // 2nd:
     if (!input.value.match(phoneRegex)) {
+        input.parentElement.classList.add('not-send')
         input.classList.add('error', "error-phone")
     } else {
-        input.classList.remove('error', "error-phone")
+        input.parentElement.classList.remove('not-send')
+        input.classList.add('error', "error-phone")
+
     }
 }

@@ -39,6 +39,15 @@
             input::-webkit-inner-spin-button {
                 -webkit-appearance: none;
             }
+
+            .error {
+                border: 1px solid $harm-color;
+            }
+
+            .error-message {
+                color: $harm-color;
+                font-size: calc(10px + 2vw);
+            }
         }
         @media screen and (min-width: 800px) {
             grid-template-columns: 1fr 1fr;

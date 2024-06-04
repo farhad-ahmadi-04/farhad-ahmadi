@@ -9,8 +9,10 @@ export const checkName = (input) => {
     const regexName = /^[آ-یA-Za-z\u0600-\u06FF\s,.!؟]+$/;
     // 2nd:
     if (!input.value.match(regexName)) {
+        input.parentElement.classList.add("not-send")
         input.classList.add("error", "error-name")
     } else {
+        input.parentElement.classList.remove("not-send")
         input.classList.remove("error", "error-name")
     }
 }

@@ -23,7 +23,7 @@ export const emailHandeler = () => {
         // 5th:
         for (const item of inputsForm) {
             // 5-1:
-            if (item.classList.contains('error')) return
+            if (item.classList.contains('not-send')) return
         }
         // 6th:
         initEmail()
