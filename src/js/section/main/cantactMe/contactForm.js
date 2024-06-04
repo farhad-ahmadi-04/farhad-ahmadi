@@ -13,7 +13,7 @@ const contactForm = () => {
             children: [{
                 tag: 'input',
                 attributes: { class: "outline-primary--text-btn" },
-                properties: { textContent: "Send", type: "submit" },
+                properties: { value: "Send", type: "submit" },
             }]
         }]
     })

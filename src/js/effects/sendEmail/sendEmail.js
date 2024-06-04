@@ -1,6 +1,5 @@
 import initEmail from "./initEmail.js"
 import { validateForm } from "./validation.js";
-
 /**
  * when user submit for this function call another function to send email
  * 1st step: select form & inputs.
@@ -50,12 +49,19 @@ const sendMail = () => {
     // 2nd: 
     const serviceID = 'service_dnejofy';
     const templateID = 'template_go2tfq5';
-    submitBtn.value = "sending..."
+    submitBtn.value = "Sending..."
 
     // 3rd:
     emailjs.send(serviceID, templateID, formData)
         .then(() => {
-            submitBtn.value = "sent!";
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Message sent!",
+                showConfirmButton: false,
+                timer: 2000
+            });
+            submitBtn.value = "Send";
         }, (err) => {
             console.log(err);
         });
