@@ -29,5 +29,5 @@ export const sliderAbout = (item, data) => {
     const skillsCards = Array.from(scrollerInner.children);
 
     // 5th:
-    slider(scroller)
+    slider(scroller, scrollerInner, skillsCards)
 }
