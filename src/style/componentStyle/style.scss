@@ -5,25 +5,36 @@ a {
 }
 
 // corsor style--------
-.cursor-dot {
-    width: 5px;
-    height: 5px;
-    background-color: $white--darker;
+@media (hover: hover) and (pointer: fine) {
+    /* Your mouse-specific styles here */
+    .cursor-dot {
+        width: 5px;
+        height: 5px;
+        background-color: $white--darker;
+    }
+    .cursor-outlione {
+        width: 30px;
+        height: 30px;
+        border: 2px solid $white--dark;
+    }
+    .cursor-dot,
+    .cursor-outlione {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 1;
+        pointer-events: none;
+    }
 }
-.cursor-outlione {
-    width: 30px;
-    height: 30px;
-    border: 2px solid $white--dark;
-}
-.cursor-dot,
-.cursor-outlione {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
+
+@media (hover: none) and (pointer: coarse) {
+    /* Your touch-specific styles here */
+    .cursor-dot,
+    .cursor-outlione {
+        display: none;
+    }
 }
 
 // --------------corsor style
