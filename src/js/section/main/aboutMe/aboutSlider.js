@@ -1,6 +1,7 @@
 import skillCard from "./skillCard.js";
 import render from "../../../Assets/render.js";
 import generateElement from "../../../Assets/generateEle.js";
+import { slider } from "../../../effects/slider/slider.js";
 
 /**
  * create skill cards:
@@ -8,7 +9,7 @@ import generateElement from "../../../Assets/generateEle.js";
  * 2nd step: create div of skills & select it.
  * 3rd step: create card by map method & get render from them.
  * 4th step: select cards.
- * 5th step: Clone cards to create continuous effect
+ * 5th step: call slider modules
  * @param {Element} item - element to appending to
  * @param {object} data - data of each cards
  */
@@ -26,9 +27,7 @@ export const sliderAbout = (item, data) => {
 
     // 4th:
     const skillsCards = Array.from(skills.children);
+
     // 5th:
-    skillsCards.forEach(card => {
-        const clone = card.cloneNode(true);
-        skills.appendChild(clone);
-    });
+    slider(slillsSlider)
 }
