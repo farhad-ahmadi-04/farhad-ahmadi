@@ -1,7 +1,7 @@
-.skills-sliedr {
+.scroller {
     overflow: hidden;
 
-    .skills {
+    .scroller-inner {
         gap: 2rem;
         animation: 10s slide infinite linear;
         @keyframes slide {
