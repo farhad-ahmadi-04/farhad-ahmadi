@@ -1,4 +1,5 @@
 @import "./skillCard.scss";
+@import "./slider.scss";
 
 .about-me-sec {
     .about-me-item {
@@ -15,25 +16,6 @@
                 @media only screen and (max-width: 1012px) {
                     display: flex;
                     align-items: center;
-                }
-            }
-        }
-        .skills-sliedr {
-            overflow: hidden;
-
-            .skills {
-                gap: 2rem;
-                animation: 10s slide infinite linear;
-                @keyframes slide {
-                    0% {
-                        transform: translateX(3%);
-                    }
-                    100% {
-                        transform: translateX(-100%);
-                    }
-                }
-                &:hover {
-                    animation-play-state: paused;
                 }
             }
         }

@@ -15,19 +15,19 @@ import { slider } from "../../../effects/slider/slider.js";
  */
 export const sliderAbout = (item, data) => {
     // 1st:
-    render(item, generateElement("div", "skills-sliedr row-primary-container"))
-    const slillsSlider = document.querySelector('.skills-sliedr')
+    render(item, generateElement("div", "scooler row-primary-container"))
+    const scoller = document.querySelector('.scooler')
 
     // 2nd:
-    render(slillsSlider, generateElement("div", "skills row-primary-container"))
-    const skills = document.querySelector('.skills')
+    render(slillsSlider, generateElement("div", "scoller-inner row-primary-container"))
+    const scollerInner = document.querySelector('.scoller-inner')
 
     // 3rd: 
-    const cards = data.skill.map(item => render(skills, skillCard(item)))
+    const cards = data.skill.map(item => render(scollerInner, skillCard(item)))
 
     // 4th:
-    const skillsCards = Array.from(skills.children);
+    const skillsCards = Array.from(scollerInner.children);
 
     // 5th:
-    slider(slillsSlider)
+    slider(scoller)
 }
