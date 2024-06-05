@@ -7,5 +7,4 @@ export const slider = (scrollers) => {
 
 const addAnimation = (item) => {
     item.setAttribute("data-animated", true);
-
 }

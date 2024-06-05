@@ -15,11 +15,11 @@ import { slider } from "../../../effects/slider/slider.js";
  */
 export const sliderAbout = (item, data) => {
     // 1st:
-    render(item, generateElement("div", "scroller row-primary-container"))
+    render(item, generateElement("div", "scroller"))
     const scroller = document.querySelector('.scroller')
 
     // 2nd:
-    render(scroller, generateElement("div", "scroller-inner row-primary-container"))
+    render(scroller, generateElement("div", "scroller-inner"))
     const scrollerInner = document.querySelector('.scroller-inner')
 
     // 3rd: 
