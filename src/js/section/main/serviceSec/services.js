@@ -12,9 +12,13 @@ import serviceCard from "./serviceCard.js";
  */
 const services = (data) => {
     const serviceSection = document.querySelector('.service--section')
-    render(serviceSection, label('Services', 'Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam'))
+    render(serviceSection, generateElement("div", "container col-primary-container"))
+    const serviceContainer = document.querySelector('.service--section>.container')
+    console.log(serviceContainer);
 
-    render(serviceSection, generateElement('div', 'service-items'))
+    render(serviceContainer, label('Services', 'Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam'))
+
+    render(serviceContainer, generateElement('div', 'service-items'))
     const serviceItems = document.querySelector('.service-items');
 
     data.serviceCard.forEach(item => {
