@@ -1,61 +1,61 @@
 @import "../../variables.scss";
 @import "../../componentStyle/modal.scss";
 
-#contact-form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0.3rem;
-    gap: 10px;
-    margin: 0 auto;
-
-    .inputs {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px 10px;
-        gap: 10px;
+.cantact-me-sec {
+    width: 100%;
+    #contact-form {
         width: 100%;
-        .input-item {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            .input-tag {
-                outline: none;
-                padding: 0.6rem 0.9rem;
-                border: none;
-                border-radius: 0.2rem;
-                height: fit-content;
-                background-color: $bg--opacity;
-                color: $white--dark--hover;
-                font-size: calc(0.4vw + 10px);
-            }
-            textarea.input-tag {
-                resize: none;
-                height: 100px;
-                font-family: "lato";
-                font-size: calc(0.4vw + 10px);
-            }
-            input::-webkit-outer-spin-button,
-            input::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-            }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0.3rem;
+        gap: 10px;
+        margin: 0 auto;
 
-            .error {
-                border: 1px solid $harm-color;
+        .inputs {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px 10px;
+            gap: 10px;
+            width: 100%;
+            .input-item {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .input-tag {
+                    outline: none;
+                    padding: 0.6rem 0.9rem;
+                    border: none;
+                    border-radius: 0.2rem;
+                    height: fit-content;
+                    background-color: $bg--opacity;
+                    color: $white--dark--hover;
+                    font-size: calc(0.4vw + 10px);
+                }
+                textarea.input-tag {
+                    resize: none;
+                    height: 100px;
+                    font-family: "lato";
+                    font-size: calc(0.4vw + 10px);
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }
+
+                .error {
+                    border: 1px solid $harm-color;
+                }
+
+                .error-message {
+                    color: $harm-color;
+
+                    font-size: calc(8px + 0.4vw);
+                }
             }
-
-            .error-message {
-                color: $harm-color;
-
-                font-size: calc(8px + 0.4vw);
+            @media screen and (min-width: 800px) {
+                grid-template-columns: 1fr 1fr;
             }
         }
-        @media screen and (min-width: 800px) {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    @media screen and (min-width: 600px) {
-        width: 70%;
     }
 }

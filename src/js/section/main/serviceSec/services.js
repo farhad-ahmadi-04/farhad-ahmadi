@@ -14,7 +14,6 @@ const services = (data) => {
     const serviceSection = document.querySelector('.service--section')
     render(serviceSection, generateElement("div", "container col-primary-container"))
     const serviceContainer = document.querySelector('.service--section>.container')
-    console.log(serviceContainer);
 
     render(serviceContainer, label('Services', 'Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam'))
 
