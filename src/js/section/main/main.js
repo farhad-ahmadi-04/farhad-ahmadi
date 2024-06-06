@@ -45,7 +45,7 @@ const sectionsRender = (item) => {
     render(item, generateElement('section', 'landin-section hero-section', undefined, "hero-section"))
     render(item, generateElement('section', 'landin-section service--section', undefined, "service-section"))
     render(item, generateElement('section', 'landin-section about-me-sec', undefined, "aboutMe-section"))
-    render(item, generateElement('section', 'landin-section portfolio-sec col-primary-container', undefined, "portfolio-section"))
+    render(item, generateElement('section', 'landin-section portfolio-sec', undefined, "portfolio-section"))
     render(item, generateElement('section', 'landin-section cantact-me-sec col-primary-container', undefined, "cantactMe-section"))
 }
 

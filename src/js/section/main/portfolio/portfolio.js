@@ -28,7 +28,10 @@ let showCards = 6
 const portfolio = (data) => {
     // 1st step: 
     const portfolioSec = document.querySelector(".portfolio-sec")
-    render(portfolioSec, portfolioLabel("Portfolio"))
+    render(portfolioSec, generateElement("div", "container col-primary-container"))
+
+    const portfolioContainer = document.querySelector(".portfolio-sec>.container")
+    render(portfolioContainer, portfolioLabel("Portfolio"))
     const category = document.querySelector(".category")
 
     // 2nd step:
@@ -39,7 +42,7 @@ const portfolio = (data) => {
     uniqueCategory.map((item, index) => render(category, textBtn(item, "secondary--text-btn button-tab", index + 2)))
 
     // 4th step:
-    render(portfolioSec, generateElement('div', "prtfolio-card-sec", undefined))
+    render(portfolioContainer, generateElement('div', "prtfolio-card-sec", undefined))
     const cardDiv = document.querySelector('.prtfolio-card-sec')
 
     // 5th step:
