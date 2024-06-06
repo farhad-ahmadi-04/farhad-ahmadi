@@ -10,18 +10,23 @@ const footerGen = (logo) => {
         tag: "footer",
         children: [{
             tag: "div",
-            attributes: { class: 'footer-item logo-footer logo' },
-            properties: { textContent: logo }
-        }, {
-            tag: "nav",
-            attributes: { class: "footer-item nav-footer" },
-        }, {
-            tag: "div",
-            attributes: { class: "footer-item media-footer" }
-        }, {
-            tag: "div",
-            attributes: { class: "footer-item contact-footer" }
+            attributes: { class: "container" },
+            children: [{
+                tag: "div",
+                attributes: { class: 'footer-item logo-footer logo' },
+                properties: { textContent: logo }
+            }, {
+                tag: "nav",
+                attributes: { class: "footer-item nav-footer" },
+            }, {
+                tag: "div",
+                attributes: { class: "footer-item media-footer" }
+            }, {
+                tag: "div",
+                attributes: { class: "footer-item contact-footer" }
+            }]
         }]
+
 
     })
 }
