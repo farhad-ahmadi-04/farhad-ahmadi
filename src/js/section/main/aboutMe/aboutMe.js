@@ -4,7 +4,6 @@ import label from "../../../components/lable.js";
 import mainImage from "../../../components/mainImg.js";
 import MyIntroduction from "./MyIntroduction.js";
 import textIconBtn from "../../../components/buttons/textIconBtn.js";
-import skillCard from "./skillCard.js";
 import { sliderAbout } from "./aboutSlider.js";
 
 /**
@@ -20,10 +19,13 @@ import { sliderAbout } from "./aboutSlider.js";
 const aboutMe = (data) => {
     // 1st:
     const aboutMeSec = document.querySelector('.about-me-sec')
-    render(aboutMeSec, label("About me", "front end developer and also UI/UX designer"))
+    render(aboutMeSec, generateElement("div", "container col-primary-container"))
+
+    const aboutMeContainer = document.querySelector('.about-me-sec>.container')
+    render(aboutMeContainer, label("About me", "front end developer and also UI/UX designer"))
 
     // 2nd:
-    render(aboutMeSec, generateElement("div", "about-me-item col-primary-container"))
+    render(aboutMeContainer, generateElement("div", "about-me-item col-primary-container"))
     const aboutMeItem = document.querySelector('.about-me-item')
 
     // 3rd:

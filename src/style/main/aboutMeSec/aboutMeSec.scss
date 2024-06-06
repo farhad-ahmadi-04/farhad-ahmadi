@@ -2,20 +2,23 @@
 @import "./skillCard.scss";
 
 .about-me-sec {
-    .about-me-item {
-        gap: 30px;
-        .about-me-sec-item {
-            @media only screen and (max-width: 1012px) {
-                justify-content: center;
-                flex-wrap: wrap;
-                text-align: center;
-                gap: 0;
-            }
-            .introduction-item {
-                gap: 30px;
+    width: 100%;
+    .container {
+        .about-me-item {
+            gap: 30px;
+            .about-me-sec-item {
                 @media only screen and (max-width: 1012px) {
-                    display: flex;
-                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    gap: 0;
+                }
+                .introduction-item {
+                    gap: 30px;
+                    @media only screen and (max-width: 1012px) {
+                        display: flex;
+                        align-items: center;
+                    }
                 }
             }
         }
