@@ -9,7 +9,7 @@ import { scroll } from "./scroll.js";
  */
 export const navScroll = () => {
     // 5th:
-    const listItems = document.querySelectorAll('.list-items')
+    const listItems = document.querySelectorAll('.list-items') && document.querySelectorAll('.mobile-nav')
     listItems.forEach(item => {
         // 5-1:
         item.addEventListener("click", (e) => {
