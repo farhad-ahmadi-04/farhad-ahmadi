@@ -24,7 +24,7 @@ const mobileNavbar = (pos) => {
 
     // 3rd:
     const hireMeBtn = document.querySelector('.hire-me')
-    render(hireMeBtn, textBtn('Hire me', 'primary--text-btn'))
+    render(hireMeBtn, textBtn('Hire me', 'primary--text-btn hireMe--btn'))
 
     // 4th:
     const navMenu = document.querySelector('.mobile-navbar'),
