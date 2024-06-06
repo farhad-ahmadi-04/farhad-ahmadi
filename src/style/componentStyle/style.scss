@@ -4,6 +4,22 @@ a {
     cursor: none;
 }
 
+// container:----------
+.container {
+    width: 100%;
+    margin: 0 auto;
+    @media only screen and (min-width: 550px) {
+        width: 90%;
+    }
+    @media only screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+    @media only screen and (min-width: 1580px) {
+        width: 1458px;
+    }
+}
+// --------:container
+
 // corsor style--------
 @media (hover: hover) and (pointer: fine) {
     /* Your mouse-specific styles here */
