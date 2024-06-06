@@ -4,9 +4,11 @@
  * @param {string} url - url of a tag
  * @param {string} name - name of file to download
  */
-export const downloadURI = (tag, url, name) => {
-    tag.download = name; // <- name instead of 'name'
+export const downloadURI = (url, name) => {
+    const tag = document.createElement('a');
+    tag.download = name;
     tag.href = url;
+    document.body.appendChild(tag);
     tag.click();
-    tag.remove();
+    document.body.removeChild(tag);
 }

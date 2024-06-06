@@ -1,3 +1,4 @@
+import { downloadURI } from "../../../Assets/downloadFile.js";
 import render from "../../../Assets/render.js";
 import iconBtn from "../../../components/buttons/iconbtn.js";
 import mainImage from "../../../components/mainImg.js";
@@ -25,6 +26,12 @@ const hero = (data) => {
     // ---get render from main image in hero section.
     const heroSecContainer = heroSection.querySelector(".container")
     render(heroSecContainer, mainImage(data.about, "max"));
+
+    const downloalBtn = document.querySelector(".download-resume")
+    downloalBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        downloadURI(data.about.resume, "Farhad-Ahmadi-resume.pdf")
+    })
 }
 
 
