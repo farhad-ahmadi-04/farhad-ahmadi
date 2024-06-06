@@ -6,7 +6,6 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 30px;
-
         .menu-logo {
             display: flex;
             flex-direction: column;
@@ -41,15 +40,6 @@ header {
             @media only screen and (max-width: 701px) {
                 display: none;
             }
-        }
-        @media only screen and (max-width: 701px) {
-            position: fixed;
-            left: 0;
-            right: 0;
-            box-shadow:
-                rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
     }
 }

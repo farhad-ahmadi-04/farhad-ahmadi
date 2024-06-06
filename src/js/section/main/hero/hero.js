@@ -13,16 +13,18 @@ import heroItem from "./heroItem.js";
  * @param {object} data - data json server
  * @param {object} position - object of elements
  */
-const hero = (data, position) => {
+const hero = (data) => {
+    const heroSection = document.querySelector('.hero-section');
     // hero: get render hero item---
-    render(position, heroItem(data));
+    render(heroSection, heroItem(data));
     // ---set icon btn in hero item
     const heroMedia = document.querySelector('.hero-media')
     data.socialMedia.forEach(item => {
         render(heroMedia, iconBtn(item.icon, item.alt, item.address, "icon-btn"));
     })
     // ---get render from main image in hero section.
-    render(position, mainImage(data.about, "max"));
+    const heroSecContainer = heroSection.querySelector(".container")
+    render(heroSecContainer, mainImage(data.about, "max"));
 }
 
 

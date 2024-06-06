@@ -28,10 +28,8 @@ export const loadMain = (app) => {
     const obj = fetchData("src/js/Assets/data.json")
     // if featching is seccess, so call this function
     obj.then(data => {
-        // find positions for push 
-        const heroSection = document.querySelector('.hero-section');
         // call function for push data
-        sectionData(data, heroSection)
+        sectionData(data)
     })
         // if not,so call this
         .catch(err => { console.log(err) });
@@ -44,7 +42,7 @@ export const loadMain = (app) => {
 */
 const sectionsRender = (item) => {
     // get renderf of hero section
-    render(item, generateElement('section', 'landin-section hero-section row-primary-container', undefined, "hero-section"))
+    render(item, generateElement('section', 'landin-section hero-section', undefined, "hero-section"))
     render(item, generateElement('section', 'landin-section service--section col-primary-container', undefined, "service-section"))
     render(item, generateElement('section', 'landin-section about-me-sec col-primary-container', undefined, "aboutMe-section"))
     render(item, generateElement('section', 'landin-section portfolio-sec col-primary-container', undefined, "portfolio-section"))
@@ -58,11 +56,10 @@ const sectionsRender = (item) => {
 /**
  * set component of sections => set data to component and then send it to sections.
  * @param {object} data - data fron json server
- * @param {object} position - object of html element 
 */
-const sectionData = (data, position) => {
+const sectionData = (data) => {
     // hero components
-    hero(data, position);
+    hero(data);
 
     // service components:
     services(data)
