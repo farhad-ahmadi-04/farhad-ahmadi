@@ -41,7 +41,11 @@ const heroItem = (data) => {
                     children: [{
                         tag: textBtn("Hire me", "primary--text-btn hireMe--btn"),
                     }, {
-                        tag: textBtn("Download CV", "outline-primary--text-btn"),
+                        tag: "a",
+                        properties: { href: "#" },
+                        children: [{
+                            tag: textBtn("Download CV", "outline-primary--text-btn")
+                        }]
                     }],
                 }, {
                     tag: "div",
