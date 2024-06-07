@@ -32,7 +32,7 @@ const portfolioCard = (category, data, icon) => {
             }, {
                 tag: 'p',
                 attributes: { class: "portfolio-body-description primary--text" },
-                properties: { textContent: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups." },
+                properties: { textContent: data.description },
             }, {
                 tag: 'a',
                 properties: { href: data.sourceCode },
