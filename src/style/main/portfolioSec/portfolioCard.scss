@@ -51,14 +51,28 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .portfolio-name:hover {
-                transition: all 0.2s;
-                color: $white--dark;
-                text-decoration: none;
+            .portfolio-name {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:hover {
+                    transition: all 0.2s;
+                    color: $white--dark;
+                    text-decoration: none;
+                }
             }
             .portfolio-category {
                 color: $white--dark--active;
             }
+        }
+        .portfolio-body-description {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .portfolio-body-description,
         a:not(.portfolio-body-label > a) {
