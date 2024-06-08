@@ -1,4 +1,4 @@
-import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
+import domGenerator from "dom-generator";
 /**
  * create my image componenet
  * @param {string} image - src of image

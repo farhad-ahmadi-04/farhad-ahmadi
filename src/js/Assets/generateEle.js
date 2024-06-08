@@ -1,4 +1,4 @@
-import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
+import domGenerator from "dom-generator";
 
 /**
  * create html element (must of the time use for create sections)

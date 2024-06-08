@@ -1,4 +1,4 @@
-import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
+import domGenerator from "dom-generator";
 /**
  * create text button component to use everywhere
  * @param {string} text - value of textBtn

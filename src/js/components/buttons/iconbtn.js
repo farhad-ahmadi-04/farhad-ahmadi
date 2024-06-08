@@ -1,5 +1,4 @@
-import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
-
+import domGenerator from "dom-generator";
 /**
  * create component of icon btn to use everywhere we want
  * @param {string} image - icon of btn
