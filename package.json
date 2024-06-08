@@ -1,14 +1,16 @@
 {
+  "name": "farhad-ahmadi",
+  "version": "1.0.0",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
   "dependencies": {
     "dom-generator": "^1.1.7"
   },
   "devDependencies": {
-    "vite": "^5.2.13"
-  },
-    "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "serve": "vite preview"
-    }
-  
+    "rollup": "^2.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-commonjs": "^21.0.0"
+  }
 }
