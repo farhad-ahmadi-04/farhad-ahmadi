@@ -1,4 +1,4 @@
-import domGenerator from "dom-generator";
+import domGenerator from "../../../../node_modules/dom-generator/dist/domGenerator.js";
 /**
  * create footer stracture
  * @param {string} logo - logo of site(It's text) 

@@ -1,4 +1,4 @@
-import domGenerator from "dom-generator";
+import domGenerator from "../../../../../node_modules/dom-generator/dist/domGenerator.js";
 import textIconBtn from "../../../components/buttons/textIconBtn.js";
 
 /**

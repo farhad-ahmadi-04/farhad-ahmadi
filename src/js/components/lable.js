@@ -1,4 +1,4 @@
-import domGenerator from "dom-generator";
+import domGenerator from "../../../node_modules/dom-generator/dist/domGenerator.js";
 /**
  * this component will use as a title of section
  * @param {string} label - title of template
