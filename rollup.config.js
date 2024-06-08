@@ -6,7 +6,7 @@ export default {
     input: 'src/js/index.js',
     output: {
         file: 'dist/bundle.js',
-        format: 'esm',
+        format: 'iife',
         name: 'MyBundle',
         inlineDynamicImports: true,
         preserveEntrySignatures: false
