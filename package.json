@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "main": "dist/bundle.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "dom-generator": "^1.1.7"
   },
   "devDependencies": {
-    "rollup": "^2.0.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
-    "@rollup/plugin-commonjs": "^21.0.0"
+    "gh-pages": "^6.1.1",
+    "rollup": "^2.0.0"
   }
 }

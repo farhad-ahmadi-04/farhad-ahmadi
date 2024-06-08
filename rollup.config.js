@@ -5,11 +5,10 @@ import commonjs from '@rollup/plugin-commonjs';
 export default {
     input: 'src/js/index.js',
     output: {
-        file: 'dist/bundle.js',
-        format: 'iife',
-        name: 'MyBundle',
-        inlineDynamicImports: true,
+        dir: 'dist',
+        format: 'esm',
         preserveEntrySignatures: false
     },
     plugins: [resolve(), commonjs()]
 };
+
