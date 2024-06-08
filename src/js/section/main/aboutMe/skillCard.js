@@ -1,5 +1,4 @@
-import domGenerator from "../../../../../node_modules/dom-generator/dist/domGenerator.js";
-
+import domGenerator from "dom-generator";
 /**
  * create skill card component with dom generator 
  * @param {object} data - data of crad(image, alt, texts) from json
