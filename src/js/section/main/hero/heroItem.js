@@ -1,5 +1,5 @@
 import domGenerator from "dom-generator";
-import textBtn from "../../../components/buttons/textBtn.js";
+import textBtn from "@/components/buttons/textBtn.js";
 
 const heroItem = (data) => {
     return domGenerator(

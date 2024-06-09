@@ -1,8 +1,8 @@
-import render from "../../Assets/render.js";
-import textBtn from "../../components/buttons/textBtn.js";
-import { liList } from "../../components/list.js";
-import mobileNavGen from "../../components/nav/mobileNavGen.js";
-import ul from "../../components/nav/ulList.js";
+import render from "@/Assets/render.js";
+import textBtn from "@/components/buttons/textBtn.js";
+import { liList } from "@/components/list.js";
+import mobileNavGen from "@/components/nav/mobileNavGen.js";
+import ul from "@/components/nav/ulList.js";
 
 /**
  * create mobile navbar

@@ -1,8 +1,8 @@
-import { downloadURI } from "../../../Assets/downloadFile.js";
-import render from "../../../Assets/render.js";
-import iconBtn from "../../../components/buttons/iconbtn.js";
-import mainImage from "../../../components/mainImg.js";
-import heroItem from "./heroItem.js";
+import { downloadURI } from "@/Assets/downloadFile.js";
+import render from "@/Assets/render.js";
+import iconBtn from "@/components/buttons/iconbtn.js";
+import mainImage from "@/components/mainImg.js";
+import heroItem from "@/heroItem.js";
 
 
 

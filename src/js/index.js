@@ -1,8 +1,8 @@
 // main js file
-import header from "./section/header/header.js";
-import { loadMain } from "./section/main/main.js";
-import footer from "./section/footer/footer.js";
-import "../style/index.scss";
+import header from "@/section/header/header.js";
+import { loadMain } from "@/section/main/main.js";
+import footer from "@/section/footer/footer.js";
+import "@/style/index.scss";
 
 const app = document.querySelector('.app')
 

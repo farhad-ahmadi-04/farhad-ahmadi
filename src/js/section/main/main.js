@@ -1,12 +1,12 @@
 import domGenerator from "dom-generator";
-import fetchData from "../../Assets/fetchData.js";
-import render from "../../Assets/render.js";
+import fetchData from "@/Assets/fetchData.js";
+import render from "@/Assets/render.js";
 import services from "./serviceSec/services.js";
-import generateElement from "../../Assets/generateEle.js";
-import hero from "./hero/hero.js";
-import aboutMe from "./aboutMe/aboutMe.js";
-import portfolio from "./portfolio/portfolio.js";
-import cantactMe from "./cantactMe/cantactMe.js";
+import generateElement from "@/Assets/generateEle.js";
+import hero from "@/hero/hero.js";
+import aboutMe from "@/aboutMe/aboutMe.js";
+import portfolio from "@/portfolio/portfolio.js";
+import cantactMe from "@/cantactMe/cantactMe.js";
 
 
 /**

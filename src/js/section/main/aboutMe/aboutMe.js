@@ -1,10 +1,10 @@
-import generateElement from "../../../Assets/generateEle.js";
-import render from "../../../Assets/render.js";
-import label from "../../../components/lable.js";
-import mainImage from "../../../components/mainImg.js";
-import MyIntroduction from "./MyIntroduction.js";
-import textIconBtn from "../../../components/buttons/textIconBtn.js";
-import { sliderAbout } from "./aboutSlider.js";
+import generateElement from "@/Assets/generateEle.js";
+import render from "@/Assets/render.js";
+import label from "@/components/lable.js";
+import mainImage from "@/components/mainImg.js";
+import MyIntroduction from "@/MyIntroduction.js";
+import textIconBtn from "@/components/buttons/textIconBtn.js";
+import { sliderAbout } from "@/aboutSlider.js";
 
 /**
  * create about me section by get render from components

@@ -1,4 +1,4 @@
-import { scroll } from "./scroll.js";
+import { scroll } from "@/scroll.js";
 
 /**
  * 5th step: select ul element

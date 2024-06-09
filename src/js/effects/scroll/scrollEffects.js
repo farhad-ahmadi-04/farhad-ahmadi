@@ -1,6 +1,6 @@
-import { asyncDelay } from '../../Assets/asyncDelay.js'
-import { scroll } from './scroll.js';
-import { navScroll } from "./navScroll.js";
+import { asyncDelay } from '@/Assets/asyncDelay.js'
+import { scroll } from '@/scroll.js';
+import { navScroll } from "@/navScroll.js";
 
 
 /**

@@ -1,7 +1,7 @@
-import skillCard from "./skillCard.js";
-import render from "../../../Assets/render.js";
-import generateElement from "../../../Assets/generateEle.js";
-import { slider } from "../../../effects/slider/slider.js";
+import skillCard from "@/skillCard.js";
+import render from "@/Assets/render.js";
+import generateElement from "@/Assets/generateEle.js";
+import { slider } from "@/effects/slider/slider.js";
 
 /**
  * create skill cards:

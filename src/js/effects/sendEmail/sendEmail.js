@@ -1,5 +1,5 @@
-import initEmail from "./initEmail.js"
-import { validateForm } from "./validation.js";
+import initEmail from "@/initEmail.js"
+import { validateForm } from "@/validation.js";
 /**
  * when user submit for this function call another function to send email
  * 1st step: select form & inputs.

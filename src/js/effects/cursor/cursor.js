@@ -1,5 +1,5 @@
-import generateElement from "../../Assets/generateEle.js"
-import render from "../../Assets/render.js"
+import generateElement from "@/Assets/generateEle.js"
+import render from "@/Assets/render.js"
 
 
 export const cursor = (app) => {

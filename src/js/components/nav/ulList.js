@@ -1,5 +1,5 @@
 import domGenerator from "dom-generator";
-import render from "../../Assets/render.js";
+import render from "@/Assets/render.js";
 
 /**
  * 1st step: create ul element with
