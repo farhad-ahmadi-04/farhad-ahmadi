@@ -25,7 +25,7 @@ export const loadMain = (app) => {
     sectionsRender(main)
 
     //featch data
-    const obj = fetchData("data.json")
+    const obj = fetchData("./src/js/Assets/data.json")
     // if featching is seccess, so call this function
     obj.then(data => {
         // call function for push data
