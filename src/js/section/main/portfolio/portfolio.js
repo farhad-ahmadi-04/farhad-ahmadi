@@ -1,8 +1,8 @@
-import generateElement from "@/Assets/generateEle.js";
-import render from "@/Assets/render.js";
-import textBtn from "@/components/buttons/textBtn.js";
-import portfolioCard from "@/portfolioCrad.js";
-import portfolioLabel from "@/portfolioLabel.js";
+import generateElement from "@/js/Assets/generateEle.js";
+import render from "@/js/Assets/render.js";
+import textBtn from "@/js/components/buttons/textBtn.js";
+import portfolioCard from "@/js/section/main/portfolio/portfolioCrad.js";
+import portfolioLabel from "@/js/section/main/portfolio/portfolioLabel.js";
 
 let showCardsStep = 0
 let showCards = 6

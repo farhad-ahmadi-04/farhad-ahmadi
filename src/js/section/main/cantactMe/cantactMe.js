@@ -1,8 +1,8 @@
-import render from "@/Assets/render.js";
-import label from "@/components/lable.js";
-import contactForm from "@/contactForm.js";
-import { inputCom, textareaCom } from "@/contactInput.js";
-import generateElement from "@/Assets/generateEle.js";
+import render from "@/js/Assets/render.js";
+import label from "@/js/components/lable.js";
+import contactForm from "@/js/section/main/cantactMe/contactForm.js";
+import { inputCom, textareaCom } from "@/js/section/main/cantactMe/contactInput.js";
+import generateElement from "@/js/Assets/generateEle.js";
 
 /**
  * create contact me section with all nessesaries components:

@@ -1,7 +1,7 @@
-import { checkName } from "@/validateInputs/validateName.js";
-import { checkPhoneNumber } from "@/validateInputs/validatePhoneNumber.js";
-import { checkMail } from "@/validateInputs/validateMail.js";
-import { checkMessage } from "@/validateInputs/validateMessage.js";
+import { checkName } from "@/js/effects/sendEmail/validateInputs/validateName.js";
+import { checkPhoneNumber } from "@/js/effects/sendEmail/validateInputs/validatePhoneNumber.js";
+import { checkMail } from "@/js/effects/sendEmail/validateInputs/validateMail.js";
+import { checkMessage } from "@/js/effects/sendEmail/validateInputs/validateMessage.js";
 
 /**
  * loop on inputs and check it by call checkInput function

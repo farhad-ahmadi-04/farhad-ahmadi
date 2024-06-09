@@ -1,7 +1,7 @@
-import generateElement from "@/Assets/generateEle.js";
-import label from "@/components/lable.js";
-import render from "@/Assets/render.js";
-import serviceCard from "@/serviceCard.js";
+import generateElement from "@/js/Assets/generateEle.js";
+import label from "@/js/components/lable.js";
+import render from "@/js/Assets/render.js";
+import serviceCard from "@/js/section/main/serviceSec/serviceCard.js";
 
 /**
  * add components to sevices section:

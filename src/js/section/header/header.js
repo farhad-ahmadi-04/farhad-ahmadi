@@ -1,9 +1,9 @@
-import render from "@/Assets/render.js";
-import { liList } from "@/components/list.js";
-import headerGen from "@/headerGen.js";
-import ul from "@/components/nav/ulList.js";
-import textBtn from "@/components/buttons/textBtn.js";
-import mobileNavbar from "@/mobileNavbar.js";
+import render from "@/js//Assets/render.js";
+import { liList } from "@/js//components/list.js";
+import headerGen from "@/js/section/header/headerGen.js";
+import ul from "@/js//components/nav/ulList.js";
+import textBtn from "@/js//components/buttons/textBtn.js";
+import mobileNavbar from "@/js/section/header/mobileNavbar.js";
 
 /**
  * create header by using component

@@ -1,4 +1,4 @@
-import { tabEffect } from '@/tabEffect.js';
+import { tabEffect } from '@/js/effects/tab/tabEffect.js';
 /**
  * select div and when user click on tab tabEffect fynction will call
  */

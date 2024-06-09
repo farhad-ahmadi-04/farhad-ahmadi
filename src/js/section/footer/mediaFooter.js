@@ -1,5 +1,5 @@
-import render from "@/Assets/render.js"
-import iconBtn from "@/components/buttons/iconbtn.js"
+import render from "@/js/Assets/render.js"
+import iconBtn from "@/js/components/buttons/iconbtn.js"
 /**
  * loop on array from json file to get render from each item
  * @param {Array} media - all social media
