@@ -1,15 +1,19 @@
 @import "./componentStyle/style.scss";
 @import "./header/mobileNvbar.scss";
 @import "./componentStyle/scroll.scss";
+@import "@/style/fontStyle.scss";
 
-.app {
-    background-color: #121212;
-    font-family: "lato";
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: none;
-    @import "./header/header.scss";
-    @import "./main/main.scss";
-    @import "./footer/footer.scss";
+    .app {
+        background-color: #121212;
+        font-family: "primary-lato";
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: none;
+        @import "./header/header.scss";
+        @import "./main/main.scss";
+        @import "./footer/footer.scss";
+    }
 }

@@ -18,7 +18,7 @@ const obj = fetchData("src/js/Assets/data.json")
  * 4th: select contact-footer div & grt rendr from data to this div...:)
  * @param {HTMLElement} app - html element to get render 
  */
-const footer = (app) => {
+const footer = async (app) => {
     // 1st step:
     render(app, footerGen("feri"))
 
@@ -29,12 +29,12 @@ const footer = (app) => {
     // 3nd & 4th :step:
     const mediaFooterDiv = document.querySelector(".media-footer")
     const contactFooterDiv = document.querySelector('.contact-footer')
-    obj.then(data => {
-        // 3:
-        mediaFooter(data.socialMedia, mediaFooterDiv);
-        // 4:
-        contactFooterCom(data.about, data.icon, contactFooterDiv)
-    }).
-        catch(err => console.error(err))
+
+    const data = await import("@/js/Assets/data.json")
+
+    // 3:
+    mediaFooter(data.socialMedia, mediaFooterDiv);
+    // 4:
+    contactFooterCom(data.about, data.icon, contactFooterDiv)
 }
 export default footer

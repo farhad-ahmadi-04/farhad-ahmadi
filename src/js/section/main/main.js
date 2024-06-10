@@ -25,9 +25,9 @@ export const loadMain = async (app) => {
     sectionsRender(main)
 
 
-    const test = await import("@/js/Assets/data.json")
+    const data = await import("@/js/Assets/data.json")
     render(app, main)
-    sectionData(test)
+    sectionData(data)
 }
 
 /**
