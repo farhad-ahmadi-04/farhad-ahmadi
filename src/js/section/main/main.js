@@ -1,5 +1,5 @@
 import domGenerator from "dom-generator";
-import fetchData from "@/js//Assets/fetchData.js";
+// import fetchData from "@/js//Assets/fetchData.js";
 import render from "@/js//Assets/render.js";
 import services from "@/js/section/main/serviceSec/services.js";
 import generateElement from "@/js/Assets/generateEle.js";
@@ -12,11 +12,11 @@ import cantactMe from "@/js/section/main/cantactMe/cantactMe.js";
 /**
  * 1st step: create main element
  * 2nd step: get render from sections
- * 3rd step: fetch data from json file
+ * 3rd step: import data from json file
  * 4th step: get render form main in direction
  * @param {Element} app direction for appending to
  */
-export const loadMain = (app) => {
+export const loadMain = async (app) => {
     // create element
     const main = domGenerator({
         tag: 'main',
@@ -24,17 +24,10 @@ export const loadMain = (app) => {
 
     sectionsRender(main)
 
-    //featch data
-    const obj = fetchData("@/js/Assets/data.json")
-    // if featching is seccess, so call this function
-    obj.then(data => {
-        // call function for push data
-        sectionData(data)
-    })
-        // if not,so call this
-        .catch(err => { console.log(err) });
 
+    const test = await import("@/js/Assets/data.json")
     render(app, main)
+    sectionData(test)
 }
 
 /**
