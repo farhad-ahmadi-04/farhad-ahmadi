@@ -13,19 +13,19 @@
     {
       "platform": "instagram",
       "address": "https://www.instagram.com/farhad_ahmadi_04",
-      "icon": "/instagram.svg",
+      "icon": "public/instagram.svg",
       "alt": "instagram icon farhad"
     },
     {
       "platform": "github",
       "address": "https://github.com/farhad-ahmadi-04",
-      "icon": "/github.svg",
+      "icon": "public/github.svg",
       "alt": "github icon farhad"
     },
     {
       "platform": "LinkedIn",
       "address": "https://www.linkedin.com/in/farhad-ahmadi-217a26288/",
-      "icon": "/linkdin.svg",
+      "icon": "public/linkdin.svg",
       "alt": "linkedin icon farhad"
     }
   ],
@@ -45,19 +45,19 @@
   ],
   "serviceCard": [
     {
-      "src": "/developer-64.png",
+      "src": "public/developer-64.png",
       "alt": "developer icon farhad",
       "title": "front-end",
       "description": "A front-end developer is responsible for designing and creating the visual and interactive parts of a website, including web pages and user interfaces."
     },
     {
-      "src": "/ui-designer.png",
+      "src": "public/ui-designer.png",
       "alt": "ui designer icon farhad",
       "title": "UI designer",
       "description": "A UI designer is an artist who crafts the visual and aesthetic details of websites and applications to make them beautiful and functional."
     },
     {
-      "src": "/ui-designer.png",
+      "src": "public/ui-designer.png",
       "alt": "ux designer icon farhad",
       "title": "Ux designer",
       "description": "A UX designer is a strategist who designs the overall experience of a product or website to ensure it is intuitive, seamless, and enjoyable for the user."
@@ -67,31 +67,31 @@
     {
       "tool": "figma",
       "avrage": 70,
-      "img": "/Figma.svg",
+      "img": "public/Figma.svg",
       "alt": "figma icon"
     },
     {
       "tool": "Html",
       "avrage": 95,
-      "img": "/Html.svg",
+      "img": "public/Html.svg",
       "alt": "html icon"
     },
     {
       "tool": "css",
       "avrage": 95,
-      "img": "/Css.svg",
+      "img": "public/Css.svg",
       "alt": "css icon"
     },
     {
       "tool": "java script",
       "avrage": 80,
-      "img": "/js.svg",
+      "img": "public/js.svg",
       "alt": "javaScript icon"
     },
     {
       "tool": "react",
       "avrage": 20,
-      "img": "/react.svg",
+      "img": "public/react.svg",
       "alt": "react icon"
     },
     {
@@ -103,21 +103,21 @@
     {
       "tool": "git",
       "avrage": 80,
-      "img": "/Git.svg",
+      "img": "public/Git.svg",
       "alt": "git icon"
     },
     {
       "tool": "bootstrap",
       "avrage": 95,
-      "img": "/Bootstrap.svg",
+      "img": "public/Bootstrap.svg",
       "alt": "Bootstrap icon"
     }
   ],
   "icon": {
-    "textIcon": "/Download.svg",
-    "arrowRight": "/Arrow-Right.svg",
-    "email": "/email.svg",
-    "phone": "/phone.svg"
+    "textIcon": "public/Download.svg",
+    "arrowRight": "public/Arrow-Right.svg",
+    "email": "public/email.svg",
+    "phone": "public/phone.svg"
   },
   "portfolio": {
     "js": [
@@ -125,7 +125,7 @@
         "name": "car insurance",
         "repository": "https://farhad-ahmadi-04.github.io/Car-insurance/",
         "sourceCode": "https://github.com/farhad-ahmadi-04/Car-insurance",
-        "img": "/car-insurance-image.png",
+        "img": "public/car-insurance-image.png",
         "description": "Here you can calculate your car insurance, you choose your car, carYear and type of insurance and get your price, all these paramets have effect on price.",
         "alt": "car insurance project"
       },
@@ -133,7 +133,7 @@
         "name": "Speech app",
         "repository": "https://farhad-ahmadi-04.github.io/Speech-App/",
         "sourceCode": "https://github.com/farhad-ahmadi-04/Speech-App",
-        "img": "/Speech-app-image.png",
+        "img": "public/Speech-app-image.png",
         "description": "Convert speech to text in this project, You can also download the text conversion project.",
         "alt": "Speech App project"
       },
@@ -141,7 +141,7 @@
         "name": "Validation project",
         "repository": "https://farhad-ahmadi-04.github.io/validation-project/",
         "sourceCode": "https://github.com/farhad-ahmadi-04/validation-project",
-        "img": "/Validation-image.png",
+        "img": "public/Validation-image.png",
         "description": "I've worked with HTML, css and js for this project, this ptoject is for learning how to create form validation",
         "alt": "Validation project"
       },
@@ -149,7 +149,7 @@
         "name": "Calculator",
         "repository": "https://mehrdadj2005.github.io/calculator/",
         "sourceCode": "https://github.com/mehrdadj2005/calculator",
-        "img": "/calculator-image.png",
+        "img": "public/calculator-image.png",
         "description": "this is not just caculator project, in this project we have bmi, Time unit conversion, Convert length units and calculator so, you are able to use all of them",
         "alt": "calculator project"
       },
@@ -157,7 +157,7 @@
         "name": "Game-of-human-007-",
         "repository": "https://farhad-ahmadi-04.github.io/Game-of-human-007-/",
         "sourceCode": "https://github.com/farhad-ahmadi-04/Game-of-human-007-",
-        "img": "/game-of-human-image.png",
+        "img": "public/game-of-human-image.png",
         "description": "A two-player game with the theme of Batman, where one person should move the character of Batman with the keyboard, and one person should try to click on the character of Batman with the mouse and kill him, the game has time, the character of Batman must survive in this time, but it has There are 5 lives, if it is clicked 5 times, the one with the mouse wins the game.",
         "alt": "Game-of-human-007 project"
       }
