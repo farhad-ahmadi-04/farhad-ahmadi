@@ -39,7 +39,7 @@ const portfolioCard = (category, data, icon) => {
                 tag: 'a',
                 properties: { href: data.sourceCode },
                 children: [{
-                    tag: textIconBtn(icon.arrowRight, "Arrow-Right", "source code", "secondary--textIcon-btn")
+                    tag: textIconBtn(icon.arrowRight, "Arrow-Right", `${category.name === "js" ? 'source code' : 'View design'}`, "secondary--textIcon-btn")
                 }]
             }]
         }]
