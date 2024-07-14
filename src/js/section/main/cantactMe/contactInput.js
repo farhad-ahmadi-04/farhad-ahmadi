@@ -1,4 +1,5 @@
 import domGenerator from "dom-generator";
+import "@/js/section/main/cantactMe/contactMeSec.scss";
 /**
  * create input component
  * @param {string} type - type of input 

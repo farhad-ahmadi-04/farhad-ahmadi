@@ -62,7 +62,15 @@ const sendMail = () => {
                 timer: 2000
             });
             submitBtn.value = "Send";
+            document.querySelector('#contact-form').reset()
         }, (err) => {
-            console.log(err);
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: err.message,
+                showConfirmButton: false,
+                timer: 2000
+            });
+            submitBtn.value = "Send";
         });
 }
