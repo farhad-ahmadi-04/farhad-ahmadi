@@ -1,4 +1,6 @@
 import domGenerator from "dom-generator";
+import "@/js/section/footer/footer.scss";
+
 /**
  * create footer stracture
  * @param {string} logo - logo of site(It's text) 

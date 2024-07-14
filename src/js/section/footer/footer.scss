@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import "@/style/variables.scss";
 
 footer {
     padding: 30px;
@@ -14,6 +14,9 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
+    }
+    .media-footer {
+        margin-bottom: 10px;
     }
     .contact-footer {
         gap: 40px;

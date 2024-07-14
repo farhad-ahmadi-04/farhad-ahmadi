@@ -1,6 +1,5 @@
-@import "./componentStyle/style.scss";
-// @import "./header/mobileNvbar.scss";
-@import "./componentStyle/scroll.scss";
+@import "@/style/componentStyle/style.scss";
+@import "@/style/componentStyle/scroll.scss";
 @import "@/style/fontStyle.scss";
 
 body {
@@ -12,8 +11,5 @@ body {
         padding: 0;
         box-sizing: border-box;
         cursor: none;
-        // @import "./header/header.scss";
-        // @import "./main/main.scss";
-        // @import "./footer/footer.scss";
     }
 }
