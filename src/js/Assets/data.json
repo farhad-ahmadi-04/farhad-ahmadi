@@ -36,7 +36,7 @@
     },
     {
       "text": "Project done",
-      "number": "10"
+      "number": "5"
     },
     {
       "text": "Happy Clients",
@@ -111,6 +111,12 @@
       "avrage": 95,
       "img": "./Bootstrap.svg",
       "alt": "Bootstrap icon"
+    },
+    {
+      "tool": "tailwind",
+      "avrage": 90,
+      "img": "./tailwind.svg",
+      "alt": "tailwind icon"
     }
   ],
   "icon": {

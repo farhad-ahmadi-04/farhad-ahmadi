@@ -1,11 +1,13 @@
 import generateElement from "@/js/Assets/generateEle.js";
 import render from "@/js/Assets/render.js";
 import label from "@/js/components/lable.js";
+import { downloadURI } from "@/js/Assets/downloadFile.js"
 import mainImage from "@/js/components/mainImg.js";
 import MyIntroduction from "@/js/section/main/aboutMe/MyIntroduction.js";
 import textIconBtn from "@/js/components/buttons/textIconBtn.js";
 import { sliderAbout } from "@/js/section/main/aboutMe/aboutSlider.js";
 import "@/js/section/main/aboutMe/aboutMeSec.scss";
+import textBtn from "../../../components/buttons/textBtn";
 
 /**
  * create about me section by get render from components
@@ -40,7 +42,7 @@ const aboutMe = (data) => {
     render(aboutMeSecItem, generateElement("div", "introduction-item col-primary-container "))
     const introductionItem = document.querySelector('.introduction-item')
     render(introductionItem, MyIntroduction(data.about.aboutMe));
-    render(introductionItem, textIconBtn(data.icon.textIcon, "download icon", "Download CV", "primary--textIcon-btn"));
+    render(introductionItem, textBtn("Hire me", "primary--text-btn hireMe--btn"));
 
     // 6th:
     sliderAbout(aboutMeItem, data)

@@ -81,6 +81,7 @@ a {
     background: linear-gradient(to bottom right, $orange--normal 0, $orange--normal--hover 100%);
     padding: 12px 40px;
     cursor: none;
+    width: fit-content;
     @media only screen and (max-width: 700px) {
         font-size: 12px;
         padding: 10px 30px;
