@@ -1,5 +1,5 @@
-@import "../componentStyle//style.scss";
-@import "../variables.scss";
+@import "@/style/componentStyle/style.scss";
+@import "@/style/variables.scss";
 
 .mobile-navbar {
     background-color: $gray--dark;

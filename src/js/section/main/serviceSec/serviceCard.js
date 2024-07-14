@@ -1,4 +1,5 @@
 import domGenerator from "dom-generator";
+import "@/js/section/main/serviceSec/serviceCard.scss";
 
 /**
  * create service card 

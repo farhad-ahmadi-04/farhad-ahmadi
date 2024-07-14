@@ -7,6 +7,7 @@ import hero from "@/js/section/main/hero/hero.js";
 import aboutMe from "@/js/section/main/aboutMe/aboutMe.js";
 import portfolio from "@/js/section/main/portfolio/portfolio.js";
 import cantactMe from "@/js/section/main/cantactMe/cantactMe.js";
+import "@/js/section/main/main.scss"
 
 
 /**

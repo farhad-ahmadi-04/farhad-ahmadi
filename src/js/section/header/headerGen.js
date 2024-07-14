@@ -1,4 +1,5 @@
 import domGenerator from "dom-generator";
+import "@/js/section/header/header.scss";
 
 // create header by dom-generator
 const headerGen = () => {

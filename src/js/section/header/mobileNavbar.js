@@ -3,6 +3,7 @@ import textBtn from "@/js/components/buttons/textBtn.js";
 import { liList } from "@/js/components/list.js";
 import mobileNavGen from "@/js/components/nav/mobileNavGen.js";
 import ul from "@/js/components/nav/ulList.js";
+import "@/js/section/header/mobileNavbar.scss";
 
 /**
  * create mobile navbar

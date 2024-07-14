@@ -2,6 +2,7 @@ import generateElement from "@/js/Assets/generateEle.js";
 import label from "@/js/components/lable.js";
 import render from "@/js/Assets/render.js";
 import serviceCard from "@/js/section/main/serviceSec/serviceCard.js";
+import "@/js/section/main/serviceSec/serviceSec.scss";
 
 /**
  * add components to sevices section:
