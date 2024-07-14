@@ -1,5 +1,7 @@
 import domGenerator from "dom-generator";
 import textIconBtn from "@/js/components/buttons/textIconBtn.js";
+import "@/js/section/main/portfolio/portfolioCard.scss";
+import "@/js/section/main/portfolio/portfolioSec.scss";
 
 /**
  * create card component with dom generator
