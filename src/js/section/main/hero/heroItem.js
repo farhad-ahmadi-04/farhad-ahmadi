@@ -1,5 +1,6 @@
 import domGenerator from "dom-generator";
 import textBtn from "@/js/components/buttons/textBtn.js";
+import "@/js/section/main/hero/hero.scss";
 
 const heroItem = (data) => {
     return domGenerator(
