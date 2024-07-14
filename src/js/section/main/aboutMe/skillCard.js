@@ -1,4 +1,5 @@
 import domGenerator from "dom-generator";
+import "@/js/section/main/aboutMe/skillCard.scss";
 
 /**
  * create skill card component with dom generator 

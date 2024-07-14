@@ -5,6 +5,7 @@ import mainImage from "@/js/components/mainImg.js";
 import MyIntroduction from "@/js/section/main/aboutMe/MyIntroduction.js";
 import textIconBtn from "@/js/components/buttons/textIconBtn.js";
 import { sliderAbout } from "@/js/section/main/aboutMe/aboutSlider.js";
+import "@/js/section/main/aboutMe/aboutMeSec.scss";
 
 /**
  * create about me section by get render from components
